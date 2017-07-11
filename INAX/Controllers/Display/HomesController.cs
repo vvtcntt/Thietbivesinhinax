@@ -13,7 +13,7 @@ namespace INAX.Controllers.Display
         // GET: /Homes/
         private DatabaseINAXContext db = new DatabaseINAXContext();
         public ActionResult Index()
-        {
+        {//connect
             tblConfig config = db.tblConfigs.First();
             ViewBag.Title = "<title>" + config.Title + "</title>";
             ViewBag.dcTitle = "<meta name=\"DC.title\" content=\"" + config.Title + "\" />";
