@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 768px) 
+{
+	#Left_Cate{ width:25%}
+	#Right_Cate{ width:72%}
+	}
+@media screen and (max-width: 480px) 
+{
+	
+		#Left_Cate{ display:none}
+	#Right_Cate{ width:98%}
+	.Content_RightCate .Tear_pd{ width:31.5%;}
+	}

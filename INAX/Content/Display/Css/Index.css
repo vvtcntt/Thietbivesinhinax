@@ -1,0 +1,659 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body {
+  
+ background:#FFF;
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+ 
+}
+@font-face { font-family: Roboto; src:url(../Font/Roboto-Bold.ttf); }
+@font-face { font-family: UTMSwiss; src:url(../Font/UTMSwiss.ttf); }
+@font-face { font-family: UTM_Cafeta; src: url(../Font/UTM%20Cafeta.ttf); }
+@font-face { font-family: Dientu; src:url(../Font/QuartzRegular.ttf); }
+@font-face { font-family: VJAM; src:url(../Font/VJAM.ttf); }
+
+@font-face { font-family: UTM-Swiss-CondensedBold; src:url(../Font/UTM-Swiss-CondensedBold.ttf); }
+@font-face { 
+font-family:taho; 
+src:url(../Font/UTMChickenhawk.ttf)
+}
+ 
+@font-face { 
+font-family:UTM_SwissCondensed; 
+src:url(../Font/UTM_SwissCondensed.ttf); 
+}
+ul,li{ padding:0px; margin:0px; outline:0px; vertical-align:baseline; border:0px; }
+ul,li{ list-style:none  }
+a{text-decoration:none}
+a:hover{color:#176388 !important}
+img { border:none}
+.Clear{ clear:both}
+
+
+#Top{background: #23a5e4;
+border-bottom: 1px solid #1c98d5;
+height: 45px;
+width: 100%;
+z-index: 9999; 
+float:left;   margin:0px;
+}
+ 
+#Content_top{ width:1200px; height:100%; margin:0px auto; padding:0px}
+ .ul_Content_top_left{background: url(../Icon/Line_Navar.png) no-repeat scroll right top transparent;
+float: left;
+margin: 0px;
+height: 100%;}
+ 
+.Homes{background: url(../Icon/Line_Navar.png) no-repeat scroll left top transparent;
+float: left;
+margin: 0px;
+padding: 0px 0px 0px 2px;}
+.Homes a{background: #23a5e4;
+display: block;
+width: 56px;
+height: 45px;
+position: relative;}
+.Homes a span{background: url(../Icon/home-icon.png) no-repeat;
+background-position: 0 0;
+width: 16px;
+height: 15px;
+display: block;
+position: absolute;
+top: 14px;
+left: 21px;}
+.Homes a:hover {
+	background: #ffffff;
+	height: 46px;
+}
+.Homes a:hover span{background: url(../Icon/home-icon.png) no-repeat;
+	background-position: -16px 0;
+	width: 16px;
+	height: 15px;
+	display: block;}
+ .CateList{background: url(../Icon/Line_Navar.png) no-repeat scroll left top transparent;
+float: left;
+margin: 0px;
+padding: 0px 0px 0px 2px; height:100%; position:relative}
+
+ .CateList a{padding: 16px 20px;
+display: inline-block;
+height: 13px;
+position: relative;}
+.CateList:hover .ul_Content_top_left_Child{ display:block; z-index:10}
+.ul_Content_top_left_Child{ background:#23a5e4; display:none; position:absolute; padding:7px}
+.ul_Content_top_left_Child li a{ font-size:12px;  text-transform:none !important; padding:5px ; display:block; }
+
+.Hot_Tags{background: url(../Icon/Line_Navar.png) no-repeat left top;
+float: left;
+margin: 0 0 0 0;
+padding: 0 0 0 2px; height:100%}
+.Hot_Tags a{padding: 16px 20px;
+display: inline-block;
+height: 13px;
+position: relative;}
+.Hot_Tags a span{background: url(../Icon/tags-icon.png) no-repeat;
+float: left;
+width: 13px;
+height: 13px;
+display: block;
+margin: 0 8px 0 0;}
+.ul_Content_top_left li a{ 
+font-weight: 600;
+font-size: 13px;
+line-height: 13px;
+color: #FFF;
+text-decoration: none;
+text-transform: uppercase;}
+.Hot_Tags .ul_Hot_Tags{ background:#23a5e4;  
+padding: 10px; max-width:320px;
+position: absolute;
+top: 45px; display:none;
+margin: 0 0 0 0;
+list-style: none; z-index:10}
+.Hot_Tags .ul_Hot_Tags li{ float:left}
+.Hot_Tags .ul_Hot_Tags li a{ font-size:12px;  text-transform:none !important; padding:5px ; margin: 3px; display:block;background:#FFF; color:#23a5e4 }
+
+
+
+
+
+.Hot_Tags:hover .ul_Hot_Tags{ display:block}
+.CateList a span{background: url(../Icon/categories-icon.png) no-repeat scroll 0% 0% transparent;
+float: left;
+width: 13px;
+height: 12px;
+display: block;
+margin: 0px 8px 0px 0px;}
+.ul_Content_top_Center{ width:350px; height:100%; float:left; margin:0px}
+.ul_Content_top_right{background: url(../Icon/Line_Navar.png) no-repeat right top;
+float: right;
+margin: 0 0 0 0; height:100%}
+.SupportOnline{background: url(../Icon/Line_Navar.png) no-repeat left top;
+float: left;
+margin: 0 0 0 0;
+padding: 0 0 0 2px; height:100%; position:relative }
+.htline{ font-weight:bold; color:#FF0; font-size:14px}
+.SupportOnline a.asup{font-weight: 600;
+font-size: 13px;
+line-height: 13px;
+color: #FFFFFF;
+text-decoration: none;
+text-transform: uppercase;padding: 16px 20px;
+display: inline-block;
+height: 13px;
+position: relative;  }
+
+.Tragop{
+	background:url(../Icon/Line_Navar.png) no-repeat left top;
+float: left;
+margin: 0 0 0 0;
+padding: 0 0 0 2px; height:100%
+	}
+	.Tragop a{font-weight: 600;
+font-size: 13px;
+line-height: 13px;
+color: #FFFFFF;
+text-decoration: none;
+text-transform: uppercase;padding: 16px 20px;
+display: inline-block;
+height: 13px;
+position: relative;  }
+.Tragop a .icon_tragop{background: url(../Icon/icon_Tietkiem.png) no-repeat;
+float: left;
+width: 15px;
+height: 15px;
+display: block;
+margin: -1px 8px 0 0;}
+.SupportOnline a .icon_SupportOnline{background: url(../Icon/Support.png) no-repeat;
+float: left;
+width: 15px;
+height: 15px;
+display: block;
+margin: -1px 8px 0 0;}
+
+
+#Banner{ width:1200px; height:85px; margin:2px auto 0px auto; padding:0px;   position:relative}
+#Left_Banner{ width:552px; height:100%; float:left; margin:0px; }
+#iName{height:85px; float:left; position:absolute} 
+#iName h3{ margin:57px auto 2px 58px; color:#000; font-size:18px; text-transform:uppercase; font-family:UTM-Swiss-CondensedBold; font-weight:normal }
+
+#iLogo{ display:table; height:100%; width:100%; overflow:hidden; float:left; margin:0px}
+#iLogo a{display: table-cell; vertical-align: middle;   }
+
+
+#Center_Banner{ width:420px; height:100%; float:left; margin:0px; background:url(../iCon/ngay-gio.png) no-repeat center center scroll transparent}
+#Center_Banner img{   margin:3px auto; display:block }
+#Top_Center_Banner{ width:100%; height:45%; float:left; margin:0}
+#Top_Center_Banner img{   margin:10px auto 2px auto; display:block }
+#Bottom_Center_Banner{ width:100%; height:55%; float:left; margin:0}
+#Content_Search{ width:331px; height:25px; background:url(../iCon/Search.png) no-repeat left center scroll transparent; margin:10px auto}
+.txtSearch{ width:294px; height:100%; margin:0px 0px 0px 4px; background-color:transparent; border:none; font-size:12px; color:#f3f3f3; float:left}
+#btnSearch{ width:30px; float:left; height:100%; background-color:transparent; border:
+none}
+#Right_Banner{ width:228px; height:100%; float:left; margin:0px}
+#Top_Right_Banner{ width:100%; float:left; height:20px}
+#Top_Right_Banner p{ font-size:12px; margin:2px 3px; float:right }
+#Center_Right_Banner{ width:70%; height:20px; float:right; margin:3px 0px; background-color:#fe0001}
+#Bottom_Right_Banner{ width:100%; float:left; height:30px; overflow:hidden}
+#Bottom_Right_Banner img{ float:right}
+#Center_Right_Banner span{ font-weight:bold;  line-height:20px; color:#FFF; text-align:right; margin-right:3px; float:right}
+
+
+#Main{ width:1200px; height:auto; margin:2px auto}
+
+#Headder{ width:100%; height:auto; float:left; margin:0px;}
+ #Top_Headder{ width:100%; height:33px; float:left; margin:0px; background:#1b98d5}
+ #Left_Top_Headder{  width:225px; height:100%; float:left; margin:0px}
+ .t1_Left_Top_Headder{ width:42px; height:100%; float:left; margin:0px }
+ .t1_Left_Top_Headder img{ margin:8px auto; display:block}
+ .t2_Left_Top_Headder{ width:141px; height:100%; float:left; margin:0}
+  .t2_Left_Top_Headder span{ font-size:14px; text-transform:uppercase; color:#FFF;   line-height:33px; display:block; font-family:UTM-Swiss-CondensedBold}
+  .t3_Left_Top_Headder {  width:40px; float: left; margin:0px; height:95%; background:url(../Icon/tamgiac.png) no-repeat left center scroll transparent}
+  #Right_Top_Headder{ width:973px; height:31px; float:left; margin:2px 0px 0px 0px; background:#189fe1}
+   #Right_Top_Headder ul{ width:100%; height:auto; float:left; margin:0; padding:0}
+   #Right_Top_Headder ul li{ float:left; z-index:1 }
+    #Right_Top_Headder ul li.Support{ height:31px}
+	
+	
+	.Support:hover .Content_SupportOnline{ display:block}
+	.Content_SupportOnline{ width:245px; display:none;  height:auto;  border:2px solid #23a5e4; background:#FFF; z-index:100; position:absolute; margin-top:31px  }
+.SupportOnline:hover .Content_SupportOnline{ display:block}
+.Tear_Support{ width:99%; float:left; margin:2px 0px; border:1px solid #f5f5f5}
+.Left_Tear_Support{ width:30%; height:auto; float:left; margin:0px}
+.Left_Tear_Support img{border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+width: 60px;
+height: auto;
+margin: 5px auto;
+display: block;
+border: 1px solid #efefef;}
+.Right_Tear_Support{ width:70%; height:auto; float:left; margin:0px}
+ 
+.Top1_Tear_Support{ float:left; width:100% ; margin:0; line-height:25px}
+.Top1_Tear_Support span{ font-weight:bold; text-align:center; display:block; color:#000; text-transform:uppercase}
+.Top2_Tear_Support{float:left; width:100% ; margin:0; line-height:25px}
+.Top2_Tear_Support p{ line-height:15px; display:block; margin:0px 5px; text-align:center}
+.Top2_Tear_Support p span{ font-weight:bold; color:#dc4e00}
+.Top3_Tear_Support{float:left; width:100%  }
+.Left_Support{ width:50%; float:left; margin:0; height:100% }
+.Top_Left_Support{ width:100%; float:left; margin:0;}
+.Top_Left_Support span{ text-align:center; display:block; font-size:12px; line-height:20px; color:#4c9686}
+.imgSkyper{ width:70px !important}
+.Top1_Left_Support{ width:100%; float:left; margin:0; height:25px}
+.Top1_Left_Support a{ margin-left:5px !important; display:block; }
+.Top1_Left_Support img{ width:64px; height:auto; margin:2px auto; display:block !important}
+.Right_Support{ width:50%; float:left; margin:0;}
+
+.Info_Support{width:100%; float:left; margin:2px 0px}
+.Info_Support p{ margin:3px 7px; color:#F00; text-align:justify; font-size:11px}
+ .icon_thongbao{ background: url(../Icon/Thong-bao.png) no-repeat scroll 0% 0% transparent;
+float: left;display: block; height:15px; width:15px; margin:auto 5px }
+ 
+
+
+   #Right_Top_Headder ul li a{ display:block; float:left; margin:auto 30px; line-height:29px;   text-transform:uppercase; color:#FFF; font-family: UTM_Cafeta;
+font-size: 18px;}
+    #Right_Top_Headder ul li a img.km{   margin:10px 8px; float:left; display:block }
+   #Right_Top_Headder ul li a img.ht{   margin:2px 8px; float:left; display:block }
+   #Bottom_Headder{ width:100%; height:auto; float:left; margin:0px}
+   #Left_Bottom_Headder{ width:225px; height:286px; float:left; margin:0px; background:#23a5e4}
+    ul.ul1{ width:100%; height:100%; float:left; margin:5px 0px; position:relative}
+    ul.ul1 li.li1{ margin:auto 0px; background:url(../Icon/Line_Navar_w.png) repeat-x left bottom scroll transparent; width:100%; float:left }
+ ul.ul1 .li1 a{ font-size:15px; color:#FFF; font-family:UTM_SwissCondensed;margin:auto 4px; display:block; line-height:28px; float:left}
+  ul.ul1 .li1 a .iCon{ width:20px; height:20px; float:left; margin:4px 10px 4px 5px;}
+ ul.ul1 .li1:last-child{ background:none !important}
+ ul.ul1 .li1 .ul2{   position:absolute; display:none; width:681px; top:0px; margin:-5px auto 0px 100%; border:2px solid #23a5e4; z-index:100000; min-height:250px}
+ ul.ul1 .li1:hover .ul2{ display:block;}
+ ul.ul1 .li1 .ul2 .li2{ width:30%; height:auto; float:left; margin:5px 3px}
+ ul.ul1 .li1 .ul2 .li2 a.Image { float:left}
+ ul.ul1 .li1 .ul2 .li2 a.Name{ color:#000 !important; color:#7a7a7a; margin:1px 5px; display:block; line-height:20px !important}
+  ul.ul1 .li1  .ul2 .li2  hr{ height:10px; width:100%; float:left;  margin:1px auto ; background:url(../iCon/bottom_list.gif) no-repeat transparent; border:none}
+  ul.ul1 .li1 ul2 .li2 span{ color:#a3a3a3; font-size:11px; font-style:italic; margin:2px 5px; display:block}
+    ul.ul1 .li1 .ul2 .li2 a.Image img{ max-width:140px; height:120px; margin:2px 5px; display:block;  border: 1px solid #f1f1ee}
+	#Center_Bottom_Headder{ width:680px; height:285px; float:left; margin:2px; overflow:hidden}
+	#Center_Bottom_Headder img{  height:285px; float:left}
+	#Right_Bottom_Headder{ width:289px; height:285px; float:left; margin:0px; border-right:2px solid  #23a5e4}
+	#Video{width:100%; float:left; margin:2px 0px 0px 0px !important}
+    #Video iframe{ margin:0px; padding:0px; float:left}
+	#News_Homes{ width:100%; margin:0px 0 0 0 ; background: #23a5e4; height:93px; float:left  }
+	#News_Homes span.iCon{ width:15px; height:15px; float:left; background:url(../iCon/iCon-News.png) no-repeat transparent; margin:6px}
+	#News_Homes span.Name{ margin:5px auto auto 25px; display:block; text-transform:uppercase; color:#FFF; font-weight:bold; line-height:22px}
+	#News_Homes ul{ width:100%; height:56px; overflow:auto; float:left; background:url(../Icon/Line_Navar_w.png) repeat-x left top scroll transparent; margin:2px 0px}
+	#News_Homes ul li:first-child{margin-top:7px}
+	#News_Homes ul a{ color:#FFF;   margin:3px 5px ; display:block}
+ 
+ /*List Categogy*/
+ #Catelogy{ width:100%; height:auto; float:left; margin:2px 0px; background:#23a5e4}
+ #ListCate{ position:relative; float:left; margin:0px; width:100%}
+ .li_Ct1{ width: 133px; height:100%; margin:0px; float:left; background:url(../iCon/Line_Navar.png) repeat-y right center scroll transparent }
+  .li_Ct1:last-child{ background:none}
+ .Content_Cate{ height:137px; width:100%;float:left; margin:0px; overflow:hidden; background:#23a5e4}
+ .Content_ct{ width:100%; height:135px; float:left}
+ .img_Content_ct{ width:100%; height:110px; float:left; margin:0; display:table }
+ .img_Content_ct  .tb_img{max-height:100%; height:auto; max-width:90%; width:auto; margin:auto; display:table-cell; vertical-align:middle; text-align:center;}
+ .Content_ct img{ max-width:113px; height:auto; margin:auto auto ; display:block; max-height:115px} 
+  .Content_Cate .Name_pd{ text-align:center; margin:5px auto; color:#FFF; display:block; font-weight:bold}
+ .li_Ct1:hover{ background:#2bb0f0}
+   .Content_Cate .Name_pd:hover{ color:#FFF !important}
+   .li_Ct1 ul{ position:absolute; left:0; top:135px; width:1200px; float:left; background:#2bb0f0; display:none}
+   .li_Ct1:hover ul{ display:block;transition: all 0.5s ease; }
+   .li_Ct1:hover ul li{float:left;}
+   .li_Ct1:hover ul li a{ margin:auto 5px; line-height:30px; color:#fff; font-weight:bold} 
+ .li_Ct1:hover ul li a span{ color:#f05307}
+ 
+ /*Sản phẩm khuyến mại*/
+ #Product_Sale{ width:100%; height:auto; float:left; margin:2px 0px}
+  #Product_Sale .Nvar_ProductSale{ background:url(../iCon/nvar_NameProduct-1.png) no-repeat left center scroll transparent; height:29px; float:left; width:100%}
+  .Nvar_ProductSale span{   font-size:15px; font-family:UTM_SwissCondensed; color:#fff; text-transform:uppercase; line-height:27px;   margin-left:33px; float:left; font-weight:normal }
+    .Nvar_ProductSale img{ width:auto; height:100%; margin-left:3px; float:left}
+  #Product_Sale .Nvar_ProductSale h1{ float:left; margin:2px 5px 5px 30px; font-size:12px; color:#FFF}
+ #Content_ProductSale{ width:100%; margin:4px 0px; float:left; height:auto}
+  .Tear_Sale{ height:330px; width:196px; float:left; margin:1px; position:relative; border:1px solid #f3f3f3}
+    .Tear_Sale h3{font-weight:normal; margin:0px}
+ .Sale{ width:45px; height:45px; background-image:url(../iCon/icon-sale-price-1.png); position:absolute; float:left; right:2px; top:2px  }
+  .Sale span{ font-size:20px; font-family:UTM_Cafeta; line-height:45px; color:#FFF; text-align:center; display:block}
+ .SaleOff{ width:82px; height:57px; float:left; position:absolute; background-image:url(../iCon/SaleOff.png); left:2px; top:100px}
+ .box_quatang{ width:82px; height:82px; float:left; position:absolute; background: url(../iCon/khuyenmai.png) no-repeat right center scroll transparent; right:2px; top:80px}
+  .SaleOff span{font-size:12px; color:#FF0; font-weight:bold; margin:30px 3px; display:block;transform: rotate(-20deg);   
+-moz-transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg); text-align:center  } 
+ .Price{ font-size:11px; color:#418513; text-align:center; display:block; margin:5px; font-weight:normal}
+  .PriceSale{ font-size:14px; color:#ff1e00; text-align:center; display:block; margin:5px 5px 0px 5px; font-weight:bold}
+ .qua{ font-size:11px; color:#ff5705; margin:2px 5px; text-align:center; display:block}
+ .qua span{ font-weight:bold; font-size:13px; color:#ff4106}
+ .qua .icon{ width:26px; height:11px; display:inline-block; margin:3px 5px 2px 2px; background:url(../iCon/km1.gif); background-size:100%}
+ .sevices{ width:100%; height:25px; float:left; margin:5px 0px 0px 0px}
+ .sevices .Status{ width:70px; height:22px; float:left; display:inline-block; background:url(../iCon/StockStatus1.gif) no-repeat right center scroll transparent; background-size:100%; margin:0px 2px 0px 5px}
+ .sevices .StatusNo{ width:70px; height:22px; float:left;display:inline-block;  background:url(../iCon/Hethang.png) no-repeat right center scroll transparent; background-size:100%; margin:0px 2px 0px 0px}
+ .sevices .Transport{ float:right; margin:3px 5px 3px 3px; font-size:12px; color:#a1a1a1; text-align:right;display:inline-block; }
+ .sevices .Transport .icon{ width:16px; height:12px; float:left; background:url(../iCon/icon-car-local.jpg); margin:2px 2px 5px auto}
+.Content_Sale{ width:100%; height:100%; float:left; margin:0px}
+.Top_Content_Sale{ width:100%; height:198px; float:left; margin:0px; display:table; table-layout:fixed}
+.Top_Content_Sale .img_PdSale{ max-width:90%; text-align:center; max-width:190px; display:table-cell; vertical-align:middle}
+.Top_Content_Sale .img_PdSale img{ margin: 3px auto; display:block; max-width:98%; max-height:190px; width:auto; height:auto}
+.Content_Sale a{ font-size:13px;   margin:3px 5px; text-align:center; color:#505050; display:block;font-family: arial,helvetica,sans serif;
+}
+
+/*List Product*/
+
+.Nvar_ListGroupsPrduct{ background:url(../iCon/nvar_Name.png) no-repeat left center scroll transparent; height:29px; float:left; width:100%; margin:3px 0px}
+.Nvar_ListGroupsPrduct span{ font-family:UTM_SwissCondensed; line-height:29px; margin:auto auto auto 30px; color:#FFF; font-size:16px; text-transform:uppercase}
+.Tear_GroupsProduct{ width:100%; height:auto; float:left; margin:0px}
+.Tear_GroupsProduct .nVar{ width:100%; height:30px; float:left; margin:0px; background:#fff}
+.Tear_GroupsProduct .nVar .Left_nVar{ width:auto; float:left; margin:0px; height:100%; position:relative}
+.Tear_GroupsProduct .nVar .Left_nVar .Name{ width:100%; float:left; margin:0px; height:100%; background:#23a5e4}
+.Tear_GroupsProduct .nVar .Left_nVar .Name .iCon{ width:20px; height:20px; float:left;   margin:5px 5px}
+.Tear_GroupsProduct .nVar .Left_nVar .Name h2{ font-size:14px; color:#fff; margin:4px 30px 5px 2px;    text-transform:uppercase; font-weight:normal; font-family:UTM-Swiss-CondensedBold;  float:left}
+.Tear_GroupsProduct .nVar .Right_nVar{ width:auto; float:right; height:100%; margin:0px}
+.Tear_GroupsProduct .nVar .Left_nVar .iCon_nVar{ border:1px solid #23a5e4; position:absolute; border-radius:50%; width:28px; height:28px; background:#fff; right:-15px}
+.Tear_GroupsProduct .nVar .Left_nVar .iCon_nVar span{ text-align:center; margin:2px auto; display:block; color:#23a5e4; font-family:UTMSwiss; font-size:15px}
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1{ width:auto; height:100%; float:left; position:relative}
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1{float:left}
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1:hover{ background:#ff5e26; height:100%; }
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1 a{ font-size:12px; color:#5e5e5e; line-height:30px;  float:left; margin:auto 5px}
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1 h2{font-weight:normal; margin:0px}
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1 a:hover{ color:#FFF !important}
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1 a span{ width:12px; height:6px; float:right; background:url(../iCon/icon-menu-task.png) no-repeat; margin:12px 4px}
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1 .ul_2{ display:none;   width:170px; position:absolute; height:100%; margin-top:30px; z-index:10;background:#fff; border:1px solid #ff5e26; height:auto !important; float:left; padding:5px}
+   .Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1 .ul_2 .li_2 a:hover{ color:#ff5e26 !important}
+   .Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1 .ul_2 .li_2 a{ line-height:normal !important; margin:5px 5px; display:block}
+  
+.Tear_GroupsProduct .nVar .Right_nVar .ul_1 .li_1:hover .ul_2{ display:block; }
+ .Tear_GroupsProduct .nVar .Right_nVar  .Xemchitiet{ font-size:12px; text-align:right; float:right; line-height:30px; color:#ff5e26; margin-left:15px}
+
+.Menu_cl_Content{ width:100%; height:auto; margin:0px; float:left; background:#ff5e26; display:none}
+.Left_Menu_cl_Content{ width:225px; height:auto; margin:0px; float:left; background: #ff5e26}
+.Left_Menu_cl_Content a{ font-size:13px; font-weight:bold ; color:#FFF; line-height:29px; display:block; margin-left:15px; text-transform:uppercase}
+.Left_Menu_cl_Content a .iCon{  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 4px 5px;}
+.Right_Menu_cl_Content{ float:left; width:975px; height:27px; background:url(../iCon/nvar_Left.png) no-repeat left center scroll #FFF; margin:2px 0px 0px 0px; }
+.Right_Menu_cl_Content ul{ width:90%; height:auto; float:left; margin:0px 2%}
+.Right_Menu_cl_Content ul li{ float:left !important}
+.Right_Menu_cl_Content ul li a{  font-size:11px; display:block; color:#1e1e1e;   padding:7px 5px; text-align:center; font-weight:bold; text-transform:uppercase}
+.Adw_cl_Content{ width:100%; height:auto; float:left; margin:0}
+ 
+.Adw_cl_Content img{ width:auto; height:70px; float:left; margin:0px}
+ .Content_cl_Content{ width:100%; height:auto; float:left; margin:0px 0px; background:#23a5e4; padding:2px 0px 0px 2px}
+  .Content_cl_Content .Content_1{ width:1199px; height:100%; float:left; margin:0px; background:#FFF; border-right:1px solid #d1d1d1; border-bottom:1px solid #d1d1d1}
+.Left_Top_cl_Content{ width:19%; height:auto; float:left; margin:0px}
+.Left_Top_cl_Content .Tear_AdwLeft{ max-width:100%; height:auto; float:left; margin:0px 0px; }
+
+
+
+
+.Right_Top_cl_Content{ width:80%; height:auto; float:left; margin:0px 0px 0px 0px; padding-bottom:5px; padding-top:5px}
+.Tear_pd{ width:153.8px; height:300px; float:left; margin:2px; border:1px solid #eeeeee; overflow:hidden; position:relative}
+.img_Tearpd{ width:100%; height:163px; float:left; margin:0px 0px 0px 0px; overflow:hidden; display:table; table-layout:fixed}
+.img_Tearpd a{ display:table-cell; vertical-align:middle; text-align:center}
+.Tear_pd h3{font-weight:normal; margin:0px}
+.Tear_pd h2{font-weight:normal}
+.img_Tearpd img{ max-width:98%; max-height:160px; height:auto; width:auto; margin:3px auto}
+.Tear_pd a.Namepd{   font-size: 12px;
+  margin: 3px 5px;
+  text-align: center;
+  color: #505050;
+  display: block;
+  font-family: arial,helvetica,sans serif;}
+ .Tear_pd .Price_s { font-size:11px; margin:2px 3px; float:none; text-align:center}
+.Tear_pd  .sevices{ width:100%; height:auto; float:left}
+.Tear_pd  .sevices .Status{width: 70px;
+  height: 22px;
+  float:left;
+  background: url(../iCon/StockStatus1.gif) no-repeat right center scroll transparent;
+  background-size: 100%;
+  margin: 0px 2px 0px 0px;
+}
+.Tear_pd .sevices .Transport {
+  float:right;
+  margin: 4px 3px;
+  font-size: 11px;
+  color: #a1a1a1;
+  text-align: right;
+}
+
+.Tear_pd .sevices .Transport .icon {
+  width: 16px;
+  height: 12px;
+  float: left;
+  background: url(../iCon/icon-car-local.jpg);
+  margin: 2px 2px 5px auto;
+}
+/* Khuyến mại sửa lại */
+ .box_quatang1{ width:62px; height:82px; float:left; position:absolute; background: url(../iCon/khuyenmai.png) no-repeat right center scroll transparent; left:2px; top:80px}
+.Box_Price_pd{    width:100px;height:53px;  }
+.Price_pd{height:33px; float:left; margin:0px; color:#464646; float:right; font-size:12px;display:block; text-decoration:line-through }
+.PriceSale_pd{    margin:1px 3px;font-size:20px;color:#6e6e6e;font-family:VJAM; float:right; display:block; height:22px  }
+
+/*Thực hiện CSS Footter*/
+#Footter{ width:100%; height:auto; float:left; margin:5px 0px 0px 0px; background:#23a5e4}
+#Footter_Top{  width:1200px; height:100%; margin:0px auto}
+.Tear_Footter{ width:200px; height:auto; float:left; margin:5px 10px 5px 0px }
+.Nvar_Tear_Footter_1{ background:url(../iCon/icon_Info.png) no-repeat left center scroll transparent; height:30px; float:left; width:100%}
+.Nvar_Tear_Footter_1 span{ line-height:30px; text-transform:uppercase;   color:#FFF; margin:auto 5px auto 45px; font-size:14px; font-family:UTM_SwissCondensed}
+.Content_Tear_Footter{ width:100%; height:100%; float:left; margin:8px 0px; background: url(../Icon/Line_Navar_w.png) repeat-x left top scroll transparent;}
+.Content_Tear_Footter a{ position:relative; display:block; margin:7px 5px ; color:#FFF}
+.Content_Tear_Footter a:hover{color:#F00 !important}
+
+.Nvar_Tear_Footter_2{ background:url(../iCon/icon-huongdan.png) no-repeat left center scroll transparent; height:30px; float:left; width:100%}
+.Nvar_Tear_Footter_2 span{ line-height:30px; text-transform:uppercase; font-family:UTM_SwissCondensed; color:#FFF; margin:auto 5px auto 35px; font-size:14px}
+.Nvar_Tear_Footter_3{ background:url(../iCon/icon-Chinhsach.png) no-repeat left center scroll transparent; height:30px; float:left; width:100%}
+.Nvar_Tear_Footter_3 span{ line-height:30px; text-transform:uppercase;   color:#FFF; margin:auto 5px auto 45px; font-size:14px; font-family:UTM_SwissCondensed}
+.Nvar_Tear_Footter_4{ background:url(../iCon/icon_Product.png) no-repeat left center scroll transparent; height:30px; float:left; width:100%}
+.Nvar_Tear_Footter_4 span{ line-height:30px; text-transform:uppercase;   color:#FFF; margin:auto 5px auto 45px; ; font-size:14px; font-family:UTM_SwissCondensed}
+.RegistrySale{ width:300px; height:auto; border-radius:5px; float:right}
+.Title_regis{ font-family:UTM_Cafeta;color:#f6ff00; margin:7px 1px; text-transform:uppercase; font-size:17px}
+.Des_Regis{ color:#FFF; margin:2px }
+.Regis{ width:300px; height:25px; margin:2px auto; background:url(../iCon/dang-ky-km.png) no-repeat left}
+.txtRegis{ width:200px; height:100%; background-color:transparent; border:none; float:left; margin-left:2px}
+.button_search_{ width:95px; height:100%;
+float:left; margin:0px; background-color:transparent; border:none}
+.Des_Regis1{ color:#fff; margin:2px 0px}
+#Footter_Centter{ width:1200px; height:30px; margin:2px auto; background:url(../iCon/Line_Navar_w.png) repeat-x top }
+#Footter_Centter p{ color:#FFF; line-height:30px; text-align:center}
+#Footter_Centter p span{ color:#F00; font-weight:bold}
+#Footter_bottom{ width:1200px; height:auto; margin:0px auto; background:url(../iCon/Line_Navar_w.png) repeat-x top  }
+#Left_Footter_bottom{ width:50%; height:100%; float:left; margin:0px}
+#Logo_Left{ width:150px; height:100%; float:left; margin:4px 0px 0px 0px  }
+#Logo_Left img{ display:block;  max-width:98%; height:auto; border:1px solid #FFF; margin:4px 0px}
+#Info_Right{ width:440px; height:auto; float:left; margin:0px 5px}
+#Info_Right .p1{ font-size:14px;  margin:5px 2px 2px 2px; text-transform:uppercase; font-weight:bold; color:#FF0}
+#Info_Right .p2{ font-size:12px; color:#FFF; margin:2px}
+ 
+#Info_Right h2{  color:#FFF; margin:2px 2px 5px 2px; text-transform:uppercase; font-size:18px; font-family:UTM-Swiss-CondensedBold; font-weight:normal}
+#Right_Footter_bottom{ width:50%; float:left; margin:0px}
+#Right_Footter_bottom p{ color:#FFF; font-weight:bold; margin:5px 2px; text-align:right}
+#Right_Footter_bottom img{ float:right; height:50px; width:auto; margin:2px}
+#Infocty{ width:100%; height:50px; float:left; margin:0px; border-top:1px solid #0894d8}
+#Infocty .cty1{ color:#ffffff; margin:7px 2px 1px 2px; font-weight:bold; text-align:center; text-transform:uppercase; font-family:UTM-Swiss-CondensedBold; font-size:14px; font-weight:normal}
+#Infocty .cty2{ color:#e8ecee; margin:2px;  text-align:center}
+
+table, th, td {
+   border: 1px solid #dadada; 
+}
+table{border-right:none; border-bottom:none}
+
+/*Đối tác*/
+#Doitac{ width:100%; height:auto; float:left; margin:0px}
+.nvar_Doitac{ width:100%; height:29px; float:left; margin:3px 0px; background:url(../iCon/nvar_Name.png) no-repeat left scroll}
+#Conten_Doitac{ width:100%; height:75px; float:left; margin:0px }
+.nvar_Doitac span{ font-family:UTM_Cafeta; line-height:29px; margin:auto auto auto 30px; color:#FFF; font-size:18px; text-transform:uppercase}
+.line{ width:100%; height:4px; margin:5px 0px; float:left}
+.Line1{ width:100%; height:2px; float:left; margin:0px; background:#069ae6}
+ .Line2{ width:100%; height:2px; float:left; margin:0px 0px 0px 0px; background:#1bb1fe}
+ #Dichvu{ width:1200px; height:98px;  margin:5px auto}
+.Tear_Dichvu1{ width:234px; height:88px; float:left; margin:5px 3px 5px 0px;  background:url(../iCon/dichvugiaohang.png) no-repeat center scroll}
+.Tear_Dichvu2{ width:234px; height:88px; float:left; margin:5px 3px; background: url(../iCon/mienphilapdat.png) no-repeat center scroll}
+.Tear_Dichvu3{ width:234px; height:88px; float:left; margin:5px 3px; background: url(../iCon/thanhtoannhanhgon.png) no-repeat center scroll}
+.Tear_Dichvu4{ width:234px; height:88px; float:left; margin:5px 0px 5px 3px; background:url(../iCon/dichvubanhang.png) no-repeat center scroll}
+.Tear_Dichvu5{ width:234px; height:88px; float:right; margin:5px 0px 5px 3px; background:url(../iCon/giathanhrenhat.png) no-repeat center scroll}
+.box_qt{ width:80px; height:80px; float:left; right:5px; background-color:#F00; position:absolute}
+.fb-like{ width:130px; height:15px; float:left; margin:7px 6px 7px 0px}
+.tweet{ width:70px; height:15px; float:left; margin:7px 5px}
+.Project{
+    width: 100%;
+    height: auto;
+    margin: 2px auto;
+    background-color: #f2f2f2;
+}
+ @media screen and (max-width: 600px) {
+
+#tooltip{ display:none   !important} 
+.float-ck{ display:none !important}
+#myModal{display:none !important}
+    #divAdRight {display:none !important}
+    #divAdLeft {display:none !important}
+}
+ .tabs{
+max-width:935px;
+margin:0 auto;
+position:relative;
+clear: both;
+padding-top:0px;
+}
+.tabs h3 {font-size:15px;background: #C0392B;color: #fff;padding: 0 20px;margin: 0 -24px;}
+.tabs input{
+position:absolute;
+top:0;
+left:0;
+display:none;
+}
+.tabs label{
+display:block;
+float:left;
+position:relative;
+padding:10px 20px;
+line-height:1.5em;
+min-width:55px;
+text-align:center;
+color: #222;
+font-size:13px;
+font-weight:bold;
+letter-spacing:1px;
+cursor:pointer;
+
+}
+.tabs label:after{
+content:"";
+display:block;
+position:absolute;
+width:100%;
+height:5px;
+background:#fff;
+left:0;
+bottom:-5px;
+}
+.clear-shadow{
+clear:both;
+}
+.content-tab{
+position:relative;
+width:100%;
+border-top: 1px solid #DDD;
+padding-top: 10px;
+margin-top:-1px;
+}
+.content-tab>div{
+overflow:hidden;
+top:0;
+left:0px;
+opacity:0;
+display:none;
+transition:opacity .4s;
+-moz-transition:opacity .4s;
+-webkit-transition:opacity .4s;
+-ms-transition:opacity .4s;
+-o-transition:opacity .4s;
+}
+/***** Xu Ly An Hien*****/
+.tabs input:checked + label{background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yf/r/PfBgtiydy5U.gif) no-repeat bottom center;z-index:1}
+.tabs input.tab-selector-1:checked ~ .content-tab .tab-1,
+.tabs input.tab-selector-2:checked ~ .content-tab .tab-2{
+opacity:1;display:block;
+}
+#feedback_1Sk3Z7kJT9sPUU0d6 {
+ width:935px !important
+}
+#ProductDB{ width:100%; height:auto; float:left; margin:5px 0px}
+#nVar_ProductDB{  background: url(../iCon/nvar_Name.png) no-repeat left center scroll transparent;
+  height: 29px;
+  float: left;
+  width: 100%;
+  margin: 3px 0px;}
+#nVar_ProductDB span {
+  font-family: UTM_SwissCondensed;
+  line-height: 29px;
+  margin: auto auto auto 30px;
+  color: #FFF;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#nVar_ProductDB h1 {
+  font-family: UTM_SwissCondensed;
+  line-height: 29px;
+  margin: auto auto auto 30px;
+  color: #FFF;
+  font-weight:normal;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#Content_ProductDB{ width:100%; height:auto; margin:0px;   float:left}
+ .spdb{ width:19.4%; float:left; margin:2px; border:1px solid #f3f3f3; position:relative}
+ .spdb .img_spdb{ width: 100%; max-height:240px; float:left; margin:0px; display:table; table-layout:fixed}
+  .spdb .img_spdb a{ display:table-cell; vertical-align:middle; text-align:center}
+  .spdb .img_spdb img{ max-width:100%; margin:0px}
+  .spdb .Name{ font-size:12px; color:#525252; margin:4px; font-family:Arial, Helvetica, sans-serif; text-align:center; display:block; text-transform:uppercase}
+  .spdb .Note{ font-size:11px; font-style:italic; color:#8d8d8d; margin:5px 2px; display:block; text-align:center}
+  .spdb .Box_Price{ width:100%; height:30px; top:60%;position:absolute;  text-align:right}
+ .spdb .Box_Price span{ font-size:18px; color:#ff3c00; text-align:right; margin:auto 1px; line-height:100%; font-family:UTMSwiss   }
+  .spdb .Box_Price span span{ font-size:11px; font-family:Arial, Helvetica, sans-serif; text-align:right } 
+  .spdb .sptb{ width:60px; height:60px; position:absolute; right:0px; background:url(../iCon/icon_Theobo.png) no-repeat left center scroll transparent}
+
+#Adw_sbdb{ width:100%; height:auto; float:left; margin:5px 0px; overflow:hidden} 
+#Adw_sbdb img{width:auto; height:100%; max-width:100%; float:left; margin:0px}
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style], .fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style]
+ {
+ 
+       width: 100% !important;
+ 
+}
+ .fb-like{ width:118px; height:15px; float:left; margin:7px 6px 7px 0px}
+.tweet{ width:70px; height:15px; float:left; margin:7px 5px}
+ 
+.float-ck { position: fixed; bottom: 0px; z-index: 9000}
+* html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+ 
+#hide_float_left {text-align:left; font-size: 11px;}
+#hide_float_left a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+#MenuMobile{ display:none; }
+.Chinhhang{ display:none}
+.Chodexe{ width:100%; height:112px; float:left; margin:5px 0px; background:url(../iCon/chodexe.png) no-repeat; background-size:100%}
+#Link{ width:100%; height:auto;color:#0894d8;}
+#Link a{ color:#0894d8; line-height:20px; margin:0px 5px}
+#Maps_Homes{ width:100%; height:120px;   margin:10px auto 10px auto}
+#Maps_Homes p{ margin:0px}
+#Maps_Homes iframe{ width:100%; height:100%;   margin:0px; float:left}
+
+.Notice{ width:100%; height:auto; float:left; margin:5px 0px; background:#23a5e4}
+.Notice .Left_notice{ width:12%; height:100%; float:left; background:url(../iCon/icon_notica.png) no-repeat center 10px scroll transparent; min-height:150px}
+.Notice .Right_notice{ width:86%; height:auto; float:left; margin:0px; text-align:center}
+.Notice .Right_notice .n1{ font-size:35px; text-align:center; text-transform:uppercase; margin:5px auto; display:inline-block; color:#FFF; font-family:UTMSwiss; border-bottom:1px solid #FFF; padding-bottom:2px}
+.Notice .Right_notice .n2{ font-size:20px; text-align:center; margin:5px 10px; display:block; color:#FFF}
+.Notice .Right_notice .n3{ font-size:22px; text-align:center; margin:5px auto 10px auto; display:inline-block; color:#ff2a00; font-weight:bold; padding:3px 10px; background:#FFF; border-radius:5px}
+.tietkiem{width:100%; height:auto; float:left; margin:0px 0px 0px 0px; text-align:center   }
+.tietkiem .tk1{font-size:11px; font-weight:bold; color:#f13300; display:block; margin:3px 3px 5px 3px; text-align:center}
+.tietkiem .tk1 span{display:inline-block; background:#f13300; padding:3px 4px; color:#f6ff00; font-size:15px}
+.tietkiem .tk2{font-size:10px ; text-transform:uppercase; color:#418513; display:block; margin:2px 5px; font-weight:bold; text-align:center }
+.laygia{ padding:5px 7px; background:url(../iCon/laygia.png) repeat-x; display:inline-block; color:#0098d0; text-transform:uppercase; border-radius:1px; cursor:pointer}
+.Laygiakm{width:100%; height:25px; position:absolute; bottom:0px; left:0;}
+#Box_laygia .laygia{ padding:7px 10px; background:url(../iCon/laygia.png) repeat-x; display:inline-block; color:#0098d0; text-transform:uppercase; border-radius:1px; cursor:pointer; margin:5px; font-size:15px}
+.maudo{color:#FFF !important; background:#ff4e00 !important; font-size:11px}
+
+
+.maudo{ color:#F00; font-weight:bold}
+.Img_adwcenter{width:100%; height:auto; float:left; margin:5px 0px;clear:both}
+.Img_adwcenter img{max-width:100%; height:auto; float:left; margin:0px}

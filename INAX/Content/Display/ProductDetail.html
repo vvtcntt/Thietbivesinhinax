@@ -1,0 +1,967 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="Css/Product_Detail.css"/>
+<link type="text/css" rel="stylesheet" href="Css/Product_Detail_Res.css"/>
+<link type="text/css" rel="stylesheet" href="Css/ListProduct.css"/>
+<link type="text/css" rel="stylesheet" href="Css/Index.css" />
+<link type="text/css" rel="stylesheet" href="Css/prettyPhoto.css" />
+<link type="text/css" rel="stylesheet" href="Css/Index_Res.css" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="Js/jquery.min.js"></script>
+<script type="text/javascript" src="Js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="Js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="Js/jquery.nivo.slider.pack.js"></script>
+</script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    <script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+		
+				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+					changepicturecallback: function(){ initialize(); }
+				});
+
+				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+					changepicturecallback: function(){ _bsap.exec(); }
+				});
+			});
+			</script>
+<script type="text/javascript" src="Js/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Css/skin.css" /> 
+<link rel="stylesheet" href="Css/Slide/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="Css/Slide/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="Css/Slide/style.css" type="text/css" media="screen" />
+<script type="text/javascript">
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 2,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback
+    });
+});
+
+</script>
+
+  <script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+		
+				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+					changepicturecallback: function(){ initialize(); }
+				});
+
+				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+					changepicturecallback: function(){ _bsap.exec(); }
+				});
+			});
+			</script> <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nhay').each(function () {
+                var elem = $(this);
+                setInterval(function () {
+                    if (elem.css('visibility') == 'hidden') {
+                        elem.css('visibility', 'visible');
+                    } else {
+                        elem.css('visibility', 'hidden');
+                    }
+                }, 800);
+            });
+        });
+    </script>
+            
+</head>
+
+<body>
+ 
+<div id="Top">
+	<div id="Content_top">
+    	 <ul class="ul_Content_top_left">
+         	<li class="Homes"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon-Homes"></span></a></li>
+         	<li class="CateList"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="categories-icon"></span>Chọn tỉnh thành</a>
+            	<ul class="ul_Content_top_left_Child">
+                	<li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">&bull; Hà Nội</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">&bull; Hải Phòng</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">&bull; TP.HCM</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">&bull; Đà Nẵng</a></li>
+                </ul>
+            </li>
+            <li class="Hot_Tags"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="Tags-icon"></span>Hot Tags</a>
+            	<ul class="ul_Hot_Tags">
+                	<li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">Hà Nội</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">Lõi lọc nước chính hãng</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">TP.HCM</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">Đà Nẵng</a></li>
+                </ul>
+            </li>
+         </ul>
+         <ul class="ul_Content_top_Center">
+         <div id="Content_Search">
+         	<input type="text"  id="txtSeach" name="txtSearch" class="txtSearch" />
+            <button type="submit" id="btnSearch" name="btnSearch"></button></div>
+         </ul>
+        <ul class="ul_Content_top_right">
+        	<li class="SupportOnline">
+                	<a class="asup" href="#" title="Hotline hỗ trợ"><span class="icon_SupportOnline"></span>Hotline hỗ trợ : <span class="htline">0987 200 700</span> </a>
+                    
+                </li>
+            <li class="Tragop">
+            	<a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="icon_tragop"></span>Mua hàng trả góp</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="Banner">
+	<div id="Left_Banner">
+    	<div id="iName"><h3>HỆ THỐNG PHÂN PHỐI SẢN PHẨM INAX CHÍNH HÃNG</h3></div>
+        <div id="iLogo"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><img src="iCon/LogoInax.png" alt="Inax Việt Nam" /></a></div>
+        
+    </div>
+    <div id="Center_Banner">
+    	 <a href="#"><img src="iCon/Bontieu.png" alt="Inax Việt Nam" /></a>
+    </div>
+    <div id="Right_Banner">
+    	<div id="Top_Right_Banner">
+        	<p>Ngôn ngữ : <img src="iCon/vn.jpg" alt="vn" /> Vi <img src="iCon/EN.png" alt="EN" /> En  
+        </div>
+        <div id="Center_Right_Banner">
+        		<span>Phân biệt hàng Inax thật giả !</span>
+        </div>
+        <div id="Bottom_Right_Banner">
+        	<a href="#" title="Thiết bị vệ sinh Inax chính hãng"><img src="iCon/lixil.jpg" alt="Inax Việt Nam" /></a>
+        </div>
+    </div>
+</div>
+<div id="Main">
+	<div id="Headder">
+    	<div id="Top_Headder">
+			<div id="Left_Top_Headder">
+    				<div class="t1_Left_Top_Headder">
+                    	<a href="#" title="Thiết bị vệ sinh Inax chính hãng"><img   src="Icon/icon_Homes.png" alt="Icon HOmes" /></a>
+                    </div>
+                    <div class="t2_Left_Top_Headder">
+                    	<span>Danh mục sản phẩm</span>
+                        	 
+                    </div>
+                    <div class="t3_Left_Top_Headder">
+                    	
+                    </div>
+                    <div class="Clear"></div>
+                    <div id="Menu">
+                    	 <ul class="ul1">
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product1.png) no-repeat transparent"></span> Đồ điện tử</a>
+                            <ul class="ul2" style="background: url(Icon/dt.png) no-repeat right bottom scroll #FFF">
+                                <li class="li2">
+                                    <a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Name">›  Bàn cầu Inax 1 khối</a>
+                                    <hr />
+                                    <span class="Status">
+                                    	Bàn cầu với khả năng xả xoáy nhanh, liền khối, tiện dụng cho khách hàng.
+                                    </span>
+                                    <a href="#" class="Image" title="Thiết bị vệ sinh Inax chính hãng"><img src="iCon/Chaurua.png" alt="Inax Việt Nam" /></a>
+                                </li>
+                                <li class="li2">
+                                    <a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Name">›  Bàn cầu Inax 1 khối</a>
+                                    <hr />
+                                    <span class="Status">
+                                    	Bàn cầu với khả năng xả xoáy nhanh, liền khối, tiện dụng cho khách hàng.
+                                    </span>
+                                    <a href="#" class="Image" title="Thiết bị vệ sinh Inax chính hãng"><img src="iCon/Product.jpg" alt="Inax Việt Nam" /></a>
+                                </li>
+                                <li class="li2">
+                                    <a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Name">›  Bàn cầu Inax 1 khối</a>
+                                    <hr />
+                                    <span class="Status">
+                                    	Bàn cầu với khả năng xả xoáy nhanh, liền khối, tiện dụng cho khách hàng.
+                                    </span>
+                                    <a href="#" class="Image" title="Thiết bị vệ sinh Inax chính hãng"><img src="iCon/Product.jpg" alt="Inax Việt Nam" /></a>
+                                </li>
+                                <li class="li2">
+                                    <a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Name">›  Bàn cầu Inax 1 khối</a>
+                                    <hr />
+                                    <span class="Status">
+                                    	Bàn cầu với khả năng xả xoáy nhanh, liền khối, tiện dụng cho khách hàng.
+                                    </span>
+                                    <a href="#" class="Image" title="Thiết bị vệ sinh Inax chính hãng"><img src="iCon/Product.jpg" alt="Inax Việt Nam" /></a>
+                                </li>
+                                <li class="li2">
+                                    <a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Name">›  Bàn cầu Inax 1 khối</a>
+                                    <hr />
+                                    <span class="Status">
+                                    	Bàn cầu với khả năng xả xoáy nhanh, liền khối, tiện dụng cho khách hàng.
+                                    </span>
+                                    <a href="#" class="Image" title="Thiết bị vệ sinh Inax chính hãng"><img src="iCon/Product.jpg" alt="Inax Việt Nam" /></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product2.png) no-repeat transparent"></span> Điện gia dụng</a><ul class="ul2" style="background: url(Icon/dt.png) no-repeat right bottom scroll #FFF">
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi theo hãngaaaaaaa</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh theo hãng</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ Lạnh Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt theo hãng</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi theo hãng</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh theo hãng</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ Lạnh Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt theo hãng</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi theo hãng</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tivi Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh theo hãng</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ lạnh Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tủ Lạnh Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt theo hãng</a>
+                                <ul class="ul3">
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Máy giặt Sam sung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product1.png) no-repeat transparent"></span> Đồ dùng gia đình</a></li>
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product1.png) no-repeat transparent"></span> Đồ dùng nhà bếp</a></li>
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product1.png) no-repeat transparent"></span> Thiết bị lọc nước</a></li>
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product1.png) no-repeat transparent"></span> Thiết bị vệ sinh</a></li>
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product1.png) no-repeat transparent"></span> Máy nước nóng năng  </a></li>
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product1.png) no-repeat transparent"></span> Thời trang</a></li>
+                        <li class="li1"><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="iCon" style=" background:url(iCon/icon_Product1.png) no-repeat transparent"></span> Thời trang</a></li>
+
+                    </ul>
+                    </div>
+    		</div>    	
+            <div id="Right_Top_Headder">
+   			  <ul>
+                	<li><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><img class="km" src="Icon/hot-icon.gif" alt="Inax Việt Nam" />Khuyến mại</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tin tức mới</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tuyển dụng</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">Dịch vụ</a></li>
+                    <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng">Phản ánh dịch vụ</a></li>
+                    <li class="Support">
+                    <a href="#" title="Thiết bị vệ sinh Inax chính hãng"><img class="ht" src="Icon/icon_Yahoo.png" alt="Inax Việt Nam" />Hỗ trợ trực tuyến</a>
+                   		  
+                        	<div class="Content_SupportOnline">
+                    		<div class="Tear_Support">
+                            	<div class="Left_Tear_Support">
+                                	<img src="Icon/icon_Hotline2.png" alt="Inax Việt Nam" />
+                                </div>
+                        		
+                                <div class="Right_Tear_Support">
+                                    <div class="Top1_Tear_Support">
+                                        <span>Hỗ trợ 1</span>
+                                    </div>
+                                    <div class="Top2_Tear_Support">
+                                    <p>Mrs.Thảo: <span>0987 200 700</span></p>
+                                </div>
+                                    <div class="Top3_Tear_Support">
+                                    <div class="Left_Support">
+                                        <div class="Top_Left_Support">
+                                            <span>Yahoo</span>
+                                        </div>
+                                         <div class="Top1_Left_Support">
+                                            <a href="ymsgr:sendim?ho_ho_ha_ha"><img src="http://opi.yahoo.com/online?u=ho_ho_ha_ha&m=g&t=1"  alt="Inax Việt Nam" /></a>
+                                         </div>
+                                     </div>
+                                     <div class="Right_Support">
+                                         <div class="Top_Left_Support">
+                                            <span>Skyper</span>
+                                         </div>
+                                         <div class="Top1_Left_Support">
+                                            <a href="Skype:vvt.cntt?chat"> <img class="imgSkyper" src="http://mystatus.skype.com/bigclassic/vvt.cntt" title="Kangaroo" width="120" height="30" alt="Inax Việt Nam"> </a>
+                                         </div>
+                                     </div>
+                                </div>
+                                </div>
+                       		</div>
+                     		<div class="Tear_Support">
+                            	<div class="Left_Tear_Support">
+                                	<img src="Icon/icon_Hotline2.png" alt="Inax Việt Nam" />
+                                </div>
+                        		
+                                <div class="Right_Tear_Support">
+                                    <div class="Top1_Tear_Support">
+                                        <span>Hỗ trợ 1</span>
+                                    </div>
+                                    <div class="Top2_Tear_Support">
+                                    <p>Mrs.Thảo: <span>0987 200 700</span></p>
+                                </div>
+                                    <div class="Top3_Tear_Support">
+                                    <div class="Left_Support">
+                                        <div class="Top_Left_Support">
+                                            <span>Yahoo</span>
+                                        </div>
+                                         <div class="Top1_Left_Support">
+                                            <a href="ymsgr:sendim?ho_ho_ha_ha"><img src="http://opi.yahoo.com/online?u=ho_ho_ha_ha&m=g&t=1"  alt="Inax Việt Nam" /></a>
+                                         </div>
+                                     </div>
+                                     <div class="Right_Support">
+                                         <div class="Top_Left_Support">
+                                            <span>Skyper</span>
+                                         </div>
+                                         <div class="Top1_Left_Support">
+                                            <a href="Skype:vvt.cntt?chat"> <img class="imgSkyper" src="http://mystatus.skype.com/bigclassic/vvt.cntt" title="Kangaroo" width="120" height="30" alt="Inax Việt Nam"> </a>
+                                         </div>
+                                     </div>
+                                </div>
+                                </div>
+                       		</div>
+                            <div class="Tear_Support">
+                            	<div class="Left_Tear_Support">
+                                	<img src="Icon/icon_Hotline2.png" alt="Inax Việt Nam" />
+                                </div>
+                        		
+                                <div class="Right_Tear_Support">
+                                    <div class="Top1_Tear_Support">
+                                        <span>Hỗ trợ 1</span>
+                                    </div>
+                                    <div class="Top2_Tear_Support">
+                                    <p>Mrs.Thảo: <span>0987 200 700</span></p>
+                                </div>
+                                    <div class="Top3_Tear_Support">
+                                    <div class="Left_Support">
+                                        <div class="Top_Left_Support">
+                                            <span>Yahoo</span>
+                                        </div>
+                                         <div class="Top1_Left_Support">
+                                            <a href="ymsgr:sendim?ho_ho_ha_ha"><img src="http://opi.yahoo.com/online?u=ho_ho_ha_ha&m=g&t=1"  alt="Inax Việt Nam" /></a>
+                                         </div>
+                                     </div>
+                                     <div class="Right_Support">
+                                         <div class="Top_Left_Support">
+                                            <span>Skyper</span>
+                                         </div>
+                                         <div class="Top1_Left_Support">
+                                            <a href="Skype:vvt.cntt?chat"> <img class="imgSkyper" src="http://mystatus.skype.com/bigclassic/vvt.cntt" title="Kangaroo" width="120" height="30" alt="Inax Việt Nam"> </a>
+                                         </div>
+                                     </div>
+                                </div>
+                                </div>
+                       		</div>
+                      		
+                     		
+                        <div class="Clear"> </div>
+                        <div class="Info_Support">
+                        	<p> * Chú ý : <span> Thời gian làm việc của siêu thị trực tuyến ZEO từ 8h sáng đến 22h hàng ngày. Khách hàng cần hỗ trợ vui lòng gọi điện hoặc Chát hỗ trợ trực tuyến. Xin cám ơn !</span></p>
+                        </div>
+                     </div>
+                    
+                    </li>
+                    
+                </ul>
+    		</div>  
+    	</div>
+         
+    </div>
+    <div id="Content">
+    <div class="Nvar_Product">
+    	<a href="#" title="Thiết bị vệ sinh Inax chính hãng"><img src="iCon/icon_Home.png" alt="Inax Việt Nam" />Trang chủ</a>&raquo;<a href="#" title="Thiết bị vệ sinh Inax chính hãng">Bàn cầu Inax</a>&raquo;<a href="#" title="Thiết bị vệ sinh Inax chính hãng">Bàn cầu Inax 1 khối</a>
+    </div>
+    <div id="Content_Product">
+    	<div id="LeftProduct">
+        	<div id="LeftProduct_Top">
+                <div id="Left_ContentProduct">
+                <div id="Top_Product">
+                    <div id="Left_TopProduct">
+                        <div id="img_Product">
+                        <div id="SaleProduct" style="background:url(iCon/Chaurua.png) no-repeat"></div>
+                        <div id="inaxchinhhang"></div>
+                        <div id="Sale">
+                        	<span>Tặng một bộ cốc thủy tinh cao cấp khi mua sản phẩm !</span>
+                        </div>
+                               <div id="Content_Img_Product">
+                               		<a href="#" title="Thiết bị vệ sinh Inax chính hãng">
+                                   	 	<img src="iCon/Product_Detail.png" alt="Inax Việt Nam" />
+                                	</a>
+                               </div>
+                        </div>
+                        <div id="List_Product">
+                        
+                        <ul class="gallery clearfix">
+			 
+				<li class="Tear_pl"><a href="iCon/Product.jpg" rel="prettyPhoto[gallery1]"><img src="iCon/Product.jpg" width="60" height="60" alt="Nice building" /></a></li>
+				<li class="Tear_pl"><a href="iCon/Product.jpg" rel="prettyPhoto[gallery1]"><img src="iCon/Product.jpg" width="60" height="60" alt="Fire!" /></a></li>
+				<li class="Tear_pl"><a href="images/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><img src="iCon/Product.jpg" width="60" height="60" alt="Rock climbing" /></a></li>
+				<li class="Tear_pl"><a href="iCon/Product.jpg" rel="prettyPhoto[gallery1]"><img src="iCon/Product.jpg" width="60" height="60" alt="Fly kite, fly!" /></a></li>
+			 
+			</ul>
+                             
+                        </div>
+                    
+                    </div>
+                </div>
+                 </div>
+                 <div id="Right_ContentProduct">
+                    <div id="Top1">
+                        <h1>Bàn cầu 1 khối inax C900</h1>
+                        <span>Mã sản phẩm : <span>C900</span> | Số lần xem <span>2541</span> | Ngày cập nhật : 15/05/2015</span>
+                    </div>
+                    <div id="Top2">
+                        <ul>
+                            <li>
+                                <span> <span class="Status"></span> Tình trạng : Còn hàng</span>
+                            </li>
+                            <li>
+                                <span> <span class="Address"></span> Xuất xứ : Chính hãng</span>
+                            </li>
+                            <li>
+                                <span> <span class="Status"></span> Bảo hành: 2 năm</span>
+                            </li>
+                            <li>
+                                <span> <span class="Status"></span> Nhóm : Bàn cầu 1 khối Inax</span>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                      <div id="Top4">
+                     		<span> Màu sản phẩm : </span>
+                        <div id="Left_Top4">
+                        	<span class="Mau" style="background:url(iCon/xanh-ngoc.png) no-repeat; background-size:100%"></span>
+                            <span class="Mau" style="background:url(iCon/trang.png) no-repeat; background-size:100%"></span>
+                            <span class="Mau" style="background:url(iCon/kem.png) no-repeat; background-size:100%"></span>
+                        </div>
+                        
+                     </div>
+                    <div id="Top3">
+                        <div id="Left_Top3">
+                            <span>Khuyến mại : <span class="Price_Sale">5.210.000 đ</span></span>
+                            <span class="PriceDetail">Gián niêm yết : 7.210.000 đ</span>
+                            <span class="editprice">( Giá trên có thể thay đổi mà không báo trước ! )</span>
+                        </div>
+                        <div id="Right_Top3">
+                            <span class="sp1">Hãy gọi điện</span>
+                            <span class="sp2">sẽ có giá tốt hơn</span>
+                        </div>
+                    </div>
+                  <div id="Box_Sale">
+                    <div id="ContentBoxSale">Tặng một sản phẩm Inax bất kỳ cho khách hàng trị giá <span>1.250.000đ</span> hoặc trừ thẳng vào giá cho khách hàng liên hệ</div>
+                </div>
+                    <div id="Top5">
+                        <span> Số lượng </span>
+                        <input type="number" name="txtOrd" id="txtOrd" class="txtOrd" value="01" />
+                        <button type="submit" name="btnInOrd" id="btnInOrd" class="btnInOrd">Cho vào giỏ</button>
+                        <button type="submit" name="btnOrd" id="btnOrd" class="btnOrd">Mua ngay</button>
+                    </div>
+                    <div id="Top6">
+                        <ul>
+                            <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="Muahang"></span>Hướng dẫn mua hàng</a></li>
+                            <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="Thanhtoan"></span>Phương thức thanh toán</a></li>
+                            <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="Vanchuyen"></span>Phương thức vận chuyển lắp đặt</a></li>
+                            <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="Baohanh"></span>Chính sách bảo hành</a></li>
+                        </ul>
+                    </div>
+                    <div id="Top7">
+                        <div id="iCon"></div>
+                        <div id="Content_Top7">
+                            <p>Hiện tại sản phẩm <span>Bàn cậu Inax 1 Khối C900</span> có giá rẻ hơn khi mua
+        sản phẩm đồng bộ, bạn có thể xem sản phẩm đồng bộ này </p>
+        					<ul>
+                            	<li><a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Syn"> <span></span> Bộ sản phẩm đồng bộ số 01</a></li>
+                                <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Syn"> <span></span> Bộ sản phẩm đồng bộ số 01</a></li>
+                                <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Syn"> <span></span> Bộ sản phẩm đồng bộ số 01</a></li>
+                                <li><a href="#" title="Thiết bị vệ sinh Inax chính hãng" class="Syn"> <span></span> Bộ sản phẩm đồng bộ số 01</a></li>
+                            </ul>
+        					
+                            
+                        </div>
+                    </div>
+                    <div id="Top8">
+                        Bếp từ âm bàn Malloca 2 từ MI02 với bề mặt kính đen dày 4mm, có chế độ hẹn giờ và khóa 
+        an toàn cho trẻ em. Sản phẩm tiện dụng cho bạn và đình
+        
+                    </div>
+                </div>
+            </div>
+            <div class="Notice">
+        	<div class="Left_notice">
+            </div>
+            <div class="Right_notice">
+            	<span class="n1">Thông báo khách hàng</span>
+                 <span class="n2">Kể từ ngày 07/12/2015 theo quy định của Tập đoàn LIXIL INAX Việt Nam thì tất cả các website
+bán sản phẩm INAX sẽ chỉ công bố giá niêm yết , không công bố giá khuyến mại.</span>
+				<span class="n3">Khách hàng vui lòng liên hệ để nhận giá khuyến mại !</span>
+            </div>
+        </div>
+            <div id="LeftProduct_Content">
+            	<div class="nVar_Content">
+                	<div class="Nvar">
+                    	<span>Chi tiết sản phẩm</span>
+                    </div>
+                    <div class="phanbiet">
+                    	 <a href="">Cách Phân biệt INAX chính hãng</a> 
+                    	
+                    </div>
+                </div>
+                <div class="line_tamgiac"></div>
+                <div id="LeftProduct_Content_Content">
+                	<div id="Tech">
+                    	<span class="tinhnang">&diams; Những tính năng nổi bật của Bồn cầu 1 khối C900</span>
+                    	<div class="Tear_tech">
+                        	<span class="imagetech" style="background:url(iCon/PROGUARD.jpg) no-repeat left center scroll transparent;"></span>
+                            <span class="Destech">Kỹ thuật xả rửa vành Rim kiểu mới</span>
+                             <p>Xem chi tiết về Kỹ thuật xả rửa vành Rim kiểu mới <a href="tại đây">Tại đây &raquo;</a></p>
+                        </div>
+                        <div class="Tear_tech">
+                        	<span class="imagetech" style="background:url(iCon/tietkiemnuoc.jpg) no-repeat center center scroll transparent;"></span>
+                            <span class="Destech">Kỹ thuật xả rửa vành Rim kiểu mới</span>
+                             <p>Xem chi tiết về Kỹ thuật xả rửa vành Rim kiểu mới <a href="tại đây">Tại đây &raquo;</a></p>
+                        </div>
+                        <div class="Tear_tech">
+                        	<span class="imagetech" style="background:url(iCon/HYPERKILAMIC.jpg) no-repeat center center scroll transparent;"></span>
+                            <span class="Destech">Kỹ thuật xả rửa vành Rim kiểu mới</span>
+                             <p>Xem chi tiết về Kỹ thuật xả rửa vành Rim kiểu mới <a href="tại đây">Tại đây &raquo;</a></p>
+                        </div>
+                        <div class="Tear_tech">
+                        	<span class="imagetech" style="background:url(iCon/PROGUARD.jpg) no-repeat center center scroll transparent;"></span>
+                            <span class="Destech">Kỹ thuật xả rửa vành Rim kiểu mới</span>
+                             <p>Xem chi tiết về Kỹ thuật xả rửa vành Rim kiểu mới <a href="tại đây">Tại đây &raquo;</a></p>
+                        </div>
+                    </div>
+                	<h3>Sản phẩm được giảm giá khuyến mại</h3>
+                	Bàn cầu GURUPICA sử dụng 100% lượng nước xả từ phía trên, tạo nên dòng xoáy cực mạnh rửa trôi mọi vết bẩn.
+Sản phẩm khác chỉ có 30%lượng nước từ phía trên,kết hợp 70% nước bên dưới từ hệ thống xi- phông jet bên dưới
+Với những sản phẩm khác thì các vết bẩn dễ dàng đọng lại.
+GURUPICA có dòng nước xả cực mạnh làm cho lòng bàn cầu luôn khô ráo và sạch sẽ
+Lòng bàn cầu GURUPICA được thiết kế rộng hơn 16% giúp chống văng nước và khó bám bẩn
+                </div>
+            </div>
+            <div id="LeftProduct_Parametter">
+            	<div class="nVar_Content">
+                	<div class="Nvar">
+                    	<span>Thông số kỹ thuật</span>
+                    </div>
+                </div>
+                <div id="LeftProduct_Parametter_content">
+                	Bàn cầu GURUPICA sử dụng 100% lượng nước xả từ phía trên, tạo nên dòng xoáy cực mạnh rửa trôi mọi vết bẩn.
+Sản phẩm khác chỉ có 30%lượng nước từ phía trên,kết hợp 70% nước bên dưới từ hệ thống xi- phông jet bên dưới
+Với những sản phẩm khác thì các vết bẩn dễ dàng đọng lại.
+GURUPICA có dòng nước xả cực mạnh làm cho lòng bàn cầu luôn khô ráo và sạch sẽ
+Lòng bàn cầu GURUPICA được thiết kế rộng hơn 16% giúp chống văng nước và khó bám bẩn
+                </div>
+                <div class="Clear"></div>
+                <div class="huondansudung"><a href=""><span></span>Tải Hướng dẫn sử dụng bàn cầu inax 1 khối</a></div>
+                <div class="Clear"></div>
+                <div id="Note">
+                	<span>Tất cả các sản phẩm do nhà sản xuất cung cấp đều có sự sai số về kích thước, thông số cũng có thể thay đổi do quy định nhà sản xuất. Để biết rõ hơn khách hàng vui lòng liên hệ hotline để nhận thông tin !</span>
+                </div>
+            </div>
+            <div id="Comment">
+            	<div class="nVar_2">
+                	<span>Nhận xét đánh giá</span>
+                </div>
+                <div id="Sluion"></div>
+                <div id="review">
+                    <span class="rv1">Cho điểm chất lượng sản phẩm</span>
+                    <span class="rv2">Mời bạn đánh giá về sản phẩm Máy lọc nước Kangaroo KG116 (Ko tủ - Mới 2014)</span>
+                    <div id="Content_review">
+                    	<input type="radio" name="review"  value="1" class="rd1"/> <img src="iCon/rating_1_rstar.gif" alt="1 điểm" />
+                        <input type="radio" name="review"  value="2" class="rd2"/><img src="iCon/rating_2_rstar.gif" alt="2 điểm" />
+                        <input type="radio" name="review"  value="3" class="rd3"/><img src="iCon/rating_3_rstar.gif" alt="3 điểm" />
+                        <input type="radio" name="review"  value="4" class="rd4"/><img src="iCon/rating_4_rstar.gif" alt="4 điểm" />
+                        <input type="radio" name="review"  value="5" class="rd5"/><img src="iCon/rating_5_rstar.gif" alt="5 điểm" />
+                    </div>
+                </div>
+                <div id="ConmentFacebook"></div>
+            </div>
+        </div>
+    	<div id="RightProduct">
+        	<div id="Support">
+            	<div id="img_Support"></div>
+            
+                <div id="Contact_Support">
+                    <span class="Hotline"><span></span> 0987 200 700</span>
+                    <span class="Mobile"><span></span> 04.3748.0028 - 04.3511.5838</span>
+                    <span class="Email"><span></span> Seabig.vn@gmail.com</span>
+                    <span class="Address"><span></span> 391 Nguyễn Xiển, Thanh Xuân, Hà Nội</span>
+                </div>
+                <div id="ListSupport">
+                    
+                    <span class="httt">Hỗ trợ trực tuyến</span>	
+                    <div class="Line_Buttom"></div>
+                    <div class="Tear_Supports">
+                        <div class="Left_Tear_Support">
+                            <span class="htv1">Hỗ trợ viên 01 :</span>
+                            <span class="htv2">Mrs.Dung :</span>
+                        </div>
+                        <div class="Right_Tear_Support">
+                        <a href="ymsgr:sendim?kinhdoanh_tdn">
+                                        <img src="http://opi.yahoo.com/online?u=kinhdoanh_tdn&m=g&t=1" alt="Yahoo" class="imgYahoo" />
+                                    </a>
+                                    <a href="Skype:vvtcntt?chat">
+                                         <img class="imgSkype" src="iCon/skype-icon.png" title="Kangaroo"  alt="Inax Việt Nam">
+                                     </a>
+                        </div>
+                    </div>
+                    <div class="line-Support"></div>
+                    <div class="Tear_Supports">
+                        <div class="Left_Tear_Support">
+                            <span class="htv1">Hỗ trợ viên 01 :</span>
+                            <span class="htv2">Mrs.Dung :</span>
+                        </div>
+                        <div class="Right_Tear_Support">
+                        <a href="ymsgr:sendim?kinhdoanh_tdn">
+                                        <img src="http://opi.yahoo.com/online?u=kinhdoanh_tdn&m=g&t=1" alt="Yahoo" class="imgYahoo" />
+                                    </a>
+                                    <a href="Skype:vvtcntt?chat">
+                                         <img class="imgSkype" src="iCon/skype-icon.png" title="Kangaroo"  alt="Inax Việt Nam">
+                                     </a>
+                        </div>
+                    </div>
+                    <div class="line-Support"></div>
+                    <div class="Tear_Supports">
+                        <div class="Left_Tear_Support">
+                            <span class="htv1">Hỗ trợ viên 01 :</span>
+                            <span class="htv2">Mrs.Dung :</span>
+                        </div>
+                        <div class="Right_Tear_Support">
+                        <a href="ymsgr:sendim?kinhdoanh_tdn">
+                                         <img class="imgSkype" src="iCon/skype-icon.png" title="Kangaroo"  alt="Inax Việt Nam">
+                                    </a>
+                                    <a href="Skype:vvtcntt?chat">
+                                         <img class="imgSkype" src="iCon/dich-vu-skype.png" title="Kangaroo"  alt="Inax Việt Nam">
+                                     </a>
+                        </div>
+                    </div>
+                    <div class="line-Support"></div>
+                </div>	
+            </div>
+            <div id="MenuProduct">
+            	<div class="nVar_Left">
+                	<span>Danh mục liên quan</span>
+                </div>
+                <div id="Content_MenuProduct">
+                	<a href="#" title="Thiết bị vệ sinh Inax chính hãng">› Bàn cầu Inax 1 khối</a>
+                    <a href="#" title="Thiết bị vệ sinh Inax chính hãng">› Bàn cầu Inax 1 khối</a>
+                     <a href="#" title="Thiết bị vệ sinh Inax chính hãng">› Bàn cầu Inax 1 khối</a>
+                     <a href="#" title="Thiết bị vệ sinh Inax chính hãng">› Bàn cầu Inax 1 khối</a>
+                
+                </div>
+            </div>
+            <div id="ProductLienquan">
+            	<div class="nVar_Left">
+                	<span>Sản phẩm được xem nhiều nhất</span>
+                </div>
+            	<div id="ContentProductlienquan">
+                	<div class="Tear_pd">
+                            <div class="img_Tearpd">
+                                <a href="#">
+                                    <img src="iCon/Product.jpg" alt="Inax Việt Nam" /></a>
+                            </div>
+                              <div class="Sale"><span>-15%</span></div>
+                            <div class="box_quatang1">
+                            
+                            </div>
+                            
+                            <a class="Namepd" href="#" title="Thiết bị vệ sinh Inax chính hãng">Bàn cầu Inax 1 khối RA-3251</a> 							 
+                                <p class="PriceSale">7.250.000 <span>đ</span></p>
+                                <p class="Price_s">10.250.000</p>
+                             
+                         	
+                        	<div class="sevices">
+                                <span class="Status"></span>
+                                <span class="Transport"><span class="icon"></span> Toàn quốc</span>
+                         </div>
+                         </div>
+                         <div class="Tear_pd">
+                            <div class="img_Tearpd">
+                                <a href="#">
+                                    <img src="iCon/Product.jpg" alt="Inax Việt Nam" /></a>
+                            </div>
+                              <div class="Sale"><span>-15%</span></div>
+                            <div class="box_quatang1">
+                            
+                            </div>
+                            
+                            <a class="Namepd" href="#" title="Thiết bị vệ sinh Inax chính hãng">Bàn cầu Inax 1 khối RA-3251</a> 							 
+                                <p class="PriceSale">7.250.000 <span>đ</span></p>
+                                <p class="Price_s">10.250.000</p>
+                             
+                         	
+                        	<div class="sevices">
+                                <span class="Status"></span>
+                                <span class="Transport"><span class="icon"></span> Toàn quốc</span>
+                         </div>
+                         </div>
+                         <div class="Tear_pd">
+                            <div class="img_Tearpd">
+                                <a href="#">
+                                    <img src="iCon/Product.jpg" alt="Inax Việt Nam" /></a>
+                            </div>
+                              <div class="Sale"><span>-15%</span></div>
+                            <div class="box_quatang1">
+                            
+                            </div>
+                            
+                            <a class="Namepd" href="#" title="Thiết bị vệ sinh Inax chính hãng">Bàn cầu Inax 1 khối RA-3251</a> 							 
+                                <p class="PriceSale">7.250.000 <span>đ</span></p>
+                                <p class="Price_s">10.250.000</p>
+                             
+                         	
+                        	<div class="sevices">
+                                <span class="Status"></span>
+                                <span class="Transport"><span class="icon"></span> Toàn quốc</span>
+                         </div>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>	 
+             	 
+    </div>
+    <div class="Clear"></div>
+    <div id="Dichvu">
+    	<div class="Tear_Dichvu1"></div>
+        <div class="Tear_Dichvu2"></div>
+        <div class="Tear_Dichvu3"></div>
+        <div class="Tear_Dichvu4"></div>
+        <div class="Tear_Dichvu5"></div>
+    </div>
+</div>
+
+<div id="Footter">
+    	<div id="Footter_Top">
+        	<div class="Tear_Footter">
+            	<div class="Nvar_Tear_Footter_1">
+                	<span>Thông tin công ty</span>
+                </div>
+                <div class="Content_Tear_Footter">
+                	 
+                    	 <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Giới thiệu</a> 
+                       <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Tin tức</a> 
+                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Hệ thống phân phối</a> 
+                       <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Bản đồ</a> 
+                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Liên hệ</a> 
+                     
+                </div>
+            </div>
+            <div class="Tear_Footter">
+            	<div class="Nvar_Tear_Footter_2">
+                	<span>Dịch vụ mua hàng</span>
+                </div>
+                <div class="Content_Tear_Footter">
+                	 
+                    	 <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Mua hàng Online</a> 
+                       <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Mua hàng tại các tỉnh ngoài Hà Nội</a> 
+                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Hướng dẫn thanh toán</a> 
+                       <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Hướng dẫn bảo hành</a> 
+                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Quy trình mua hàng</a> 
+                     
+                </div>
+            </div>
+            <div class="Tear_Footter">
+            	<div class="Nvar_Tear_Footter_3">
+                	<span>Chính sách áp dụng</span>
+                </div>
+                <div class="Content_Tear_Footter">
+                	 
+                    	 <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Chính sách mua hàng</a> 
+                       <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Chính sách bảo hành</a> 
+                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Chính sách vận chuyển và lắp đặt</a> 
+                       <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Chính sách đổi trả hàng</a> 
+                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Chính sách bảo mật thông tin</a> 
+                     
+                </div>
+            </div>
+            <div class="Tear_Footter">
+            	<div class="Nvar_Tear_Footter_4">
+                	<span>Sản phẩm bán chạy</span>
+                </div>
+                <div class="Content_Tear_Footter">
+                	 
+                    	 <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Bàn cầu Inax</a> 
+                       <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Bồn tắm Inax</a> 
+                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Sen vòi INAX</a> 
+                       <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Chậu rửa Inax</a> 
+                        <a href="#" title="Thiết bị vệ sinh Inax chính hãng">Bình nước nóng Inax</a> 
+                     
+                </div>
+            </div>
+            <div class="RegistrySale">
+            	<p class="Title_regis">Nhận bản tin Khuyến Mại mỗi ngày</p>
+                <p class="Des_Regis">
+Đăng ký email để nhận bản tin khuyến mại đặc biệt và các chương trình khuyến mại.</p>
+				<div class="Regis">
+                	<input type="text" name="txtRegis" id="txtRegis" class="txtRegis" />
+                               <input type="submit" value="" class="pic button_search_" id="dkKM"  />
+                    </div>
+                    <p class="Des_Regis1">
+                    	Nếu bạn không có thời gian thường xuyên duyệt website của chúng tôi. Hãy đăng ký email để theo dõi những bản tin khuyến mại đặc biệt và các chương trình khuyến mại từ tập đoàn Inax.
+                    </p>
+            </div>
+        </div>
+        <div class="Clear"></div>
+        <div id="Footter_Centter">
+        	<p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> 0987 200 700 </span>hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
+        </div>
+         <div class="Clear"></div>
+         <div id="Footter_bottom">
+         	<div id="Left_Footter_bottom">
+            	<div id="Logo_Left">
+                	<img src="iCon/LogoInax.png" alt="Logo" />
+                    
+                </div>
+                <div id="Info_Right">
+                <p class="p1">LIXIL INAX VIỆT NAM</p>
+                <h2>Trung tâm phân phối sản phẩm INAX tại VIỆT NAM</h2>
+                <p class="p2">Địa chỉ : <span>391 - Nguyễn Xiển - Thanh Xuân - Hà Nội</span></p>
+                <p class="p2">Điện thoại : <span>04.37 48 00 28 / 04.39 97 05 46 - 0918 762 536 Fax 04 3511 5838</span></p>
+                <p class="p2">Email liên hệ: <span>Seabig.vn@gmail.com</span></p>
+               
+                </div>
+            </div>
+            <div id="Right_Footter_bottom">
+                <p>Website bán hàng tin cậy</p>
+                	<a href="#"><img src="iCon/DKBCT.jpg" alt="Đăng ký bộ công thương" /></a>
+                    <a href="#"><img src="iCon/BNI.jpg" alt="Thành viên BNI" /></a>
+                    <a href="#"><img src="iCon/so-ke-hoach-dau-tu.jpg" alt="Sở kế hoạch đầu tư thành phố HN" /></a>
+                </div>
+                <div class="Clear"></div>
+            <div id="Infocty">
+          		<p class="cty1">Công ty TNHH SEABIG VIỆT NAM</p>
+                <p class="cty2">Mã số doanh nghiệp : 0105956762 Ngày cấp: 30/07/2012 Loại giấy phép/chứng nhận: Giấy chứng nhận đăng ký doanh nghiệp Nơi cấp: Sở kế hoạch và đầu tư thành phố Hà Nội
+</p>
+          </div>
+         </div>
+          <div class="Clear"></div>
+          
+            
+    </div>
+    
+</body>
+</html>

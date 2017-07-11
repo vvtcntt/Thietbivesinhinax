@@ -1,0 +1,10 @@
+﻿@model INAX.Models.tblConfig
+<div class="Clear"></div>
+@if (Model.Content != null && Model.Content != "")
+{
+    <div class="Adwadsense" style="width:100%; min-height:100px; float:left; margin:0px">
+        @Html.Raw(Model.Content)
+
+    </div>
+
+}

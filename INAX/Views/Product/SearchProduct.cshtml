@@ -1,0 +1,16 @@
+﻿@{
+     Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+<div id="Content">
+    <div class="Nvar_Cate">
+         <a href="/" title="Thiết bị vệ sinh Inax chính hãng"><img src="~/Content/Display/iCon/icon_Home.png" alt="Inax Việt Nam" />Trang chủ</a>&raquo; Tìm kiếm
+    </div>
+    <div id="Left_Cate">
+        @*@{Html.RenderAction("PartialRightListProduct", "Product");}*@
+
+    </div>
+    <div id="Right_Cate">
+        @Html.Raw(ViewBag.chuoisanpham)
+    </div>
+</div>

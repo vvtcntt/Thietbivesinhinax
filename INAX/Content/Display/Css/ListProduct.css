@@ -1,0 +1,68 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+#Left_Cate{ width:220px; height:auto; float:left; margin:0px}
+.Tear_Menu{ width:100%; height:auto; float:left; margin:0px 0px 0px 0px; border:1px solid #f1f2f1}
+.nVar_Menu{ width:100%; height:30px; float:left; margin:0px; background:url(../iCon/nvar_MenuName.png) no-repeat left center scroll transparent}
+.nVar_Menu span{ color:#FFF; text-transform:uppercase; line-height:30px; font-family:UTM-Swiss-CondensedBold; font-size:15px; text-align:center; display:block}
+.Content_Menu{ width:100%; height:auto; float:left; margin:5px 0px}
+.Content_Menu li{ margin:auto 5px }
+.Content_Menu li:first-child{ margin-top:2px}
+.Content_Menu li a{ font-size:12px; color:#444; margin:8px 5px; display:block; font-weight:bold }
+.Content_Menu li a span{color:#F00}
+.Content_Menu li h2{font-weight:normal; margin:0px}
+.Content_Menu li a:hover{color:#F00 !important}
+.Content_Menu li ul li a{ font-weight:normal; margin:4px 5px; display:block}
+.Nvar_Cate{ height:30px; float:left; width:100%; margin:2px 0px}
+.Nvar_Cate h1{margin:5px; font-size:12px; color:#3e3e3e; font-weight:normal; display:inline-block}
+.Nvar_Cate a{ line-height:30px; margin:auto 5px; color:#333}
+.Nvar_Cate a img{ margin:9px 2px; float:left }
+#Right_Cate{width: 977px;
+height: auto;
+float: left;
+margin: 0px 0px 0px 1px;
+border: 1px solid #eae8e8;}
+.Sale_SaleCate{ width:100%; height:auto; float:left; margin:2px 0px}
+.Sale_SaleCate img{
+width: 50%;
+height: 70px;
+float: left;
+margin: 0px;}
+.Name_Cate
+{
+ height: 29px;
+float: left;
+width: 100%;
+margin: 0px 0px;
+
+}
+.Left_Name_Cate{ width:26px; height:100%; float:left; margin:0px; background:url(../iCon/n1.png) no-repeat }
+.Center_Name_Cate{ width:auto; height:100%; background:#04a2ee; float:left; margin:0px}
+.Right_Name_Cate{ width:28px; height:100%; float:left; margin:0px; background:url(../iCon/n2.png) no-repeat}
+.Nvar_Cate a span {
+    width: 13px;
+    height: 13px;
+    background: url("../iCon/icon_Home.png") no-repeat scroll 0% 0% transparent;
+    margin: 8px;
+    float: left;
+}
+.Name_Cate h2{ color:#FFF; text-transform:uppercase; margin:auto 5px auto 10px; line-height:30px; font-size:12px}
+.Name_Cate h1{ color:#FFF; text-transform:uppercase; margin:auto 5px auto 10px; line-height:30px; font-size:12px}
+.Name_Cate span{ color:#FFF; text-transform:uppercase; margin:auto 5px auto 10px; line-height:30px; font-size:12px}
+  .NamePd{ width:100%; height:auto; float:left; margin:0px 0px 5px 0px; background: url(../iCon/n1.png) no-repeat left center scroll #fafbfb}
+.NamePd .h1{ color:#04a2ee; text-transform:uppercase; margin:auto 5px auto 30px; line-height:30px; font-size:17px; font-family:UTM-Swiss-CondensedBold; font-weight:normal}
+.NamePd span{ color:#04a2ee; text-transform:uppercase; margin:auto 5px auto 30px; line-height:30px; font-size:17px; font-family:UTM-Swiss-CondensedBold; font-weight:normal}
+
+.Adw_Cate{ width:100%; height:auto; float:left; margin:5px 0px}
+.Adw_Cate img{ max-width:100%; height:auto; margin:3px auto; display:block}
+.Leight{ width:100%; height:10px; float:left; margin:2px 0px}
+/*Load Menu sản phẩm*/
+#Left_Top_Headder #Menu{ display:none; z-index:1000}
+#Left_Top_Headder:hover #Menu{ display:block;}
+#Menu{ width:225px; height:auto; float:left; margin:0px; background: #23a5e4;  position:absolute}
+.Description_List{ width:100%; height:auto; float:left; margin:7px 0px}
+.Content_Description_List{ width:98%; height:auto; margin:5px auto; font-size:12px; text-align:justify; line-height:20px}
+
+.Content_RightCate .Tear_pd {
+  width: 153.5px}
+ .Content_RightCate{ width:98%; height:auto; margin:5px auto}

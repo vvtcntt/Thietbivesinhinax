@@ -1,0 +1,27 @@
+﻿@{
+ 
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+@model INAX.Models.tblMap
+
+<div id="Content">
+    <div class="Nvar_Product">
+      
+        <a href="/" title="Thiết bị vệ sinh Inax chính hãng"><img src="~/Content/Display/iCon/icon_Home.png" alt="Inax Việt Nam" />Trang chủ</a>&raquo;<a href="/Ban-do" title="Bản đồ">Bản đồ</a>
+    </div>
+    <div id="Conten_Maps">
+        <div class="nVar_ListNews">
+            <div class="Left_nVar_ListNews"></div>
+            <div class="Center_nVar_ListNews">
+                <span>Chi tiết </span>
+            </div>
+            <div class="Right_nVar_ListNews"></div>
+        </div>
+        <div class="Clear"></div>
+        <h1>@Model.Name</h1>
+        <div id="Description">@Model.Description</div>
+        <div id="Content">@Html.Raw(Model.Content)</div>
+    </div>
+
+</div>

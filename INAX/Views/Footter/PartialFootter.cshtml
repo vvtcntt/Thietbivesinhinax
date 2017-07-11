@@ -1,0 +1,295 @@
+﻿@model INAX.Models.tblConfig
+<div id="Footter">
+    <div id="Footter_Top">
+        <div class="Tear_Footter">
+            <div class="Nvar_Tear_Footter_1">
+                <span>Thông tin công ty</span>
+            </div>
+            <div class="Content_Tear_Footter">
+
+               
+                <a href="/2/Tin-tuc" title="Thiết bị vệ sinh Inax chính hãng">Tin tức</a>
+                <a href="/2/He-thong-phan-phoi" title="Thiết bị vệ sinh Inax chính hãng" >Hệ thống phân phối</a>
+                <a href="/Ban-do" title="Thiết bị vệ sinh Inax chính hãng">Bản đồ</a>
+                <a href="/Lien-he" title="Thiết bị vệ sinh Inax chính hãng">Liên hệ</a>
+                <a href="/san-pham-inax-dong-bo" title="Sản phẩm đồng bộ">Sản phẩm đồng bộ</a>
+
+            </div>
+        </div>
+        <div class="Tear_Footter">
+            <div class="Nvar_Tear_Footter_2">
+                <span>Dịch vụ mua hàng</span>
+            </div>
+            <div class="Content_Tear_Footter">
+
+                <a href="/tin-tuc/huong-dan-mua-thiet-bi-ve-sinh-inax-online" title="Hướng dẫn mua hàng online" rel="nofollow">Mua hàng Online</a>
+                <a href="/tin-tuc/hinh-thuc-thanh-toan-khi-mua-thiet-bi-ve-sinh-inax" title="Hướng dẫn thanh toán khi mua hàng" rel="nofollow">Hướng dẫn thanh toán</a>
+                <a href="#" title="Mua hàng tại các tỉnh ngoài Hà Nội" rel="nofollow">Mua hàng tại các tỉnh ngoài Hà Nội</a> 
+                <a href="#" title="Khách hàng mua hàng dự án" rel="nofollow">Khách mua hàng dự án</a>
+                <a href="#" title="Quy trình mua hàng" rel="nofollow">Quy trình mua hàng</a>
+
+            </div>
+        </div>
+        <div class="Tear_Footter">
+            <div class="Nvar_Tear_Footter_3">
+                <span>Chính sách áp dụng</span>
+            </div>
+            <div class="Content_Tear_Footter">
+                <a href="/tin-tuc/chinh-sach-mua-hang" title="Chính sách mua hàng" rel="nofollow">Chính sách mua hàng</a>
+                <a href="/tin-tuc/chinh-sach-bao-hanh-thiet-bi-ve-sinh-inax" title="Chính sách bảo hành" rel="nofollow">Chính sách bảo hành</a>
+                <a href="/tin-tuc/chinh-sach-van-chuyen-giao-hang" title="Chính sách vận chuyển và lắp đặt" rel="nofollow">Chính sách vận chuyển và lắp đặt</a>
+                <a href="/tin-tuc/chinh-sach-doi-tra-va-hoan-tien" title="Chính sách đổi trả hàng" rel="nofollow">Chính sách đổi trả hàng</a>
+                <a href="/tin-tuc/chinh-sach-bao-mat-thong-tin" title="Chính sách bảo mật thông tin" rel="nofollow">Chính sách bảo mật thông tin</a>
+
+            </div>
+        </div>
+        <div class="Tear_Footter">
+            <div class="Nvar_Tear_Footter_4">
+                <span>Báo giá mới nhất</span>
+            </div>
+            <div class="Content_Tear_Footter">
+
+                @Html.Raw(ViewBag.chuoibaogia)
+ 
+            </div>
+        </div>
+        <div class="RegistrySale">
+@using (Html.BeginForm("Command", "Footter", FormMethod.Post))
+{
+            <p class="Title_regis">Nhận bản tin Khuyến Mại mỗi ngày</p>
+            <p class="Des_Regis">
+                Đăng ký email để nhận bản tin khuyến mại đặc biệt và các chương trình khuyến mại.
+            </p>
+            <div class="Regis">
+                <input type="text" name="txtRegis" id="txtRegis" class="txtRegis" required />
+                <input type="submit" value="" class="pic button_search_" id="dkKM" name="dkKM" />
+            </div>
+            <p class="Des_Regis1">
+                Nếu bạn không có thời gian thường xuyên duyệt website của chúng tôi. Hãy đăng ký email để theo dõi những bản tin khuyến mại đặc biệt và các chương trình khuyến mại từ tập đoàn Inax.
+            </p>
+}
+        </div>
+    </div>
+    <div class="Clear"></div>
+    <div id="Footter_Centter">
+        @if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
+        {
+
+            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> @Model.HotlineOUT</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
+
+        }
+        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
+        {
+
+            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> @Model.HotlineIN</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
+        }
+
+
+        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 22)
+        {
+            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> @Model.HotlineOUT</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
+
+        }
+        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
+        {
+            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> @Model.HotlineOUT</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
+        }
+        
+    </div>
+    <div class="Clear"></div>
+    <div id="Footter_bottom">
+        <div id="Left_Footter_bottom">
+            <div id="Logo_Left">
+                <img src="@Model.Logo" alt="Logo Inax " />
+
+            </div>
+            <div id="Info_Right">
+                <p class="p1">LIXIL INAX VIỆT NAM</p>
+                <h2>@Model.Name</h2>
+                <p class="p2"><span style="color:#f9ff5f">Hà Nội</span> : <span>@Model.Address</span></p>
+                <p class="p2">Điện thoại : <span>@Model.MobileIN  - @Model.HotlineIN</span></p>
+                <p class="p2">Email liên hệ: <span>@Model.Email</span></p>
+                @Html.Raw(ViewBag.resultParner)
+
+            </div>
+        </div>
+        <div id="Right_Footter_bottom">
+            <p>Website bán hàng tin cậy</p>
+            <a href="http://www.online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=5512" title="Đăng ký bộ công thương" rel="nofollow">
+                <img src="~/Content/Display/iCon/DKBCT.jpg" alt="Đăng ký bộ công thương" />
+            </a>
+            <a href="http://bni.vn/vi/" title="Thành viên BNI" rel="nofollow">
+                <img src="~/Content/Display/iCon/BNI.jpg" alt="Thành viên BNI" />
+            </a>
+            <a href="http://tthc.hapi.gov.vn/" title="Sở kế hoạch đầu tư" rel="nofollow">
+                <img src="~/Content/Display/iCon/so-ke-hoach-dau-tu.jpg" alt="Sở kế hoạch đầu tư thành phố HN" />
+            </a>
+        </div>
+        <div class="Clear"></div>
+        <div class="Chodexe"></div>
+        <div class="Clear"></div>
+        <div id="Authorship" style=" width:100%; height:auto; float:left; margin:10px 0px; text-align:center">
+            <nav>
+                @Html.Raw(Model.DMCA)
+ 
+                <a href="https://plus.google.com/@Model.Authorship?rel=author"><img src="~/Content/Display/iCon/GoogleAuthorShip.png" alt="Đăng ký google authorShip" /></a>
+            </nav>
+            <div class="Clear"></div>
+        </div>
+        <div class="Clear"></div>
+        <div id="Maps_Homes">
+@Html.Raw(ViewBag.maps)            
+            <div class="Clear"></div>
+        </div>
+        <div class="Clear"></div>
+        <div id="Infocty">
+            <p class="cty1">Công ty TNHH SEABIG VIỆT NAM</p>
+            <p class="cty2">
+                Mã số doanh nghiệp : 0105956762 Ngày cấp: 30/07/2012 Loại giấy phép/chứng nhận: Giấy chứng nhận đăng ký doanh nghiệp Nơi cấp: Sở kế hoạch và đầu tư thành phố Hà Nội
+            </p>
+        </div>
+        <div id="Link">
+            @Html.Raw(ViewBag.Link)
+            <a href="http://binhnonglanh.top" style="color:transparent" title="Binh nong lanh">http://binhnonglanh.top</a>
+        </div>
+        <div class="boxlink">
+            <a href="http://viglacerahanoi.com" title="Thiết bị vệ sinh viglacera">thiết bị vệ sinh Viglacera</a> hay sản phẩm <a href="http://viglacerahanoi.com/gach-op-lat-viglacera" title="Gạch ốp lát">Gạch ốp lát</a> cùng với 	<a href="http://viglacerahanoi.com" title="Bồn cầu viglacera">Bồn cầu Viglacera</a> hay <a href="http://loiloc.com" title="Lõi lọc nước">Lõi lọc nước</a> hay 	<a href="http://viglacerahanoi.com/sen-voi-viglacera" title="Sen vòi Viglacera">Sen vòi Viglacera</a>
+        </div>
+        <style>
+            .boxlink {
+                opacity: 0.01;
+                width: 100%;
+                height: auto;
+                font-size: 10px;
+            }
+        </style>
+        <div class="Clear"></div>
+    </div>
+    <div class="Clear"></div>
+
+</div>
+@if (Request.Browser.IsMobileDevice)
+{
+    <nav id="menu">
+    <ul>
+        <li><a href="/" title="Trang chủ" rel="nofollow">Trang chủ</a></li>
+        <li>
+            <a href="/" title="Trang chủ" rel="nofollow">Sản phẩm</a>
+            <ul>
+                 
+                 @Html.Raw(ViewBag.chuoi)
+            </ul>
+        </li>
+        <li><a href="/Lien-he" title="Liên hệ" rel="nofollow">Liên hệ</a></li>
+    </ul>
+</nav>
+}
+else
+{
+   
+}
+
+
+ 
+
+@if (Request.Browser.IsMobileDevice)
+{
+
+}
+else
+{
+   @Html.Raw(ViewBag.codechat)
+}
+
+<script>
+    try {
+        var Tat_quangcao = localStorage.getItem("Tat_quangcao");
+        if (Tat_quangcao != null) {
+            if ((new Date).getDate() == new Date(parseInt(localStorage.getItem("Tat_quangcao"))).getDate()) {
+                open_motog = false;
+            }
+        }
+    } catch (e) { console.log(e) }
+
+    function Tatquangcao(obj) {
+        $(obj).parent().remove();
+        try {
+
+            $('#Top_Banner').css({ 'height': '32px' });
+            $('#Content_Top_Banner').css({ 'position': 'relative', 'display': 'block' });
+            $('#adw').html();
+
+            localStorage.setItem("Tat_quangcao", (new Date).getTime())
+        } catch (e) { console.log(e); }
+    }
+</script>
+@if (Request.Browser.IsMobileDevice == false)
+{
+    if (Model.Social == true)
+    {
+    <style>
+        #adwfooter {
+            width: 100%;
+            height: auto;
+            float: left;
+            margin: 0px;
+            border-bottom: 1px solid #dddddd;
+            position: fixed;
+            bottom: 0px;
+        }
+
+        #Banner_footer {
+            bottom: 0px;
+            z-index: 10;
+            width: 100%;
+            height: auto;
+            float: left;
+        }
+
+        #Content_Banner_Footer {
+            width: 1200px;
+            height: auto;
+            margin: 0px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+            #Content_Banner_Footer span {
+                font-size: 20px;
+                text-align: center;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-color: #333;
+                color: #FFF;
+                cursor: pointer;
+                z-index: 99;
+                line-height: 20px;
+            }
+
+            #Content_Banner_Footer a {
+                float: left;
+                margin: 0px;
+                display: block;
+            }
+    </style>
+    if(ViewBag.Chuoiimg != null && ViewBag.Chuoiimg!="")
+    {
+        <div id="adwfooter">
+        <div id="Banner_footer">
+            <div id="Content_Banner_Footer">
+                <span onclick="Tatquangcao(this)">×</span>
+                
+                @Html.Raw(ViewBag.Chuoiimg)
+            </div>
+        </div>
+    </div>
+    }
+    
+
+    }
+
+}

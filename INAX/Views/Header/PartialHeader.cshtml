@@ -1,0 +1,45 @@
+﻿@model IEnumerable<INAX.Models.tblImage>
+<div id="Bottom_Headder">
+    <div id="Left_Bottom_Headder">
+        @{Html.RenderAction("PartialMenu", "Header");}
+    </div>
+    <div id="Center_Bottom_Headder">
+        <div id="slideshow">
+            <div class="container">
+                <div class="c_slider" style="background: @Html.Raw(ViewBag.chuoislide)"></div>
+                <div class="slider">
+                    @foreach (var item in Model)
+                    {
+                        <figure>
+                            @if(item.Link==true)
+                            { <a href="@item.Url" title="@item.Name">
+                                  <img src="@item.Images" alt="@item.Name" title="@item.Name"  width="680" height="285" />
+                            </a> 
+                            }
+                                  else
+                            { <a href="@item.Url" title="@item.Name" rel="@item.Link">
+                                  <img src="@item.Images" alt="@item.Name" width="680" title="@item.Name"  height="285" />
+                            </a>  }
+                            
+                        </figure>
+                    }
+                </div>
+
+            </div>
+            <span id="timeline"></span>
+
+        </div>
+    </div>
+    <div id="Right_Bottom_Headder">
+        <div id="Video">
+            @Html.Raw(ViewBag.chuoivideo)
+        </div>
+        <div class="Clear"></div>
+        <div id="News_Homes">
+            <span class="iCon"></span><span class="Name">TIN MỚI</span>
+            <ul>
+                @Html.Raw(ViewBag.chuoinew)
+            </ul>
+        </div>
+    </div>
+</div>

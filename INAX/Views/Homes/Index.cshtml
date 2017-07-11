@@ -1,0 +1,48 @@
+﻿@{
+     Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+     @{Html.RenderAction("PartialHeader", "Header");}
+         @{Html.RenderAction("PartialCategories", "Homes");}
+@{Html.RenderAction("Thongbao", "Homes");}
+        @{Html.RenderAction("ProductSaleHomes", "Product");}
+        <div class="Clear"></div>
+            @{Html.RenderAction("ListProductSyn", "ProductSysDislay");}
+    
+        <div class="Clear"></div>
+@{Html.RenderAction("ListProductHomes","Product");}
+        <div class="Clear"></div>
+        <div class="line">
+            <div class="Line1"></div>
+            <div class="Line2"></div>
+        </div>
+        <div class="Clear"></div>
+        <div id="Doitac">
+            <div class="nvar_Doitac">
+                <span>Đối tác hợp tác</span>
+            </div>
+            <div id="Conten_Doitac">
+
+                <ul id="mycarousel" class="jcarousel-skin-tango">
+                    @Html.Raw(ViewBag.chuoiimage)
+                  
+                </ul>
+
+
+            </div>
+        </div>
+        <div class="Clear"></div>
+@Html.Raw(ViewBag.Thongbao)
+ 
+@if (Request.Browser.IsMobileDevice)
+{
+
+}
+else
+{
+    { Html.RenderAction("PartialPopup", "Homes"); }
+}
+ 
+
+<div class="Clear"></div>
+@{ Html.RenderAction("PartialAdwleft", "Homes"); }
+  

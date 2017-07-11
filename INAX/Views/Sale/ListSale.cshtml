@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+@using PagedList.Mvc;
+@model PagedList.IPagedList<INAX.Models.tblProductSale>
+
+<div id="Content">
+    <div class="Nvar_Cate">
+        @Html.Raw(ViewBag.nUrl)
+    </div>
+    <div id="News_Detail">
+        <div class="nVar_ListNews">
+            <div class="Left_nVar_ListNews"></div>
+            <div class="Center_nVar_ListNews">
+                <h1>Danh sách khuyến mại</h1>
+            </div>
+            <div class="Right_nVar_ListNews"></div>
+        </div>
+        <div class="Clear"></div>
+        <div class="COntent_ListNews">
+            @foreach (var item in Model)
+            {
+
+                <div class="Content_Listnew">
+                    <div class="Left">
+    <a href="/Sale/@item.Tag" title="@item.Name"><img src="@item.ImageThumb" alt="@item.Name" /></a> 
+                    </div>
+                    <div class="Right">
+                        <div class="Top">	<a href="/Sale/@item.Tag" title="@item.Name"> @item.Name <span>@item.DateCreate</span></a> </div>
+                        <div class="Buttom">
+                             
+                            @item.Description 
+                            
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="Clear"></div>
+            }
+
+            <div class="Clear"></div>
+            @Html.PagedListPager(Model, page => Url.Action("ListSale", new { page = page, sortOrder = ViewBag.CurrentSortOrder, sortName = ViewBag.CurrentSortName, sortLevel = ViewBag.CurrentSortLevel }), (PagedListRenderOptions)ViewBag.ship)
+        </div>
+    </div>
+
+    @{Html.RenderAction("Partialnewright", "News");}
+</div>

@@ -1,0 +1,10 @@
+﻿#Login{
+	width:483px;
+	height:479px;
+	margin:0px auto;
+background-image: url(../Icons/nenlogin.png); background-repeat:no-repeat;
+}
+#Login div#ContenLogin{ padding-top:180px; margin-left:180px}
+#Login div#ContenLogin input#txtUser{ margin-right:10px; width:150px}
+#Login div#ContenLogin input#txtPass{ margin-right:10px; width:150px; margin-top:5px}
+#Login div#ContenLogin input#btnLogin{ margin-left:50px; margin-top:10px}

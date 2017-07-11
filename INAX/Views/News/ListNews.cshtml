@@ -1,0 +1,62 @@
+﻿@{ 
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+ @using PagedList.Mvc;
+@model PagedList.IPagedList<INAX.Models.tblNew>
+<article>
+    <div id="Content">
+        <div class="Nvar_Cate">
+            @Html.Raw(ViewBag.nUrl)
+        </div>
+        <article>
+            <div id="News_Detail">
+                <div class="nVar_ListNews">
+                    <div class="Left_nVar_ListNews"></div>
+                    <div class="Center_nVar_ListNews">
+                        <h1>@ViewBag.Name</h1>
+                    </div>
+                    <div class="Right_nVar_ListNews"></div>
+                </div>
+                <div class="Clear"></div>
+                <div class="COntent_ListNews">
+                    @foreach(var item in Model)
+            {
+
+                        <div class="Content_Listnew">
+                            <div class="Left">
+
+                                @if (item.Images.Length < 15)
+            {
+                                    <a href="/vn/home/tin-tuc/@item.Tag@Html.Raw("_")@item.id@Html.Raw(".html")" title="@item.Name">
+                                        <img src="~/Content/Display/iCon/icon-tintuc.jpg" alt="Ảnh đại diện Inax" />
+                                    </a>
+                                }
+                                else
+                                {     <a href="tin-tuc/@item.Tag" title="@item.Name"><img src="@item.Images" alt="@item.Name" /></a>}
+                            </div>
+                            <div class="Right">
+                                <div class="Top">	<a href="/tin-tuc/@item.Tag" title="@item.Name"> @item.Name <span>@item.DateCreate</span></a> </div>
+                                <div class="Buttom">
+                                    <span class="Des">
+                                        @Html.Raw(item.Description)
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="Clear"></div>
+            }
+
+                    <div class="Clear"></div>
+                    @Html.PagedListPager(Model, page => Url.Action("ListNews", new { page = page, sortOrder = ViewBag.CurrentSortOrder, sortName = ViewBag.CurrentSortName, sortLevel = ViewBag.CurrentSortLevel }), (PagedListRenderOptions)ViewBag.ship)
+                </div>
+            </div>
+        </article>
+        <aside>
+            @{Html.RenderAction("Partialnewright", "News");}
+        </aside>
+    </div>
+</article>

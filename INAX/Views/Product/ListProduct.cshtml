@@ -1,0 +1,28 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<article>
+    <div id="Content">
+        <div class="Nvar_Cate">
+            @Html.Raw(ViewBag.nUrl)
+        </div>
+        <aside>
+            <div id="Left_Cate">
+                @{Html.RenderAction("PartialRightListProduct", "Product");}
+
+            </div>
+
+
+        </aside>
+        <article>
+            <div id="Right_Cate">
+                @Html.Raw(ViewBag.chuoisanpham)
+            </div>
+        </article>
+        @{Html.RenderAction("adwadsense", "Homes");}
+
+
+    </div>
+</article>

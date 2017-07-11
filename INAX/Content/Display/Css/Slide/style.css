@@ -1,0 +1,25 @@
+ 
+
+/*===================*/
+/*=== Main Styles ===*/
+/*===================*/
+ 
+
+ 
+.theme-default #slider {
+    margin:0px auto 0 auto;
+    width:100%; /* Make sure your images are the same size */
+    height:283px; /* Make sure your images are the same size */
+}
+.img_Slide{ width:100%; height:283px !important}
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper {
+    margin-top:150px;
+}
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}

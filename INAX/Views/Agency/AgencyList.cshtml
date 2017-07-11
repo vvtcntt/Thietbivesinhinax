@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+@using PagedList.Mvc;
+@model PagedList.IPagedList<INAX.Models.tblAgency>
+
+
+
+<article>
+    <div id="Content">
+        <div class="Nvar_Cate">
+            @Html.Raw(ViewBag.nUrl)
+        </div>
+        <article>
+            <div id="News_Detail">
+                <div class="nVar_ListNews">
+                    <div class="Left_nVar_ListNews"></div>
+                    <div class="Center_nVar_ListNews">
+                        <h1>@ViewBag.Name</h1>
+                    </div>
+                    <div class="Right_nVar_ListNews"></div>
+                </div>
+                <div class="Clear"></div>
+                <div class="COntent_ListNews">
+                    @foreach (var item in Model)
+                    {
+
+                        <div class="Content_Listnew">
+                            <div class="Left">
+
+                           
+                                    <a href="5/@item.Tag" title="@item.Name">
+                                        <img src="~/Content/Display/iCon/icon-tintuc.jpg" alt="Ảnh đại diện Inax" />
+                                    </a>
+                               
+                            </div>
+                            <div class="Right">
+                                <div class="Top">	<a href="/5/@item.Tag" title="@item.Name"> @item.Name <span>@item.DateCreate</span></a> </div>
+                                <div class="Buttom">
+                                    <span class="Des">
+                                        @Html.Raw(item.Description)
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="Clear"></div>
+                    }
+
+                    <div class="Clear"></div>
+                    @Html.PagedListPager(Model, page => Url.Action("AgencyList", new { page = page, sortOrder = ViewBag.CurrentSortOrder, sortName = ViewBag.CurrentSortName, sortLevel = ViewBag.CurrentSortLevel }), (PagedListRenderOptions)ViewBag.ship)
+                </div>
+            </div>
+        </article>
+        <aside>
+            @{Html.RenderAction("Partialnewright", "News");}
+        </aside>
+    </div>
+</article>
