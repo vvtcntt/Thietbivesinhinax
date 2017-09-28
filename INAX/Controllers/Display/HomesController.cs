@@ -61,8 +61,7 @@ namespace INAX.Controllers.Display
             var listmenu = db.tblGroupProducts.Where(p => p.Active == true && p.ParentID == null).OrderBy(p => p.Ord).Take(9).ToList();
             for (int i = 0; i < listmenu.Count; i++)
             {
-                string tag = listmenu[i].Tag;
-                   
+                string tag = listmenu[i].Tag;                   
                 chuoi.Append("<li class=\"li_Ct1\">");
                 chuoi.Append("<div class=\"Content_ct\">");
                 chuoi.Append("<div class=\"img_Content_ct\">");

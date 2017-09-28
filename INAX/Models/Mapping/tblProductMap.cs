@@ -29,9 +29,6 @@ namespace INAX.Models.Mapping
             this.Property(t => t.Warranty)
                 .HasMaxLength(50);
 
-            this.Property(t => t.Address)
-                .HasMaxLength(50);
-
             this.Property(t => t.Access)
                 .HasMaxLength(500);
 
@@ -80,8 +77,8 @@ namespace INAX.Models.Mapping
             this.Property(t => t.Note).HasColumnName("Note");
             this.Property(t => t.Size).HasColumnName("Size");
             this.Property(t => t.ImageSale).HasColumnName("ImageSale");
-            this.Property(t => t.Ord).HasColumnName("Ord");
             this.Property(t => t.Group).HasColumnName("Group");
+            this.Property(t => t.Ord).HasColumnName("Ord");
             this.Property(t => t.Status).HasColumnName("Status");
             this.Property(t => t.Active).HasColumnName("Active");
             this.Property(t => t.ProductSale).HasColumnName("ProductSale");

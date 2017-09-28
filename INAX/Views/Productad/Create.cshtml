@@ -411,8 +411,7 @@
                             </tr>
                             <tr>
                                 <td class="key">
-                                    Nhóm sản phẩm
-                                     
+                                    Nhóm sản phẩm                                     
                                 </td>
                                 <td>
                                     @Html.Raw(ViewBag.chuoigroup)
@@ -433,10 +432,8 @@
                                 <td class="key">
                                     Bảo hành / Tháng
                                 </td>
-                                <td>
-                                   
-                                    @Html.TextBoxFor(p => p.Warranty, new { @class = "Ord_ad", @type = "number" , @placeholder = "Tháng" })
-                                   
+                                <td>                                   
+                                    @Html.TextBoxFor(p => p.Warranty, new { @class = "Ord_ad", @type = "number" , @placeholder = "Tháng" })                                   
                                     <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
@@ -444,6 +441,24 @@
                                             </p>
                                             <p class="tooltipmessage">
                                                 Thời gian bảo hành được tính theo tháng
+                                            </p>
+                                        </span>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="key">
+                                    Xuất xứ sản phẩm
+                                </td>
+                                <td>
+                                    @Html.DropDownList("drAddress", "--Nhóm xuất xứ--")
+                                    <span class="tooltip-help">
+                                        <span class="tooltipContent">
+                                            <p class="tooltiptitle">
+                                                Xuất xứ sản phẩm
+                                            </p>
+                                            <p class="tooltipmessage">
+                                                Xuất xứ sản phẩm
                                             </p>
                                         </span>
                                     </span>

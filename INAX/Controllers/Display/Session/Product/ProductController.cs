@@ -408,6 +408,15 @@ namespace INAX.Controllers.Display.Session
             {
                 ViewBag.files = "<div class=\"huondansudung\"><a href=\"" + listfile[0].File + "\" title=\"" + listfile[0].Name + "\"><span></span>Tải Hướng dẫn sử dụng " + Product.Name + "</a></div>";
             }
+            string address =Product.Address.ToString();
+            string resultAddress = "";
+            if (address != null && address != "")
+            {
+                int idaddress = int.Parse(address);
+                if (db.tblAddresses.FirstOrDefault(p => p.id == idaddress) != null)
+                    resultAddress = db.tblAddresses.FirstOrDefault(p => p.id == idaddress).Name;
+            }
+            ViewBag.address = resultAddress;
             return View(Product);
         }
         public ActionResult Command(FormCollection collection, string tag)

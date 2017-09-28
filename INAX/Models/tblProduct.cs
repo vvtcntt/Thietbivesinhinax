@@ -20,15 +20,15 @@ namespace INAX.Models
         public Nullable<double> PriceSaleActive { get; set; }
         public Nullable<bool> Vat { get; set; }
         public string Warranty { get; set; }
-        public string Address { get; set; }
+        public Nullable<int> Address { get; set; }
         public Nullable<bool> Transport { get; set; }
         public string Access { get; set; }
         public string Sale { get; set; }
         public Nullable<bool> Note { get; set; }
         public string Size { get; set; }
         public string ImageSale { get; set; }
-        public Nullable<int> Ord { get; set; }
         public Nullable<int> Group { get; set; }
+        public Nullable<int> Ord { get; set; }
         public Nullable<bool> Status { get; set; }
         public Nullable<bool> Active { get; set; }
         public Nullable<bool> ProductSale { get; set; }
