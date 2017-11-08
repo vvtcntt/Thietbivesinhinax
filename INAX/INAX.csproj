@@ -204,6 +204,7 @@
     <Compile Include="Controllers\Admin\Product\ProductSaleadController.cs" />
     <Compile Include="Controllers\Admin\Product\ProductSYNadController.cs" />
     <Compile Include="Controllers\Admin\Role\ModuleController.cs" />
+    <Compile Include="Controllers\Admin\support\supportController.cs" />
     <Compile Include="Controllers\Admin\Url\UrladController.cs" />
     <Compile Include="Controllers\Admin\User\UsersController.cs" />
     <Compile Include="Controllers\Admin\WebSites\WebController.cs" />
@@ -1567,6 +1568,7 @@
     <Content Include="Content\Display\iCon\login.png" />
     <Content Include="Content\Display\iCon\Logo Seabig.png" />
     <Content Include="Content\Display\iCon\LogoInax.png" />
+    <Content Include="Content\Display\iCon\logo_zalo.png" />
     <Content Include="Content\Display\iCon\mienphilapdat.png" />
     <Content Include="Content\Display\iCon\muahangtructiep.png" />
     <Content Include="Content\Display\iCon\muahangtructuyen.png" />
@@ -1670,12 +1672,14 @@
     <Content Include="Content\Display\iCon\thong-bao-khach-hang.png" />
     <Content Include="Content\Display\iCon\Thong-bao.png" />
     <Content Include="Content\Display\iCon\tietkiemnuoc.jpg" />
+    <Content Include="Content\Display\iCon\tong-dai-ban-hang.png" />
     <Content Include="Content\Display\iCon\top-left.png" />
     <Content Include="Content\Display\iCon\top-right.png" />
     <Content Include="Content\Display\iCon\trang.png" />
     <Content Include="Content\Display\iCon\tubep.png" />
     <Content Include="Content\Display\iCon\user.png" />
     <Content Include="Content\Display\iCon\vanchuyen.png" />
+    <Content Include="Content\Display\iCon\Viber_logo.png" />
     <Content Include="Content\Display\iCon\views.png" />
     <Content Include="Content\Display\iCon\view_refresh.png" />
     <Content Include="Content\Display\iCon\vn.jpg" />
@@ -1982,6 +1986,9 @@
     <Content Include="Views\address\Index.cshtml" />
     <Content Include="Views\address\ProductAddress.cshtml" />
     <Content Include="Views\address\UpdateProductAddress.cshtml" />
+    <Content Include="Views\support\Index.cshtml" />
+    <Content Include="Views\support\Create.cshtml" />
+    <Content Include="Views\support\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

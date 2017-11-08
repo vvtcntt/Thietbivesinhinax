@@ -160,6 +160,10 @@ table tr{ min-height:30px !important}
 #ListSupport .Tear_Supports .Right_Tear_Support{ width:50%; height:auto; float:left; margin:0px}
 #ListSupport .Tear_Supports .Right_Tear_Support .imgYahoo{ width:auto; height:auto; float:left; margin:5px 5px 2px 5px; display:block}
 #ListSupport .Tear_Supports .Right_Tear_Support .imgSkype{ width:76px; height:auto; float:left; margin:0px 3px; display:block}
+#ListSupport .Tear_Supports .Right_Tear_Support .topTearSupport{width:100%; height:auto; float:left; margin:0px; text-align:center}
+#ListSupport .Tear_Supports .Right_Tear_Support .topTearSupport a img{width:46%; height:22px; margin:0px auto}
+.bottomTearSupport{width:100%; height:auto; float:left; margin:0px; text-align:center; font-weight:bold; color:#F33; font-size:16px}
+
 #MenuProduct{ width:100%; height:auto; float:left; margin:7px 0px; background:#fafafa}
 .nVar_Left{ width:100%; height:auto; margin:0px; background:url(../iCon/line-buttom.png) no-repeat  bottom center scroll transparent; padding-bottom:7px}
  .nVar_Left span{   text-align:center; display:block;font-size:15px; font-family:UTM-Swiss-CondensedBold; text-align:center; margin:5px auto;   color:#ff4e00;  text-transform:uppercase}

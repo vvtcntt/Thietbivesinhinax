@@ -1,64 +1,47 @@
 ﻿@model INAX.Models.tblConfig
 
 <div id="Top">
-    
     <div id="Content_top">
         <ul class="ul_Content_top_left">
             <li class="Homes"><a href="/" title="Trang chủ" rel="nofollow"><span class="~/Content/Display/iCon-Homes"></span></a></li>
             <li class="CateList">
                 <a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="categories-icon"></span>Chọn tỉnh thành</a>
                 <ul class="ul_Content_top_left_Child">
-
-                   @Html.Raw(ViewBag.chuoiagency)
-                     
+                    @Html.Raw(ViewBag.chuoiagency)
                 </ul>
             </li>
-            <li class="Hot_Tags">
-                <a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="Tags-icon"></span>Hot Tags</a>
-                <ul class="ul_Hot_Tags">
-                    @Model.Content
-                     
-                </ul>
-            </li>
+            @*<li class="Hot_Tags">
+                    <a href="#" title="Thiết bị vệ sinh Inax chính hãng"><span class="Tags-icon"></span>Hot Tags</a>
+                    <ul class="ul_Hot_Tags">
+                        @Model.Content
+                    </ul>
+                </li>*@
         </ul>
         <ul class="ul_Content_top_Center">
-@using (Html.BeginForm("Search", "Product", FormMethod.Post))
-{
-             <div id="Content_Search">
-                 <input type="text" id="txtSearch" name="txtSearch" class="txtSearch" />
-                <button type="submit" id="btnSearch" name="btnSearch"></button>
-            </div>
-}
+            @using (Html.BeginForm("Search", "Product", FormMethod.Post))
+            {
+                <div id="Content_Search">
+                    <input type="text" id="txtSearch" name="txtSearch" class="txtSearch" />
+                    <button type="submit" id="btnSearch" name="btnSearch"></button>
+                </div>
+            }
         </ul>
         <ul class="ul_Content_top_right">
             <li class="SupportOnline">
-                <a class="asup" href="#" title="Hotline hỗ trợ"><span class="icon_SupportOnline"></span>Hotline hỗ trợ : 
-
-                    @*@if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
-                    {
-                        <span class="htline">@Model.HotlineOUT</span>
-                    }
-                    else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
-                    {*@
-
-                        <span class="htline">@Model.HotlineIN</span>
-                    @*}
-
-
-                    else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 22)
-                    {
-                        <span class="htline">@Model.HotlineOUT</span>
-
-                    }
-                    else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
-                    {
-                        <span class="htline">@Model.HotlineOUT</span>
-                    }*@
+                <a class="asup" href="#" title="Hotline hỗ trợ">
+                    <span class="icon_SupportOnline"></span>Hotline hỗ trợ :
+                    <span class="htline">@Model.HotlineIN</span>
                 </a>
             </li>
-            <li class="Tragop">
-                <a href="#" title="Mua hàng dự án"><span class="icon_tragop"></span>Mua hàng dự án</a>
+            <li class="SupportOnline">
+                <a class="asup" href="#" title="Hotline hỗ trợ">
+                    <span class="icon_SupportOnline"></span>Tổng đài bán hàng :
+                    <span class="htline">@Model.HotlineSwitchBoard</span>
+                </a>
             </li>
+            @*<li class="Tragop">
+                <a href="#" title="Mua hàng dự án"><span class="icon_tragop"></span>Mua hàng dự án</a>
+            </li>*@
         </ul>
         <span class="Chinhhang">Website INAX chính hãng từ Inaxgroup </span>
     </div>

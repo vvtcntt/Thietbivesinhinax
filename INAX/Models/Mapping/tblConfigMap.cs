@@ -38,6 +38,12 @@ namespace INAX.Models.Mapping
             this.Property(t => t.HotlineOUT)
                 .HasMaxLength(50);
 
+            this.Property(t => t.HotlineSwitchBoard)
+                .HasMaxLength(50);
+
+            this.Property(t => t.HotlineGuarantee)
+                .HasMaxLength(50);
+
             this.Property(t => t.Email)
                 .HasMaxLength(100);
 
@@ -112,6 +118,8 @@ namespace INAX.Models.Mapping
             this.Property(t => t.HotlineIN).HasColumnName("HotlineIN");
             this.Property(t => t.MobileOUT).HasColumnName("MobileOUT");
             this.Property(t => t.HotlineOUT).HasColumnName("HotlineOUT");
+            this.Property(t => t.HotlineSwitchBoard).HasColumnName("HotlineSwitchBoard");
+            this.Property(t => t.HotlineGuarantee).HasColumnName("HotlineGuarantee");
             this.Property(t => t.Email).HasColumnName("Email");
             this.Property(t => t.Slogan).HasColumnName("Slogan");
             this.Property(t => t.Authorship).HasColumnName("Authorship");

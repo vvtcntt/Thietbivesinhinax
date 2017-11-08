@@ -20,6 +20,8 @@ namespace INAX.Models
         public string HotlineIN { get; set; }
         public string MobileOUT { get; set; }
         public string HotlineOUT { get; set; }
+        public string HotlineSwitchBoard { get; set; }
+        public string HotlineGuarantee { get; set; }
         public string Email { get; set; }
         public string Slogan { get; set; }
         public string Authorship { get; set; }

@@ -5,6 +5,7 @@
         <div id="img_Support"></div>
 
         <div id="Contact_Support">
+<img style="max-width:95%; height:auto; margin:7px auto; display:block" src="~/Content/Display/iCon/tong-dai-ban-hang.png" alt="Tổng đài" />
 @if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
 {<span class="Hotline"><span></span> @Model.HotlineOUT</span> }
 else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
@@ -28,8 +29,8 @@ else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now
         <div id="ListSupport">
             <span class="httt">Hỗ trợ trực tuyến</span>
            @Html.Raw(ViewBag.chuoisupport)
-          
-        </div>
+
+         </div>
     </div>
     <div id="MenuProduct">
         <div class="nVar_Left">

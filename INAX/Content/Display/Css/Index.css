@@ -196,8 +196,8 @@ none}
 #Top_Right_Banner{ width:100%; float:left; height:20px}
 #Top_Right_Banner p{ font-size:12px; margin:2px 3px; float:right }
 #Center_Right_Banner{ width:70%; height:20px; float:right; margin:3px 0px; background-color:#fe0001}
-#Bottom_Right_Banner{ width:100%; float:left; height:30px; overflow:hidden}
-#Bottom_Right_Banner img{ float:right}
+#Bottom_Right_Banner{ width:100%; float:left; height:auto; overflow:hidden}
+#Bottom_Right_Banner img{ float:right; width:190px}
 #Center_Right_Banner span{ font-weight:bold;  line-height:20px; color:#FFF; text-align:right; margin-right:3px; float:right}
 
 

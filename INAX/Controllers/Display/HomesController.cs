@@ -39,7 +39,7 @@ namespace INAX.Controllers.Display
             ViewBag.chuoiimage = chuoiparner;
             return View();
         }
-        [OutputCache(Duration = 3600)]
+        //[OutputCache(Duration = 3600)]
 
         public PartialViewResult Top()
         {
