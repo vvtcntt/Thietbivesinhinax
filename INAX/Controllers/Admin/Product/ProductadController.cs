@@ -153,7 +153,7 @@ namespace INAX.Controllers.Admin.Product
                 }
                 if (text != null && text != "")
                 {
-                    listProduct = db.tblProducts.Where(p => p.Name.ToUpper().Contains(text.ToUpper()) && p.Active == true).OrderByDescending(p => p.DateCreate).ToList();
+                    listProduct = db.tblProducts.Where(p => p.Name.ToUpper().Contains(text.ToUpper())).OrderByDescending(p => p.DateCreate).ToList();
                     ViewBag.chuoicout = "<span style='color: #A52A2A;'>" + listProduct.Count + "</span> ";
 
                     return PartialView("PartialProductData", listProduct.ToPagedList(pageNumber, pageSize));
@@ -197,7 +197,7 @@ namespace INAX.Controllers.Admin.Product
             }
             if (text != null && text != "")
             {
-                listProduct = db.tblProducts.Where(p => p.Name.ToUpper().Contains(text.ToUpper()) && p.Active == true).OrderByDescending(p => p.DateCreate).ToList();
+                listProduct = db.tblProducts.Where(p => p.Name.ToUpper().Contains(text.ToUpper()) ).OrderByDescending(p => p.DateCreate).ToList();
                 ViewBag.chuoicout = "<span style='color: #A52A2A;'>" + listProduct.Count + "</span> ";
                 ViewBag.Text = text;
                 return PartialView("PartialProductData", listProduct.ToPagedList(pageNumber, pageSize));
@@ -919,8 +919,7 @@ namespace INAX.Controllers.Admin.Product
                     string tag = tblproduct.Tag;
                     string Name = collection["Name"];
                     string Code = collection["Code"];
-                    string Size = collection["Size"];
-                    
+                    string Size = collection["Size"];                    
                     string Description = collection["Description"];
                     string Content = collection["Content"];
                     string Parameter = collection["Parameter"];

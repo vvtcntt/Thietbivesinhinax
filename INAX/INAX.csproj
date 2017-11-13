@@ -1470,6 +1470,8 @@
     <Content Include="Content\Display\iCon\Chaurua.png" />
     <Content Include="Content\Display\iCon\chinhhang.png" />
     <Content Include="Content\Display\iCon\chodexe.png" />
+    <Content Include="Content\Display\iCon\clock.gif" />
+    <Content Include="Content\Display\iCon\clock.png" />
     <Content Include="Content\Display\iCon\comments-icon.png" />
     <Content Include="Content\Display\iCon\Con_loc_van_phong_pham_anh_phuoc.jpg" />
     <Content Include="Content\Display\iCon\dang-ky-km.png" />

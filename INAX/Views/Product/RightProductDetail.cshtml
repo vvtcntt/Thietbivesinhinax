@@ -5,22 +5,17 @@
         <div id="img_Support"></div>
 
         <div id="Contact_Support">
+            <div class="timeWorks">
+                <span class="tm1">Thời gian làm việc : <strong>8H00 - 21H15</strong> </span>
+                <span class="tm2">Làm việc tất cả các ngày trong tuần</span>
+                <span class="tm3">
+                    Khách hàng mua hàng từ <strong>18H00 - 21H15</strong> cần đặt lịch trước qua số hotline : <strong>1900 63 66 95</strong>
+                </span>
+            </div>
 <img style="max-width:95%; height:auto; margin:7px auto; display:block" src="~/Content/Display/iCon/tong-dai-ban-hang.png" alt="Tổng đài" />
-@if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
-{<span class="Hotline"><span></span> @Model.HotlineOUT</span> }
-else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
-{
+ 
     <span class="Hotline"><span></span> @Model.HotlineIN</span>
-}
-else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 22)
-{
-    <span class="Hotline">Điện thoại : @Model.MobileOUT - Hotline :@Model.HotlineOUT</span>
-
-}
-else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
-{
-    <span class="Hotline">Điện thoại : @Model.MobileOUT - Hotline :@Model.HotlineOUT</span>
-}
+ 
             
             <span class="Mobile"><span></span> @Model.MobileIN</span>
             <span class="Email"><span></span> @Model.Email</span>
