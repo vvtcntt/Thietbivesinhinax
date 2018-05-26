@@ -136,8 +136,10 @@
     <script type="text/javascript" src="~/Content/Display/Js/jquery.jcarousel.min.js"></script>
     <script src="~/Scripts/jquery.popup.js"></script>
     <script src="~/Content/Display/Js/jquery.mmenu.min.all.js"></script>*@
+ 
     @Scripts.Render("~/Content/Display/Js/Scripts")
-
+    @*<script src="~/Content/Display/Js/jquery.popup.js"></script>
+    <link href="~/Content/Display/Css/linhnguyen.css" rel="stylesheet" />*@
     <script type="text/javascript">
     $(function () {
         $('nav#menu').mmenu({
@@ -152,7 +154,7 @@
         });
     });
     </script>
-    <script type="text/javascript">
+    @*<script type="text/javascript">
         $(window).load(function () {
             if (document.cookie.indexOf("adf") == -1)
             {
@@ -160,7 +162,12 @@
                 $('#myModal').linhnguyen($('#myModal').data());
             }
     });
-    </script>
+    </script>*@
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#myModal').linhnguyen($('#myModal').data());
+        });
+    </script>	
     <script type="text/javascript">
     $(window).load(function () {
         $('#slider').nivoSlider();

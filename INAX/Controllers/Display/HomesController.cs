@@ -104,7 +104,7 @@ namespace INAX.Controllers.Display
             var tblconfig = db.tblConfigs.First();
             return PartialView(tblconfig);
         }
-        [OutputCache(Duration = 3600)]
+        //[OutputCache(Duration = 3600)]
 
         public PartialViewResult PartialPopup()
         {

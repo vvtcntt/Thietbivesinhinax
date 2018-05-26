@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -2025,6 +2026,8 @@
           <DevelopmentServerPort>20750</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:20750/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:20750/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -25,7 +25,7 @@
                         <div class="Content_Listnew">
                             <div class="Left">
 
-                                @if (item.Images.Length < 15)
+                                @if (item.Images!=null && item.Images!="")
             {
                                     <a href="/vn/home/tin-tuc/@item.Tag@Html.Raw("_")@item.id@Html.Raw(".html")" title="@item.Name">
                                         <img src="~/Content/Display/iCon/icon-tintuc.jpg" alt="Ảnh đại diện Inax" />
