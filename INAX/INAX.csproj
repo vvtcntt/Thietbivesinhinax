@@ -217,6 +217,7 @@
     <Compile Include="Controllers\Display\Session\Contact\ContactDisplayController.cs" />
     <Compile Include="Controllers\Display\Session\Maps\MapsDisplayController.cs" />
     <Compile Include="Controllers\Display\Session\News\NewsController.cs" />
+    <Compile Include="Controllers\Display\Session\ProductSale\Sale2018Controller.cs" />
     <Compile Include="Controllers\Display\Session\ProductSale\SaleController.cs" />
     <Compile Include="Controllers\Display\Session\ProductSyn\ProductSysDislayController.cs" />
     <Compile Include="Controllers\Display\Session\Product\OrderController.cs" />
@@ -1382,6 +1383,7 @@
     <Content Include="Content\Display\Css\Product_Detail_Res.css" />
     <Content Include="Content\Display\Css\Product_Res.css" />
     <Content Include="Content\Display\Css\Sale.css" />
+    <Content Include="Content\Display\Css\SaleProduct.css" />
     <Content Include="Content\Display\Css\skin.css" />
     <Content Include="Content\Display\Css\Slide.css" />
     <Content Include="Content\Display\Css\Slide\default.css" />
@@ -1444,6 +1446,7 @@
     <Content Include="Content\Display\iCon\banner-Khuyenmai.png" />
     <Content Include="Content\Display\iCon\Banner_Sale_KM.png" />
     <Content Include="Content\Display\iCon\bg-textrun.png" />
+    <Content Include="Content\Display\iCon\bg.jpg" />
     <Content Include="Content\Display\iCon\bg_body.jpg" />
     <Content Include="Content\Display\iCon\bg_Cate.png" />
     <Content Include="Content\Display\iCon\bg_Menu.png" />
@@ -1491,6 +1494,7 @@
     <Content Include="Content\Display\iCon\favicon.png" />
     <Content Include="Content\Display\iCon\footer.png" />
     <Content Include="Content\Display\iCon\Footter.png" />
+    <Content Include="Content\Display\iCon\gia-soc.png" />
     <Content Include="Content\Display\iCon\giathanhrenhat.png" />
     <Content Include="Content\Display\iCon\gioithieu.png" />
     <Content Include="Content\Display\iCon\GoogleAuthorShip.png" />
@@ -1638,6 +1642,7 @@
     <Content Include="Content\Display\iCon\ProductSale.png" />
     <Content Include="Content\Display\iCon\Product_Detail.png" />
     <Content Include="Content\Display\iCon\PROGUARD.jpg" />
+    <Content Include="Content\Display\iCon\qua1.png" />
     <Content Include="Content\Display\iCon\quang-cao-inax-ben-trai.jpg" />
     <Content Include="Content\Display\iCon\quang-cao-inax-ben-trai.png" />
     <Content Include="Content\Display\iCon\Quangcao.jpg" />
@@ -1680,6 +1685,7 @@
     <Content Include="Content\Display\iCon\top-right.png" />
     <Content Include="Content\Display\iCon\trang.png" />
     <Content Include="Content\Display\iCon\tubep.png" />
+    <Content Include="Content\Display\iCon\type-discount.png" />
     <Content Include="Content\Display\iCon\user.png" />
     <Content Include="Content\Display\iCon\vanchuyen.png" />
     <Content Include="Content\Display\iCon\Viber_logo.png" />
@@ -1992,6 +1998,7 @@
     <Content Include="Views\support\Index.cshtml" />
     <Content Include="Views\support\Create.cshtml" />
     <Content Include="Views\support\Edit.cshtml" />
+    <Content Include="Views\Sale2018\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

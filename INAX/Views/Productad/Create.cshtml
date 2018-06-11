@@ -27,7 +27,12 @@
     $(function () {
         createEditor('vi', 'Parameter');
     });
-
+    $(function () {
+        createEditor('vi', 'Info');
+    });
+    $(function () {
+        createEditor('vi', 'Sale');
+    });
 </script>
  <script type="text/javascript">
      $(function () {
@@ -189,7 +194,7 @@
                                     Danh mục cha <span class="Required">*</span>
                                 </td>
                                 <td>
-                                    @Html.DropDownList("drMenu", "-- Danh mục cha --")  
+                                    @Html.DropDownList("drMenu", "-- Danh mục cha --")
                                     <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
@@ -210,7 +215,7 @@
                                     @Html.TextBoxFor(p => p.Name, new { @class = "Name_ad txtName", @autofocus = "autofocus", @required = "required" })
 
 
-                                     <span class="tooltip-help">
+                                    <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
                                                 Tên sản phẩm
@@ -226,7 +231,7 @@
                             </tr>
                             <tr>
                                 <td class="key">
-                                   Mã sản phẩm
+                                    Mã sản phẩm
                                 </td>
                                 <td>
                                     @Html.TextBoxFor(p => p.Code, new { @class = "Code_ad", @autofocus = "autofocus", @required = "required" })
@@ -246,9 +251,9 @@
                                 <td class="key">
                                     Mô tả
                                 </td>
-                                <td> 
-                                    @Html.TextAreaFor(p => p.Description, new { @class = "Content_ad", @autofocus = "autofocus", @required = "required" }) 
-                                     <span class="tooltip-help">
+                                <td>
+                                    @Html.TextAreaFor(p => p.Description, new { @class = "Content_ad", @autofocus = "autofocus", @required = "required" })
+                                    <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
                                                 Mô tả cho sản phẩm
@@ -262,12 +267,13 @@
 
                                 </td>
                             </tr>
+
                             <tr>
                                 <td class="key">
-                                   Nội dung Chi tiết
+                                    Nội dung Chi tiết
                                 </td>
                                 <td>
-                                    @Html.TextAreaFor(p => p.Content, new { @class = "Content_ad" }) 
+                                    @Html.TextAreaFor(p => p.Content, new { @class = "Content_ad" })
                                 </td>
                             </tr>
                             <tr>
@@ -293,8 +299,8 @@
                                 </td>
                                 <td>
                                     <fieldset>
-                                         <label>Chọn ảnh: </label><br />
-                                         <div id="myinput" class="myinput">
+                                        <label>Chọn ảnh: </label><br />
+                                        <div id="myinput" class="myinput">
                                             <input type="file" name="uploadFile[0]" /><br />
                                         </div>
                                         <br />
@@ -321,7 +327,7 @@
                             </tr>
                             <tr>
                                 <td class="key">
-                                   Màu sản phẩm
+                                    Màu sản phẩm
                                 </td>
                                 <td>
                                     @Html.Raw(ViewBag.chuoicolor)
@@ -340,8 +346,8 @@
                                     Thứ tự
                                 </td>
                                 <td>
-                                    @Html.TextBoxFor(p => p.Ord, new { @class = "Ord_ad", @Value = @Html.Raw(ViewBag.Ord) }) 
-                                     <span class="tooltip-help">
+                                    @Html.TextBoxFor(p => p.Ord, new { @class = "Ord_ad", @Value = @Html.Raw(ViewBag.Ord) })
+                                    <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
                                                 Thứ tự hiển thị
@@ -376,7 +382,7 @@
                                     Giá khuyến nội bộ
                                 </td>
                                 <td>
-                                    @Html.TextBoxFor(p => p.PriceSale, new { @class = "Price_ad",@type="number",@value="1"})
+                                    @Html.TextBoxFor(p => p.PriceSale, new { @class = "Price_ad", @type = "number", @value = "1" })
 
                                     <span class="tooltip-help">
                                         <span class="tooltipContent">
@@ -411,7 +417,7 @@
                             </tr>
                             <tr>
                                 <td class="key">
-                                    Nhóm sản phẩm                                     
+                                    Nhóm sản phẩm
                                 </td>
                                 <td>
                                     @Html.Raw(ViewBag.chuoigroup)
@@ -432,8 +438,8 @@
                                 <td class="key">
                                     Bảo hành / Tháng
                                 </td>
-                                <td>                                   
-                                    @Html.TextBoxFor(p => p.Warranty, new { @class = "Ord_ad", @type = "number" , @placeholder = "Tháng" })                                   
+                                <td>
+                                    @Html.TextBoxFor(p => p.Warranty, new { @class = "Ord_ad", @type = "number", @placeholder = "Tháng" })
                                     <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
@@ -482,12 +488,13 @@
                                     </span>
                                 </td>
                             </tr>
+                            ss
                             <tr>
                                 <td class="key">
                                     Kích thước<span class="Required">*</span>
                                 </td>
                                 <td>
-                                    @Html.TextBoxFor(p => p.Size, new { @class = "Name_ad txtName", @autofocus = "autofocus" }) 
+                                    @Html.TextBoxFor(p => p.Size, new { @class = "Name_ad txtName", @autofocus = "autofocus" })
 
                                     <span class="tooltip-help">
                                         <span class="tooltipContent">
@@ -499,19 +506,19 @@
                                             </p>
                                         </span>
                                     </span>
-                               
+
                                 </td>
                             </tr>
                             <tbody id="Tinhnang">@Html.Raw(ViewBag.chuoi)</tbody>
-                            
-                             <tr>
+
+                            <tr>
                                 <td class="key">
                                     Tình trạng sản phẩm
                                 </td>
                                 <td>
                                     @{bool Status = true;}
                                     @Html.CheckBoxFor(model => Status)
-                                     <span class="tooltip-help">
+                                    <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
                                                 Tình trạng sản phẩm
@@ -527,10 +534,10 @@
                                 <td class="key">
                                     VAT
                                 </td>
-                                <td> 
-                                   @{bool Vat = true;}
+                                <td>
+                                    @{bool Vat = true;}
                                     @Html.CheckBoxFor(model => Vat)
-                                      <span class="tooltip-help">
+                                    <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
                                                 Vat sản phẩm
@@ -549,7 +556,7 @@
                                 <td>
                                     @{bool New = false;}
                                     @Html.CheckBoxFor(model => New)
-                                     
+
                                     <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
@@ -569,7 +576,7 @@
                                 <td>
                                     @{bool Priority = false;}
                                     @Html.CheckBoxFor(model => Priority)
-                                     <span class="tooltip-help">
+                                    <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
                                                 Sản phẩm nổi bật
@@ -607,13 +614,13 @@
                                 <td>
                                     @{bool ViewHomes = false;}
                                     @Html.CheckBoxFor(model => ViewHomes)
-                                     <span class="tooltip-help">
+                                    <span class="tooltip-help">
                                         <span class="tooltipContent">
                                             <p class="tooltiptitle">
                                                 Hiển thị trang chủ
                                             </p>
                                             <p class="tooltipmessage">
-                                               Là sản phẩm mà bạn muốn hiện thị ở trang chủ theo danh mục, nếu danh mục được ưu tiên ngoài trang chủ thì sản phẩm này sẽ được hiển thị theo
+                                                Là sản phẩm mà bạn muốn hiện thị ở trang chủ theo danh mục, nếu danh mục được ưu tiên ngoài trang chủ thì sản phẩm này sẽ được hiển thị theo
                                             </p>
                                         </span>
                                     </span>
@@ -624,7 +631,7 @@
                                     Hiển thị
                                 </td>
                                 <td>
-                                     @{bool Active = true;}
+                                    @{bool Active = true;}
                                     @Html.CheckBoxFor(model => Active)
 
                                     <span class="tooltip-help">
@@ -665,7 +672,7 @@
                                     @Html.TextAreaFor(p => p.Keyword, new { @class = "Content_ad KeywordProduct" })
                                     <span class="tooltip-help">
                                         <span class="tooltipContent">
-                                            <p class="tooltiptitle"  >
+                                            <p class="tooltiptitle">
                                                 Thẻ từ khóa
                                             </p>
                                             <p class="tooltipmessage" style="color:red">

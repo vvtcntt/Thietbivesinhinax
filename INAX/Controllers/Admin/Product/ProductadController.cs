@@ -919,7 +919,8 @@ namespace INAX.Controllers.Admin.Product
                     string tag = tblproduct.Tag;
                     string Name = collection["Name"];
                     string Code = collection["Code"];
-                    string Size = collection["Size"];                    
+                    string Size = collection["Size"];
+                    string Info = collection["Info"];
                     string Description = collection["Description"];
                     string Content = collection["Content"];
                     string Parameter = collection["Parameter"];
@@ -982,6 +983,7 @@ namespace INAX.Controllers.Admin.Product
                     tblproduct.Parameter = Parameter;
                     tblproduct.ImageLinkDetail = ImageLinkDetail;
                     tblproduct.Vat = Vat;
+                    tblproduct.Info = Info;
                     tblproduct.Warranty = Warranty;
                     tblproduct.Sale = Sale;
                     tblproduct.Active = Active;

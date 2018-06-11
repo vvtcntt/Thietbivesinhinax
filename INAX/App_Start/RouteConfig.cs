@@ -32,7 +32,7 @@ namespace INAX
             routes.MapRoute("Chi_Tiet-1", "1/{tag}/{*catchall}", new { controller = "Product", action = "ProductDetail", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ProductDetail$" });
             routes.MapRoute("ProductSyn", "Syn/{Tag}/{*catchall}", new { controller = "ProductSysDislay", action = "ProductSyn_Detail", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ProductSyn_Detail$" });
             routes.MapRoute("ProductSearch", "Search/{Tag}/{*catchall}", new { controller = "Product", action = "SearchProduct", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^SearchProduct$" });
-            routes.MapRoute("ProductSale", "Sale/{Tag}/{*catchall}", new { controller = "Sale", action = "Index", tag = UrlParameter.Optional }, new { controller = "^S.*", action = "^Index$" });
+            routes.MapRoute("ProductSale", "Sale/{Tag}/{*catchall}", new { controller = "Sale2018", action = "Index", tag = UrlParameter.Optional }, new { controller = "^S.*", action = "^Index$" });
             routes.MapRoute("Danh_Sach", "0/{Tag}/{*catchall}", new { controller = "Product", action = "ListProduct", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ListProduct$" });
             routes.MapRoute("ListAgency", "4/{Tag}/{*catchall}", new { controller = "Agency", action = "AgencyList", tag = UrlParameter.Optional }, new { controller = "^A.*", action = "^AgencyList$" });
             routes.MapRoute("DetailAgency", "5/{Tag}/{*catchall}", new { controller = "AgencyDisplay", action = "AgencyDetail", tag = UrlParameter.Optional }, new { controller = "^A.*", action = "^AgencyDetail$" });

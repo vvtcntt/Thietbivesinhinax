@@ -172,7 +172,6 @@ namespace INAX.Controllers.Admin.Product
         public ActionResult Create(tblProductSale tblproductsale, FormCollection collection)
         {
             tblproductsale.Tag = StringClass.NameToTag(tblproductsale.Name);
-
             db.tblProductSales.Add(tblproductsale);
             db.SaveChanges();
             var lisstch = db.tblProductSyns.OrderByDescending(p => p.id).Take(1).First();
@@ -255,6 +254,19 @@ namespace INAX.Controllers.Admin.Product
 
             }
             return View(tblproductsale);
+        }
+        public ActionResult Reset()
+        {
+            var listProduct = db.tblProducts.Where(p => p.ProductSale == true).ToList();
+            for(int i=0;i<listProduct.Count;i++)
+            {
+                int id = listProduct[i].id;
+                tblProduct product = db.tblProducts.Find(id);
+                product.id = id;
+                product.ProductSale = false;
+                db.SaveChanges();
+            }
+            return View();
         }
 	}
 }

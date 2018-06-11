@@ -68,58 +68,260 @@
 .float-ck{ display:none}
 #divAdRight,#divAdLeft{display:none}
 }
-@media screen and (max-width: 480px) 
-{
-	#Bottom_Headder{ display:none}
-	
-	.CateList{ display:none}
-	.SupportOnline {
-   			 background:url(../iCon/Line_Navar.png)no-repeat scroll left top transparent !important;
-	}
-	#Banner{ height:auto !important; padding:5px 0px; float:left; margin:0px}
-	#iLogo a img{ height:60px; margin:7px; display:block}
-	#Left_Banner{ width:100% !important}
-	#iName{ height:auto !important}
-	#Right_Banner{ display:none !important}
-	#iName h3{margin: 47px auto 2px 56px !important; font-size:15px !important; font-family:UTM-Swiss-CondensedBold; display:none}
-	#Headder{ display:none}
-	#Catelogy{ display:none}
-.SupportOnline a.asup{ margin-left:5px; display:block; font-size:12.5px}
-	.Tear_Sale{ width:48.5%}		
-		.Tear_pd{ width:31%}
-		.Tear_GroupsProduct .nVar .Right_nVar li{ display:none}
-		#Doitac{ display:none}
-		.teardv{ width:49%; margin:1px 0px 1px 3px; background-size:100%; max-height:80px}
-		.teardv:last-child{display:none}
-		.Tear_Footter{ width:48%}
-		.RegistrySale{ width:98%; margin:5px 0px; float:left; text-align:justify}
-		.Title_regis{ text-align:center; margin:2px}
-		#Footter_Centter p{ line-height:20px; padding-top:4px}
-		#Footter_bottom{ height:auto}
-		#Left_Footter_bottom{ width:100%; height:auto; float:left; margin:0px}
-		##Right_Footter_bottom{ width:100%; height:auto; float:left; margin:0px}
-		#Logo_Left{ width:100%; height:auto; float:left; margin:0px}
-		#Logo_Left img{ margin:5px auto; display:block}
-		#Info_Right .p1{ text-align:center}
-		#Info_Right{ width:100%; float:left; margin:0px}
-		#Right_Footter_bottom{ width:100% !important; margin:0px; height:auto}
-		#Right_Footter_bottom img{ width:32%}
-		#Infocty{height:auto}
-		#Content_ProductDB .spdb{ width:48% }
-		#subiz_right_bottom{ display:none !important}
-		#subiz_wrapper{ display:none !important}
-		.float-ck{ display:none}
-		#myModal{ display:none !important}
-		#MenuMobile{ display:block; position:absolute; width:5px 0px; z-index:100; background: url(../iCon/nvar.png) no-repeat 5px center scroll #129dff; ; width:140px; height:37px; right:0px; top:20px; }
-		#MenuMobile a{ font-size:16px; font-family:UTM-Swiss-CondensedBold; color:#FFF; line-height:37px; margin:auto 5px auto 44px; text-transform:uppercase
-}
-#menu{ z-index:10000 }
-.ul_Content_top_right { display:none}
- 
-.Chinhhang{ display:block; font-size:15px; font-family:UTM-Swiss-CondensedBold; color:#FFF; line-height:45px; text-align:center; text-transform:uppercase}
-#Maps_Homes{ display:none}
-.Notice .Right_notice .n1{ font-size:20px}
-.Notice .Right_notice .n2{ font-size:16px}
-.Notice .Right_notice .n3{ font-size:15px}
-#Link{ display:none}
+@media screen and (max-width: 480px) {
+    #Bottom_Headder {
+        display: none
+    }
+
+    .CateList {
+        display: none
+    }
+
+    .SupportOnline {
+        background: url(../iCon/Line_Navar.png)no-repeat scroll left top transparent !important;
+    }
+
+    #Banner {
+        height: auto !important;
+        padding: 5px 0px;
+        float: left;
+        margin: 0px
+    }
+
+    #iLogo a img {
+        height: 60px;
+        margin: 7px;
+        display: block
+    }
+
+    #Left_Banner {
+        width: 100% !important
+    }
+
+    #iName {
+        height: auto !important
+    }
+
+    #Right_Banner {
+        display: none !important
+    }
+
+    #iName h3 {
+        margin: 47px auto 2px 56px !important;
+        font-size: 15px !important;
+        font-family: UTM-Swiss-CondensedBold;
+        display: none
+    }
+
+    #Headder {
+        display: none
+    }
+
+    #Catelogy {
+        display: none
+    }
+
+    .SupportOnline a.asup {
+        margin-left: 5px;
+        display: block;
+        font-size: 12.5px
+    }
+
+    .Tear_Sale {
+        width: 48.5%
+    }
+
+    .Tear_pd {
+        width: 31%
+    }
+
+    .Tear_GroupsProduct .nVar .Right_nVar li {
+        display: none
+    }
+
+    #Doitac {
+        display: none
+    }
+
+    .teardv {
+        width: 49%;
+        margin: 1px 0px 1px 3px;
+        background-size: 100%;
+        max-height: 80px
+    }
+
+        .teardv:last-child {
+            display: none
+        }
+
+    .Tear_Footter {
+        width: 48%
+    }
+
+    .RegistrySale {
+        width: 98%;
+        margin: 5px 0px;
+        float: left;
+        text-align: justify
+    }
+
+    .Title_regis {
+        text-align: center;
+        margin: 2px
+    }
+
+    #Footter_Centter p {
+        line-height: 20px;
+        padding-top: 4px
+    }
+
+    #Footter_bottom {
+        height: auto
+    }
+
+    #Left_Footter_bottom {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 0px
+    }
+
+    ##Right_Footter_bottom {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 0px
+    }
+
+    #Logo_Left {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 0px
+    }
+
+        #Logo_Left img {
+            margin: 5px auto;
+            display: block
+        }
+
+    #Info_Right .p1 {
+        text-align: center
+    }
+
+    #Info_Right {
+        width: 100%;
+        float: left;
+        margin: 0px
+    }
+
+    #Right_Footter_bottom {
+        width: 100% !important;
+        margin: 0px;
+        height: auto
+    }
+
+        #Right_Footter_bottom img {
+            width: 32%
+        }
+
+    #Infocty {
+        height: auto
+    }
+
+    #Content_ProductDB .spdb {
+        width: 48%
+    }
+
+    #subiz_right_bottom {
+        display: none !important
+    }
+
+    #subiz_wrapper {
+        display: none !important
+    }
+
+    .float-ck {
+        display: none
+    }
+
+    #myModal {
+        display: none !important
+    }
+
+    #MenuMobile {
+        display: block;
+        position: absolute;
+        width: 5px 0px;
+        z-index: 100;
+        background: url(../iCon/nvar.png) no-repeat 5px center scroll #129dff;
+        ;
+        width: 140px;
+        height: 37px;
+        right: 0px;
+        top: 20px;
+    }
+
+        #MenuMobile a {
+            font-size: 16px;
+            font-family: UTM-Swiss-CondensedBold;
+            color: #FFF;
+            line-height: 37px;
+            margin: auto 5px auto 44px;
+            text-transform: uppercase
+        }
+
+    #menu {
+        z-index: 10000
+    }
+
+    .ul_Content_top_right {
+        display: none
+    }
+
+    .Chinhhang {
+        display: block;
+        font-size: 15px;
+        font-family: UTM-Swiss-CondensedBold;
+        color: #FFF;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase
+    }
+
+    #Maps_Homes {
+        display: none
+    }
+
+    .Notice .Right_notice .n1 {
+        font-size: 20px
+    }
+
+    .Notice .Right_notice .n2 {
+        font-size: 16px
+    }
+
+    .Notice .Right_notice .n3 {
+        font-size: 15px
+    }
+
+    #Link {
+        display: none
+    }
+
+    .tearSale {
+        width: 50%
+    }
+
+    .largeTearSale {
+        width: 100%
+    }
+
+    .tearListSale {
+        width: 100%
+    }
+
+    .tearListSale {
+        width: 100% !important
+    }
 }

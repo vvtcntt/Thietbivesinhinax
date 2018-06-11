@@ -22,7 +22,8 @@ namespace INAX.Controllers.Display.Session
         public PartialViewResult ProductSaleHomes()
         {
             StringBuilder chuoi = new StringBuilder();
-             var listProductHomes = db.tblProducts.Where(p => p.Active == true && p.ProductSale == true).OrderBy(p => p.Ord).ToList();
+             var listProductHomess = db.tblProducts.Where(p => p.Active == true && p.ProductSale == true).OrderBy(p => p.Ord).Take(12).ToList();
+            var listProductHomes = listProductHomess.OrderBy(p => p.idCate).ToList();
            for (int i = 0; i < listProductHomes.Count; i++)
             {
                 int idcates = int.Parse(listProductHomes[i].idCate.ToString());
