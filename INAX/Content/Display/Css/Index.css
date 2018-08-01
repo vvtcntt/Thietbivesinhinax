@@ -632,9 +632,8 @@ opacity:1;display:block;
 #MenuMobile{ display:none; }
 .Chinhhang{ display:none}
 .Chodexe{ width:100%; height:112px; float:left; margin:5px 0px; background:url(../iCon/chodexe.png) no-repeat; background-size:100%}
-#Link{ width:100%; height:auto;color:#0894d8;}
-#Link a{ color:#0894d8; line-height:20px; margin:0px 5px}
-#Maps_Homes{ width:100%; height:120px;   margin:10px auto 10px auto}
+#Link{ width:100%; height:auto;  opacity:0.1}
+ #Maps_Homes{ width:100%; height:120px;   margin:10px auto 10px auto}
 #Maps_Homes p{ margin:0px}
 #Maps_Homes iframe{ width:100%; height:100%;   margin:0px; float:left}
 
@@ -652,8 +651,132 @@ opacity:1;display:block;
 .Laygiakm{width:100%; height:25px; position:absolute; bottom:0px; left:0;}
 #Box_laygia .laygia{ padding:7px 10px; background:url(../iCon/laygia.png) repeat-x; display:inline-block; color:#0098d0; text-transform:uppercase; border-radius:1px; cursor:pointer; margin:5px; font-size:15px}
 .maudo{color:#FFF !important; background:#ff4e00 !important; font-size:11px}
-
-
 .maudo{ color:#F00; font-weight:bold}
 .Img_adwcenter{width:100%; height:auto; float:left; margin:5px 0px;clear:both}
 .Img_adwcenter img{max-width:100%; height:auto; float:left; margin:0px}
+.support {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    float: left;
+    background: #3b88c8
+}
+
+    .support .leftSupport {
+        width: 47%;
+        height: 100%;
+        background: url(../iCon/hotline_iCon.png) no-repeat 5px 36px scroll #2971ad;
+        float: left;
+        position: relative;
+        padding-bottom: 5px
+    }
+
+        .support .leftSupport:after {
+            position: absolute;
+            content: '';
+            border-bottom: 70px solid transparent;
+            border-top: 0px solid transparent;
+            border-left: 40px solid #2971ad;
+            right: -40px;
+            top: 0px
+        }
+
+        .support .leftSupport p {
+            font-size: 15px;
+            color: #b9efff;
+            margin: 4px 5px 8px 8px;
+            font-family: "Open Sans",sans-serif !important;
+            position: relative;
+            padding-bottom: 3px
+        }
+
+            .support .leftSupport p:before {
+                width: 90%;
+                height: 1px;
+                background: #2971ad;
+                content: '';
+                position: absolute;
+                left: 0px;
+                bottom: 0px
+            }
+
+        .support .leftSupport a {
+            font-size: 17px;
+            color: #fff;
+            margin: 3px 5px 0px 37px;
+            display: block;
+            line-height: 14px
+        }
+
+    .support .rightSupport {
+        width: 53%;
+        height: auto;
+        float: left;
+        margin: 0px
+    }
+
+        .support .rightSupport p {
+            font-size: 15px;
+            color: #d9ffff;
+            margin: 4px 5px 2px 41px;
+            font-family: "Open Sans",sans-serif !important;
+            position: relative;
+            padding-bottom: 3px
+        }
+
+        .support .rightSupport .sp1 {
+            font-size: 22px;
+            display: block;
+            margin: 0px 5px 0px 20px;
+            color: #FFF;
+            text-align: right;
+            font-weight: bold;
+            line-height: 20px
+        }
+
+        .support .rightSupport .sp2 {
+            font-size: 13px;
+            color: #feffd9;
+            margin: 2px 5px 2px 5px;
+            text-align: right;
+            display: block
+        }
+
+#adwfooter {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0px;
+    position: fixed;
+    bottom: 0px;
+}
+
+    #adwfooter img {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 0px;
+        float: left
+    }
+
+#menuMobile {
+    width: auto;
+    background: #3b88c8;
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    display: none
+}
+
+    #menuMobile span {
+        color: #FFF;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        padding: 10px
+    }
+
+        #menuMobile span i {
+            margin-right: 10px;
+        }
