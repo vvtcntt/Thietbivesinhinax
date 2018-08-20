@@ -37,6 +37,13 @@ namespace INAX.Controllers.Display
 
             }
             ViewBag.chuoiimage = chuoiparner;
+            StringBuilder resultSale = new StringBuilder();
+            var listImage = db.tblImages.Where(p => p.Active == true && p.idCate == 11).OrderByDescending(p=>p.Ord).Take(1).ToList();
+            for(int i=0;i<listImage.Count;i++)
+            {
+                resultSale.Append("<a href=\""+ listImage[i].Url+ "\" title=\"" + listImage[i].Name + "\"><img src=\"" + listImage[i].Images + "\" alt=\"" + listImage[i].Name + "\" /></a>");
+            }
+            ViewBag.resultImage = resultSale.ToString();
             return View();
         }
         //[OutputCache(Duration = 3600)]

@@ -1229,7 +1229,7 @@ td {
     height: auto;
     float: left;
     margin: 5px;
-    background: url(../iCon/sale-icon.png) no-repeat left center scroll #fef3df;
+    background: #fef3df;
     min-height: 37px;
     border: 1px solid #F2E7D2;
     background-position: 5px;
@@ -1238,20 +1238,32 @@ td {
 #ContentBoxSale {
     width: auto;
     height: auto;
-    margin-left: 50px;
     float: left;
-    padding: 5px;
-    color: #ff6000;
+    padding: 5px 10px;
+    color: #434343;
+    font-size:16px
 }
 
-    #ContentBoxSale span {
-        background: #ff6000;
-        font-weight: bold;
-        font-size: 17px;
-        color: #f6ff00;
-        display: inline-block;
-        padding: 3px 4px;
+#ContentBoxSale .nameSale {
+        color: #ff0000;
+        font-size: 20px;
+        display: block;
+        margin: 5px 0px;
+        font-family: UTMSwiss; 
+        text-transform:uppercase
     }
-
-#box_Call{width:100%; height:auto; float:left; margin:2px 0px}
+    #ContentBoxSale .nameSale1 {
+        color: #ff0000;
+        font-size: 15px;
+        display: block;
+        margin: 7px 0px;
+        text-transform: uppercase;
+        font-weight:bold
+    }
+    #box_Call {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 2px 0px
+    }
  

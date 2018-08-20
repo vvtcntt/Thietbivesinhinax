@@ -23,9 +23,9 @@
                                         <div id="img_Product">
                                             <div id="SaleProduct" style="background:url(@Model.ImageSale) no-repeat left bottom scroll transparent"></div>
                                             <div id="inaxchinhhang"></div>
-                                            <div id="Sale">
-                                                <span>@Html.Raw(Model.Sale)</span>
-                                            </div>
+                                            @*<div id="Sale">
+                                                    <span>@Html.Raw(Model.Sale)</span>
+                                                </div>*@
                                             <div id="Content_Img_Product">
                                                 <a href="#" title="@Model.Name" rel="prettyPhoto[gallery1]">
                                                     <img src="@Model.ImageLinkDetail" alt="@Model.Name" />
@@ -35,13 +35,9 @@
                                         <div id="List_Product">
                                             <ul class="gallery clearfix">
                                                 @Html.Raw(ViewBag.chuoiimage)
-
                                             </ul>
                                         </div>
-
-                                       
                                     </div>
-                                    
                                 </div>
                             </div>
                             <div id="Right_ContentProduct">
@@ -61,8 +57,6 @@
                                                 <span> <span class="Status"></span> Tình trạng : Hết hàng</span>
                                             }
                                         </li>
-                                       
-
 
                                         <li>
                                             @if (ViewBag.address != null && ViewBag.address != "")
@@ -75,7 +69,6 @@
                                                 <span> <span class="Address"></span> Xuất xứ : Liên hệ</span>
 
                                             }
-
                                         </li>
                                         <li>
                                             <span> <span class="Status"></span> Bảo hành: @Model.Warranty năm</span>
@@ -89,40 +82,40 @@
                                 <div id="Top3">
                                     <div id="Left_Top3">
                                         @if (Model.PriceSale == 1)
-                                        { 
-                                        
+                                        {
+
                                         }
                                         else
                                         {
-                                            if(Model.PriceSaleActive>1)
+                                            if (Model.PriceSaleActive > 1)
                                             {
-                                                   <span>Khuyến mại : <span class="Price_Sale">@string.Format("{0:#,#}", @Model.PriceSaleActive) đ</span></span>
+                                                <span>Khuyến mại : <span class="Price_Sale">@string.Format("{0:#,#}", @Model.PriceSaleActive) đ</span></span>
                                             }
                                             else
                                             {
-                                                   <span>Khuyến mại : <span class="Price_Sale">Liên hệ</span></span>
+                                                <span>Khuyến mại : <span class="Price_Sale">Liên hệ</span></span>
                                             }
-                                         
+
                                         }
                                         <span class="PriceDetail">Giá niêm yết : @string.Format("{0:#,#}", @Model.Price) đ</span>
                                         <span class="editprice">( Giá trên có thể thay đổi mà không báo trước ! )</span>
                                     </div>
                                     <div id="Right_Top3">
                                         <span class="sp1">Hãy gọi điện</span>
-                                        <span class="sp2">sẽ có giá tốt hơn</span>
+                                        <span class="sp2">Để có giá trị Khuyến mại tốt hơn</span>
                                     </div>
                                 </div>
                                 <div id="Box_laygia">
-                                    @if(Model.PriceSaleActive>1)
+                                    @if (Model.PriceSaleActive > 1)
                                     {
-                                    <span class="laygia @Html.Raw("lg"+Model.id)" onclick="javascript: return Laygia('@Html.Raw("lg"+Model.id)','@Html.Raw(Model.Name)','@Html.Raw(@String.Format("{0:#,#}",Model.PriceSale))');" title="Giá tốt">›› Lấy giá tốt hơn</span>
+                                        <span class="laygia @Html.Raw("lg"+Model.id)" onclick="javascript: return Laygia('@Html.Raw("lg"+Model.id)','@Html.Raw(Model.Name)','@Html.Raw(@String.Format("{0:#,#}",Model.PriceSale))');" title="Giá tốt">›› Lấy giá tốt hơn</span>
                                     }
                                     else
                                     {
-                                    <span class="laygia @Html.Raw("lg"+Model.id)" onclick="javascript: return Laygia('@Html.Raw("lg"+Model.id)','@Html.Raw(Model.Name)','@Html.Raw(@String.Format("{0:#,#}",Model.PriceSale))');" title="Giá tốt">›› Lấy giá tốt nhất</span>
+                                        <span class="laygia @Html.Raw("lg"+Model.id)" onclick="javascript: return Laygia('@Html.Raw("lg"+Model.id)','@Html.Raw(Model.Name)','@Html.Raw(@String.Format("{0:#,#}",Model.PriceSale))');" title="Giá tốt">›› Lấy giá tốt nhất</span>
                                     }
                                 </div>
-                                
+
                                 <div id="Box_Sale">
                                     @{
 
@@ -137,17 +130,19 @@
                                     }
                                     @if (Giakm > 50)
                                     {
-                                        <div id="ContentBoxSale">Chúng tôi cam kết giá rẻ nhất Việt Nam nếu bạn gọi điện hoặc đến trực tiếp !</div>
 
+                                        <div id="ContentBoxSale">
+                                            <h5 class="nameSale"><img src="~/Content/Display/iCon/sale-icon.png" alt="Khuyến mại đặc biệt" />Ưu đãi đặc biệt</h5>
+                                            @Html.Raw(Model.Sale)
+                                            <span class="nameSale1">Để có giá trị khuyến mại tốt hơn vui lòng liên hệ qua hotline 1900 636 798</span>
+                                        </div>
                                     }
                                 </div>
                                 <div id="Top5">
 
-
                                     <span>Số lượng : </span><input type="number" value="01" name="txtOrd" id="txtOrd" class="txtOrd" /><button type="submit" name="btnOrder" id="btnOrder" class="btnOrd">Đặt Hàng</button>
                                     <input type="text" value="@Model.id" id="idPro" name="idPro" style="opacity:0; height:1px; width:1px; float:right" />
                                     <input type="text" value="@Model.idCate" id="idCate" name="idCate" style="opacity: 0; height: 1px; width: 1px; float: right" />
-
                                 </div>
                                 <div id="Top6">
                                     <ul>
@@ -165,7 +160,6 @@
                         </div>
                         @{Html.RenderAction("Thongbao", "Homes");}
 
-
                         <div id="LeftProduct_Content">
                             <div class="nVar_Content">
                                 <div class="Nvar">
@@ -173,7 +167,6 @@
                                 </div>
                                 <div class="phanbiet">
                                     <a href="/vn/home/tin-tuc/huong-dan-nhan-biet-thiet-bi-ve-sinh-inax-that-gia_61.html" title="Phân biệt Inax chính hãng" rel="nofollow">Cách Phân biệt INAX chính hãng</a>
-
                                 </div>
                             </div>
                             <div class="line_tamgiac"></div>
@@ -201,7 +194,6 @@
                         </div>
                         @{Html.RenderAction("adwadsense", "Homes");}
 
-
                         <div id="Comment">
                             <div class="nVar_2">
                                 <span>Nhận xét đánh giá</span>
@@ -211,7 +203,7 @@
                                     <div class="fb-like" data-send="true" data-layout="button_count" data-width="60"
                                          data-show-faces="true">
                                     </div>
-                                    
+
                                     <div id="g" style="float: left; margin: 7px 5px; height: 15px; width: 20px">
                                         <g:plusone size="medium"></g:plusone>
                                     </div>
@@ -230,7 +222,6 @@
                             </div>
                             <div id="ConmentFacebook">
                                 <div class="fb-comments" data-href="@Request.Url.ToString()" data-num-posts="20" style="width:100%; float:left; margin:0px" width="100%"></div>
-
                             </div>
                         </div>
                     </div>
@@ -239,10 +230,9 @@
                     @{Html.RenderAction("RightProductDetail", "Product");}
                 </aside>
             </div>
-
         </div>
     </article>
 }
-    <div id="Link">
-        Bạn muốn <a href="http://thayloilocnuoc.com" title="Thay lõi lọc nước tại nhà">Thay lõi lọc nước tại nhà</a> có thể <a href="http://thegioibinhnonglanh.vn" style="color:transparent" title="Binh nong lanh">Bình nóng lạnh</a> hay bạn mua sản phẩm <a href="http://viglaceravietnam.com" title="Thiết bị vệ sinh viglacera">Thiết bị vệ sinh Viglacera</a>, trang bị Kangaroo với <a href="https://kangaroochinhhang.vn/" title="Kangaroo">Kangaroo</a> với <a href="https://kangaroochinhhang.vn/may-loc-nuoc-kangaroo" title="Máy lọc nước">Máy lọc nước </a> hoặc <a href="https://kangaroochinhhang.vn/loi-loc-nuoc-kangaroo" title="lõi lọc nước chính hãng"> lõi lọc nước chính hãng</a>
-    </div>
+<div id="Link">
+    Bạn muốn <a href="http://thayloilocnuoc.com" title="Thay lõi lọc nước tại nhà">Thay lõi lọc nước tại nhà</a> có thể <a href="http://thegioibinhnonglanh.vn" style="color:transparent" title="Binh nong lanh">Bình nóng lạnh</a> hay bạn mua sản phẩm <a href="http://viglaceravietnam.com" title="Thiết bị vệ sinh viglacera">Thiết bị vệ sinh Viglacera</a>, trang bị Kangaroo với <a href="https://kangaroochinhhang.vn/" title="Kangaroo">Kangaroo</a> với <a href="https://kangaroochinhhang.vn/may-loc-nuoc-kangaroo" title="Máy lọc nước">Máy lọc nước </a> hoặc <a href="https://kangaroochinhhang.vn/loi-loc-nuoc-kangaroo" title="lõi lọc nước chính hãng"> lõi lọc nước chính hãng</a> chính hãng <a href="http://karofichinhhang.vn" title="karofi">Karofi</a>
+</div>

@@ -109,7 +109,7 @@ namespace INAX.Controllers.Admin.Product
 
         public PartialViewResult PartialProductData(int? page, string text, string idCate, string pageSizes)
         {
-            var listProduct = db.tblProducts.OrderByDescending(p => p.DateCreate).ToList();
+            var listProduct = db.tblProducts.OrderByDescending(p => p.DateCreate).Take(20).ToList();
             int pageSize = 20;
             var pageNumber = (page ?? 1);
             var ship = new PagedListRenderOptions
@@ -206,7 +206,7 @@ namespace INAX.Controllers.Admin.Product
             {
 
                 int idcates = int.Parse(idCate);
-                listProduct = db.tblProducts.Where(p => p.idCate == idcates && p.Active == true).OrderByDescending(p => p.DateCreate).ToList();
+                listProduct = db.tblProducts.Where(p => p.idCate == idcates ).OrderByDescending(p => p.DateCreate).ToList();
                 ViewBag.idMenu = idCate;
                 ViewBag.idcate = idCate;
                 ViewBag.ddlMenu = carlist;
@@ -217,7 +217,7 @@ namespace INAX.Controllers.Admin.Product
             else
             {
                 ViewBag.ddlMenu = carlist;
-                listProduct = db.tblProducts.Where(p => p.Active == true).OrderByDescending(p => p.DateCreate).ToList();
+                listProduct = db.tblProducts.Where(p => p.Active == true).OrderByDescending(p => p.DateCreate).Take(20).ToList();
                 return PartialView(listProduct.ToPagedList(pageNumber, pageSize));
             }
 

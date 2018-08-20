@@ -3,6 +3,10 @@
 }
      @{Html.RenderAction("PartialHeader", "Header");}
          @{Html.RenderAction("PartialCategories", "Homes");}
+<div id="imageSaleHome">
+    @Html.Raw(ViewBag.resultImage)
+
+</div>
 @{Html.RenderAction("Thongbao", "Homes");}
         @{Html.RenderAction("ProductSaleHomes", "Product");}
         <div class="Clear"></div>

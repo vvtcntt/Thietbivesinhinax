@@ -38,18 +38,28 @@
             var giatri = $(".textarea_online").val();
             _sbzq.push(['expandWidget']);
             //$('iframe[id=sbzon_frame]').contents().find('#textarea_online').html("Sản phẩm " + name + " có giá bao nhiêu");
-             
-       
+
+
             $('iframe[id=sbzon_frame]').contents().find('.supporter_chat').append("<div class=\"line_message\"><img src=\"https://css-dashboard.subiz.com/img/avatar-chat.png\" alt=\"\" class=\"avatar_small\"><span class=\"supporter_content_chat\">Chào anh chị. Sản phẩm " + name + " giá khuyến mại tại Hà Nội là <span  style=\"color:#F00; font-weight:bold; font-size:15px\">" + price + " đ "+note+"</span></span></div>");
             $('iframe[id=sbzon_frame]').contents().find('#subiz_wrapper').addClass("maudo");
-           
+
             return false;
         }
-        
+
     </script>
+    <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MLL7B3Z');</script>
     <link href="~/Content/Display/Css/Slideshow.css" rel="stylesheet" />
 </head>
 <body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLL7B3Z"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <header>
         @{Html.RenderAction("Top", "Homes");}
         <div class="Clear"></div>
@@ -113,7 +123,7 @@
             @RenderBody()
         </div>
     </section>
-     
+
     <footer>
         <div id="Dichvu">
             <div class="Tear_Dichvu1 teardv"></div>
@@ -124,54 +134,54 @@
         </div>
         @{Html.RenderAction("PartialFootter", "Footter");}
         @{ Html.RenderAction("Adw", "Homes"); }
-        
+
     </footer>
-    
+
     <script type="text/javascript" src="~/Content/Display/Js//jquery.min.js"></script>
     <script src="~/Content/Display/Js/jquery-1.9.1.min.js"></script>
     <script src="~/Scripts/jquery-ui.js"></script>
 
     @*<script src="~/Content/Display/Js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="~/Content/Display/Js/jquery.nivo.slider.pack.js"></script>
-    <script type="text/javascript" src="~/Content/Display/Js/jquery.jcarousel.min.js"></script>
-    <script src="~/Scripts/jquery.popup.js"></script>
-    <script src="~/Content/Display/Js/jquery.mmenu.min.all.js"></script>*@
- 
+        <script type="text/javascript" src="~/Content/Display/Js/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript" src="~/Content/Display/Js/jquery.jcarousel.min.js"></script>
+        <script src="~/Scripts/jquery.popup.js"></script>
+        <script src="~/Content/Display/Js/jquery.mmenu.min.all.js"></script>*@
+
     @Scripts.Render("~/Content/Display/Js/Scripts")
     @*<script src="~/Content/Display/Js/jquery.popup.js"></script>
-    <link href="~/Content/Display/Css/linhnguyen.css" rel="stylesheet" />*@
+        <link href="~/Content/Display/Css/linhnguyen.css" rel="stylesheet" />*@
     <script type="text/javascript">
-    $(function () {
-        $('nav#menu').mmenu({
-            extensions: ['effect-slide', 'pageshadow'],
-            header: true,
-            searchfield: true,
-            counters: true,
-            footer: {
-                add: true,
-                content: '<a href="/">Visit website &rsaquo;</a>'
-            }
+        $(function () {
+            $('nav#menu').mmenu({
+                extensions: ['effect-slide', 'pageshadow'],
+                header: true,
+                searchfield: true,
+                counters: true,
+                footer: {
+                    add: true,
+                    content: '<a href="/">Visit website &rsaquo;</a>'
+                }
+            });
         });
-    });
     </script>
     @*<script type="text/javascript">
-        $(window).load(function () {
-            if (document.cookie.indexOf("adf") == -1)
-            {
-                document.cookie = "popunder1=adf";
-                $('#myModal').linhnguyen($('#myModal').data());
-            }
-    });
-    </script>*@
+            $(window).load(function () {
+                if (document.cookie.indexOf("adf") == -1)
+                {
+                    document.cookie = "popunder1=adf";
+                    $('#myModal').linhnguyen($('#myModal').data());
+                }
+        });
+        </script>*@
     <script type="text/javascript">
         $(window).load(function () {
             $('#myModal').linhnguyen($('#myModal').data());
         });
-    </script>	
+    </script>
     <script type="text/javascript">
-    $(window).load(function () {
-        $('#slider').nivoSlider();
-    });
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
     </script>
     <script type="text/javascript">
 
@@ -219,36 +229,35 @@
                 changepicturecallback: function () { _bsap.exec(); }
             });
         });
-    </script> 
+    </script>
     <script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '789566341160063',
-            xfbml: true,
-            version: 'v2.4'
-        });
-    };
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '789566341160063',
+                xfbml: true,
+                version: 'v2.4'
+            });
+        };
 
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) { return; }
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
     <script type="text/javascript">
-    function hide_float_left() {
-        var content = document.getElementById('float_content_left');
-        var hide = document.getElementById('hide_float_left');
-        if (content.style.display == "none")
-        { content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_left()">Tắt khuyến mại [X]</a>'; }
-        else {
-            content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_left()">Xem khuyến mại..</a>';
+        function hide_float_left() {
+            var content = document.getElementById('float_content_left');
+            var hide = document.getElementById('hide_float_left');
+            if (content.style.display == "none") { content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_left()">Tắt khuyến mại [X]</a>'; }
+            else {
+                content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_left()">Xem khuyến mại..</a>';
+            }
         }
-    }
     </script>
-@Scripts.Render("~/Content/Display/Js/Google")    
+    @Scripts.Render("~/Content/Display/Js/Google")
     <script type="text/javascript">
         $(document).ready(function () {
             $('.nhay').each(function () {

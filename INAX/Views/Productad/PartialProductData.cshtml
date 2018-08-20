@@ -154,7 +154,7 @@
                                onchange="javascript:return UpdateProduct2(@item.id);" />
                     </td>
                     <td>
-                        <a href="Sửa sản phẩm @item.Name" id="@Html.Raw("lbtUpdateProduct")@item.id"> @item.Name</a>
+                        <a href="../../Productad/Edit?id=@item.id" id="@Html.Raw("lbtUpdateProduct")@item.id"> @item.Name</a>
                     </td>
                     <td class="ddlMenu" align="center" style="width:200px;">
                        
@@ -226,7 +226,8 @@
                             <i class="icon-plus"></i>
                         </a>
                     </td>
-                </tr>}
+                </tr>
+            }
 
         }
 
