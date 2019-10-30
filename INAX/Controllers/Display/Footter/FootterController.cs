@@ -84,8 +84,8 @@ namespace INAX.Controllers.Display.Footter
                 Chuoiimg.Append("<div id=\"adwfooter\"><div class=\"support\">");
                 Chuoiimg.Append("<div class=\"leftSupport\">");
                 Chuoiimg.Append("<p><i class=\"fa fa-comments-o\" aria-hidden=\"true\"></i> Gọi ngay !</p>");
-                Chuoiimg.Append("<a href=\"tel:" + tblconfig.HotlineIN + "\"> " + tblconfig.HotlineIN + "</a>");
-                Chuoiimg.Append("<a href=\"tel:" + tblconfig.HotlineOUT + "\">" + tblconfig.HotlineOUT + "</a>");
+                Chuoiimg.Append("<a href=\"tel:" + tblconfig.Hotline1 + "\"> " + tblconfig.Hotline1 + "</a>");
+                Chuoiimg.Append("<a href=\"tel:" + tblconfig.Hotline2 + "\">" + tblconfig.Hotline2 + "</a>");
                 Chuoiimg.Append("</div>");
                 Chuoiimg.Append("<div class=\"rightSupport\">");
                 Chuoiimg.Append("<p><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> Thời gian làm việc</p>");

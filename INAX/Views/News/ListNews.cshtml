@@ -25,14 +25,14 @@
                         <div class="Content_Listnew">
                             <div class="Left">
 
-                                @if (item.Images!=null && item.Images!="")
-            {
-                                    <a href="/vn/home/tin-tuc/@item.Tag@Html.Raw("_")@item.id@Html.Raw(".html")" title="@item.Name">
-                                        <img src="~/Content/Display/iCon/icon-tintuc.jpg" alt="Ảnh đại diện Inax" />
-                                    </a>
+                                @if (item.Images != null && item.Images != "")
+                                {<a href="tin-tuc/@item.Tag" title="@item.Name"><img src="@item.Images" alt="@item.Name" /></a>
+
                                 }
                                 else
-                                {     <a href="tin-tuc/@item.Tag" title="@item.Name"><img src="@item.Images" alt="@item.Name" /></a>}
+                                { <a href="/vn/home/tin-tuc/@item.Tag@Html.Raw("_")@item.id@Html.Raw(".html")" title="@item.Name">
+                                        <img src="~/Content/Display/iCon/icon-tintuc.jpg" alt="Ảnh đại diện Inax" />
+                                    </a>}
                             </div>
                             <div class="Right">
                                 <div class="Top">	<a href="/tin-tuc/@item.Tag" title="@item.Name"> @item.Name <span>@item.DateCreate</span></a> </div>

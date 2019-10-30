@@ -52,15 +52,15 @@ namespace INAX.Controllers.Display.Session
                 chuoi.Append( "<span class=\"Price\">Giá NY : <span>" + string.Format("{0:#,#}", listProductHomes[i].Price) + "đ</span></span>");
                 string hoigia = "";
                 string note = ".";
-                 if (listProductHomes[i].PriceSaleActive>1)
+                 if (listProductHomes[i].PriceSale > 1)
                 {
-                    chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProductHomes[i].PriceSaleActive) + "đ</span></span>");
+                    chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProductHomes[i].PriceSale) + "đ</span></span>");
                     hoigia = "Lấy giá tốt hơn ";
                    
-                    if(listProductHomes[i].PriceSaleActive>listProductHomes[i].PriceSale)
+                    if(listProductHomes[i].PriceSale>listProductHomes[i].PriceSale)
                     {
-                        note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProductHomes[i].PriceSaleActive - listProductHomes[i].PriceSale) + "đ hoặc cao hơn nữa cho bạn !";
-                        Giakm = float.Parse(listProductHomes[i].PriceSaleActive.ToString());
+                        note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProductHomes[i].PriceSale - listProductHomes[i].PriceSale) + "đ hoặc cao hơn nữa cho bạn !";
+                        Giakm = float.Parse(listProductHomes[i].PriceSale.ToString());
                     }
                 }
                 else
@@ -69,7 +69,7 @@ namespace INAX.Controllers.Display.Session
                     chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>Liên hệ</span></span>");
                 }              
                 chuoi.Append( "<div class=\"tietkiem\">");
-                chuoi.Append( "<span class=\"tk1\">Cam kết giá rẻ nhất khi gọi điện hoặc đến trực tiếp hoặc click vào đây :</span>");
+                chuoi.Append( "<span class=\"tk1\">Khách hàng được hỗ trợ tốt hơn khi gọi điện :</span>");
 
                 chuoi.Append("<div class=\"Laygiakm\"><span class=\"laygia lg" + listProductHomes[i].id + "\" onClick=\"javascript:return Laygia('lg" + listProductHomes[i].id + "','" + listProductHomes[i].Name + "','" + String.Format("{0:#,#}", Giakm) + "','" + note + "');\" title=\"Để lấy giá hỗ trợ rẻ nhất Hà Nội \">" + hoigia + "</span></div>");
                 chuoi.Append( "</div>");
@@ -241,14 +241,14 @@ namespace INAX.Controllers.Display.Session
                     chuoi.Append( "<span class=\"Price\">Giá NY: <span>" + string.Format("{0:#,#}", listProduct[y].Price) + " đ</span></span>");
                     string hoigia = "";
                     string note = "";
-                    if (listProduct[y].PriceSaleActive>1)
+                    if (listProduct[y].PriceSale>1)
                     {
                         hoigia = "Lấy giá tốt hơn";
-                        chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProduct[y].PriceSaleActive) + " đ</span></span>");
-                        if (listProduct[y].PriceSaleActive > listProduct[y].PriceSale)
+                        chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProduct[y].PriceSale) + " đ</span></span>");
+                        if (listProduct[y].PriceSale > listProduct[y].PriceSale)
                         {
-                            note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProduct[y].PriceSaleActive - listProduct[y].PriceSale) + "đ hoặc cao hơn nữa cho bạn khi liên hệ !";
-                            Giakm = float.Parse(listProduct[y].PriceSaleActive.ToString());
+                            note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProduct[y].PriceSale - listProduct[y].PriceSale) + "đ hoặc cao hơn nữa cho bạn khi liên hệ !";
+                            Giakm = float.Parse(listProduct[y].PriceSale.ToString());
                         }
                     }
                     else
@@ -258,7 +258,7 @@ namespace INAX.Controllers.Display.Session
                     }
                   
                     chuoi.Append( "<div class=\"tietkiem\">");
-                    chuoi.Append( "<span class=\"tk1\">Chúng tôi giảm thêm giá khi bạn gọi điện hoặc ấn vào : </span>");
+                    chuoi.Append( "<span class=\"tk1\">Khách hàng được hỗ trợ thêm khi gọi điện : </span>");
                     chuoi.Append("<div class=\"Laygiakm\"><span class=\"laygia lg" + listProduct[y].id + "\" onClick=\"javascript:return Laygia('lg" + listProduct[y].id + "','" + listProduct[y].Name + "','" + String.Format("{0:#,#}",Giakm) + "','"+note+"');\" title=\"Để lấy giá hỗ trợ rẻ nhất Hà Nội\">"+hoigia+"</span></div>");
                     chuoi.Append("</div>");
                     chuoi.Append( "</div>");
@@ -503,13 +503,13 @@ namespace INAX.Controllers.Display.Session
                 string note = "";
                 if (giakm > 50)
                 {
-                    if(listProduct[i].PriceSaleActive>1)
+                    if(listProduct[i].PriceSale>1)
                     {
-                        chuoiproduct.Append("<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProduct[i].PriceSaleActive) + "</span></span>");
-                        if (listProduct[i].PriceSaleActive > listProduct[i].PriceSale)
+                        chuoiproduct.Append("<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProduct[i].PriceSale) + "</span></span>");
+                        if (listProduct[i].PriceSale > listProduct[i].PriceSale)
                         {
-                            note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProduct[i].PriceSaleActive - listProduct[i].PriceSale) + "đ hoặc cao hơn nữa cho bạn khi liên hệ !";
-                            Giakm = float.Parse(listProduct[i].PriceSaleActive.ToString());
+                            note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProduct[i].PriceSale - listProduct[i].PriceSale) + "đ hoặc cao hơn nữa cho bạn khi liên hệ !";
+                            Giakm = float.Parse(listProduct[i].PriceSale.ToString());
                         }
                     }
                     else
@@ -518,12 +518,12 @@ namespace INAX.Controllers.Display.Session
                     }
                     
                     chuoiproduct.Append("<div class=\"tietkiem\">");
-                    chuoiproduct.Append("<span class=\"tk1\">Cam kết giá rẻ nhất khi liên hệ</span>");
+                    chuoiproduct.Append("<span class=\"tk1\">Khách hàng được hỗ trợ thêm khi gọi điện</span>");
                     chuoiproduct.Append("<div class=\"Laygiakm\"><span class=\"laygia lg" + listProduct[i].id + "\" onClick=\"javascript:return Laygia('lg" + listProduct[i].id + "','" + listProduct[i].Name + "','" + String.Format("{0:#,#}", Giakm) + "','"+note+"');\" title=\"Để lấy giá hỗ trợ rẻ nhất Hà Nội\">Lấy giá tốt nhất</span></div>");
                     chuoiproduct.Append("</div>");
                 }
                 else
-                    chuoiproduct.Append(" <p class=\"qua\">Vui lòng liên hệ để nhận được giá khuyến mại</p>");
+                    chuoiproduct.Append(" <p class=\"qua\">Khách hàng được hỗ trợ thêm khi gọi điện</p>");
                 
                 chuoiproduct.Append("</div>");
             }
@@ -568,9 +568,9 @@ namespace INAX.Controllers.Display.Session
                     chuoi += "</div>";
                     chuoi += "<a class=\"Namepd\" href=\"/"+ listProduct[j].Tag + "-dt\" title=\"" + listProduct[j].Name + "\">" + listProduct[j].Name + "</a>";
                     chuoi += "<span class=\"Price\">Giá : <span>" + string.Format("{0:#,#}", listProduct[j].Price) + " đ</span></span>";
-                    if (listProduct[j].PriceSaleActive>1)
-                    chuoi += "<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProduct[j].PriceSaleActive) + "</span></span>";
-                    chuoi += " <p class=\"qua\">Cam kết giá rẻ nhất khi liên hệ</p>";
+                    if (listProduct[j].PriceSale>1)
+                    chuoi += "<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProduct[j].PriceSale) + "</span></span>";
+                    chuoi += " <p class=\"qua\">Khách hàng được hỗ trợ thêm khi gọi điện</p>";
                     //chuoi += "<div class=\"sevices\">";
 
                     //if (listProduct[j].Status == true)
@@ -685,14 +685,14 @@ namespace INAX.Controllers.Display.Session
                         if (giakm > 50)
                         {
                             string hoigia = "";
-                            if (listProduct[j].PriceSaleActive>1)
+                            if (listProduct[j].PriceSale>1)
                             {
                                 hoigia = "Lấy giá tốt hơn";
-                                chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>"+string.Format("{0:#,#}", listProduct[j].PriceSaleActive) +"</span></span>");
-                                if (listProduct[j].PriceSaleActive > listProduct[j].PriceSale)
+                                chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>"+string.Format("{0:#,#}", listProduct[j].PriceSale) +"</span></span>");
+                                if (listProduct[j].PriceSale > listProduct[j].PriceSale)
                                 {
-                                    note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProduct[j].PriceSaleActive - listProduct[j].PriceSale) + "đ hoặc cao hơn nữa cho bạn khi liên hệ !";
-                                    Giakm = float.Parse(listProduct[j].PriceSaleActive.ToString());
+                                    note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProduct[j].PriceSale - listProduct[j].PriceSale) + "đ hoặc cao hơn nữa cho bạn khi liên hệ !";
+                                    Giakm = float.Parse(listProduct[j].PriceSale.ToString());
                                 }
                             }
                             else
@@ -702,12 +702,12 @@ namespace INAX.Controllers.Display.Session
                             }
                         
                             chuoi.Append("<div class=\"tietkiem\">");
-                            chuoi.Append("<span class=\"tk1\">Cam kết giá rẻ nhất khi liên hệ</span>");
+                            chuoi.Append("<span class=\"tk1\">Khách hàng được hỗ trợ thêm khi gọi điện</span>");
                             chuoi.Append("<div class=\"Laygiakm\"><span class=\"laygia lg" + listProduct[j].id + "\" onClick=\"javascript:return Laygia('lg" + listProduct[j].id + "','" + listProduct[j].Name + "','" + String.Format("{0:#,#}", Giakm) + "','" + note + "');\" title=\"Để lấy giá hỗ trợ rẻ nhất Hà Nội\">" + hoigia + "</span></div>");
                             chuoi.Append("</div>");
                         }
                         else
-                            chuoi.Append(" <p class=\"qua\">Vui lòng liên hệ để nhận được giá khuyến mại</p>");
+                            chuoi.Append(" <p class=\"qua\">Khách hàng được hỗ trợ thêm khi gọi điện</p>");
                         // chuoi.Append("<div class=\"sevices\">");
 
                         //if (listProduct[j].Status == true)
@@ -785,14 +785,14 @@ namespace INAX.Controllers.Display.Session
                     if (giakm > 50)
                     {
                         string hoigia = "";
-                        if (listProduct[j].PriceSaleActive > 1)
+                        if (listProduct[j].PriceSale > 1)
                         {
                             hoigia = "Lấy giá tốt hơn";
-                            chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProduct[j].PriceSaleActive) + "</span></span>");
-                            if (listProduct[j].PriceSaleActive > listProduct[j].PriceSale)
+                            chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>" + string.Format("{0:#,#}", listProduct[j].PriceSale) + "</span></span>");
+                            if (listProduct[j].PriceSale > listProduct[j].PriceSale)
                             {
-                                note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProduct[j].PriceSaleActive - listProduct[j].PriceSale) + "đ hoặc cao hơn nữa cho bạn khi liên hệ!";
-                                Giakm = float.Parse(listProduct[j].PriceSaleActive.ToString());
+                                note = ". Ngoài ra chúng tôi có thể giảm thêm " + string.Format("{0:#,#}", listProduct[j].PriceSale - listProduct[j].PriceSale) + "đ hoặc cao hơn nữa cho bạn khi liên hệ!";
+                                Giakm = float.Parse(listProduct[j].PriceSale.ToString());
                             }
                         }
                         else
@@ -801,12 +801,12 @@ namespace INAX.Controllers.Display.Session
                             chuoi.Append("<span class=\"PriceSale\">Giá KM : <span>Liên hệ</span></span>");
                         }
                         chuoi.Append("<div class=\"tietkiem\">");
-                        chuoi.Append("<span class=\"tk1\">Cam kết giá rẻ nhất khi liên hệ</span>");
+                        chuoi.Append("<span class=\"tk1\">Khách hàng được hỗ trợ thêm khi gọi điện</span>");
                         chuoi.Append("<div class=\"Laygiakm\"><span class=\"laygia lg" + listProduct[j].id + "\" onClick=\"javascript:return Laygia('lg" + listProduct[j].id + "','" + listProduct[j].Name + "','" + String.Format("{0:#,#}", Giakm) + "','" + note + "');\" title=\"Để lấy giá hỗ trợ rẻ nhất Hà Nội\">" + hoigia + "</span></div>");
                         chuoi.Append("</div>");
                     }
                     else
-                        chuoi.Append(" <p class=\"qua\">Vui lòng liên hệ để nhận được giá khuyến mại</p>");
+                        chuoi.Append(" <p class=\"qua\">Khách hàng được hỗ trợ thêm khi gọi điện</p>");
                     //chuoi.Append("<div class=\"sevices\">");
                     //if (listProduct[j].Status == true)
                     //{ chuoi.Append("<span class=\"Status\"></span>"); }
@@ -885,7 +885,6 @@ namespace INAX.Controllers.Display.Session
 
                 chuoi.Append("<li>");
                 chuoi.Append("<a href=\"/" + listGroup[i].Tag + ".html\" rel=\"nofollow\" title=\"" + listGroup[i].Name + "\"><span>&bull;</span> " + listGroup[i].Name + "</a>");
-
                 int idCate1 = listGroup[i].id;
                 var listGroup1 = db.tblGroupProducts.Where(p => p.Active == true && p.ParentID == idCate1).OrderBy(p => p.Ord).ToList();
 
@@ -897,9 +896,7 @@ namespace INAX.Controllers.Display.Session
                     chuoi.Append("<li><a href=\"/" + listGroup1[j].Tag + ".html\" rel=\"nofollow\" title=\"" + listGroup1[j].Name + "\"><span>&raquo; </span>" + listGroup1[j].Name + "</a></li>");
                 }
                 chuoi.Append("</ul>");
-                chuoi.Append("</li>");
-
-
+                chuoi.Append("</li>");              
 
             }
             chuoi.Append("</ul>");

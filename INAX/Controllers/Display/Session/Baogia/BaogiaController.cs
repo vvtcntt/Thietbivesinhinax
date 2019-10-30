@@ -72,8 +72,8 @@ namespace INAX.Controllers.Display.Session.Baogia
             var tblcongif = db.tblConfigs.First();
             string config = "";
             config += "<span class=\"hd1\">" + tblcongif.Name + "</span>";
-            config += "<span class=\"hd2\">" + tblcongif.Address + "</span>";
-            config += "<span class=\"hd3\">Điện thoại:" + tblcongif.MobileIN + "   - Hotline : " + tblcongif.HotlineIN + "</span>";
+            config += "<span class=\"hd2\">" + tblcongif.Address1 + "</span>";
+            config += "<span class=\"hd3\">Điện thoại:" + tblcongif.Mobile2 + "   - Hotline : " + tblcongif.Hotline2 + "</span>";
             config += "<span class=\"hd4\">Email : " + tblcongif.Email + " - website: Thietbivesinhinax.vn</span>";
             ViewBag.chuoiconfig = config;
             ViewBag.Content = baogia.Content;

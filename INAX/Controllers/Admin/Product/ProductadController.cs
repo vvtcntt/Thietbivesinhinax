@@ -236,21 +236,21 @@ namespace INAX.Controllers.Admin.Product
                 Product.ViewHomes = bool.Parse(chkHome);
                 Product.Active = bool.Parse(cbIsActive);
                 Product.ProductSale = bool.Parse(chkSale);
-                Product.idCate = int.Parse(idCate);
-                int idcates = int.Parse(idCate); ;
+                //Product.idCate = int.Parse(idCate);
+                //int idcates = int.Parse(idCate); ;
                 int Ord = int.Parse(ordernumber);
-                var Kiemtra = db.tblProducts.Where(p => p.Ord == Ord && p.idCate == idcates && p.id!=id).ToList();
-                if (Kiemtra.Count > 0)
-                {
-                    var listProduct = db.tblProducts.Where(p => p.Ord >= Ord && p.idCate == idcates).ToList();   
-                    for(int i=0;i<listProduct.Count;i++)
-                    {
-                        int idp = int.Parse(listProduct[i].id.ToString());
-                        var productUpdate = db.tblProducts.Find(idp);
-                        productUpdate.Ord = productUpdate.Ord + 1;
-                        db.SaveChanges();
-                    }
-                }
+                //var Kiemtra = db.tblProducts.Where(p => p.Ord == Ord && p.idCate == idcates && p.id!=id).ToList();
+                //if (Kiemtra.Count > 0)
+                //{
+                //    var listProduct = db.tblProducts.Where(p => p.Ord >= Ord && p.idCate == idcates).ToList();   
+                //    for(int i=0;i<listProduct.Count;i++)
+                //    {
+                //        int idp = int.Parse(listProduct[i].id.ToString());
+                //        var productUpdate = db.tblProducts.Find(idp);
+                //        productUpdate.Ord = productUpdate.Ord + 1;
+                //        db.SaveChanges();
+                //    }
+                //}
                 Product.Ord = Ord;
                 db.SaveChanges();
                 //db.Entry(Product).State = System.Data.EntityState.Modified;

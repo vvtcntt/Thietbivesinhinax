@@ -103,9 +103,7 @@ namespace INAX.Controllers.Display.Session.News
                 //Load tin mới
                 
             }
-            int iduser = int.Parse(tblnews.idUser.ToString());
-            var User = db.tblUsers.Find(iduser);
-            ViewBag.UserName = User.FullName;
+            
             StringBuilder chuoinewnew =new StringBuilder();
             var NewsNew = db.tblNews.Where(p => p.Active == true).OrderByDescending(p => p.DateCreate).Take(5).ToList();
             for (int i = 0; i < NewsNew.Count; i++)

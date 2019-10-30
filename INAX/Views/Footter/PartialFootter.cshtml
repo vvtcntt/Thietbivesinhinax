@@ -72,28 +72,11 @@
     </div>
     <div class="Clear"></div>
     <div id="Footter_Centter">
-        @if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
-        {
+         
 
-            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> @Model.HotlineOUT</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
+            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài bán hàng<span> @Model.PbxSell</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
 
-        }
-        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
-        {
-
-            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> @Model.HotlineIN</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
-        }
-
-
-        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 22)
-        {
-            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> @Model.HotlineOUT</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
-
-        }
-        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
-        {
-            <p>Bạn cần trợ giúp? Vui lòng gọi đến tổng đài<span> @Model.HotlineOUT</span> hoặc Trợ giúp trực tuyến để nhận được hỗ trợ từ INAX</p>
-        }
+        
         
     </div>
     <div class="Clear"></div>
@@ -106,9 +89,11 @@
             <div id="Info_Right">
                 <p class="p1">LIXIL INAX VIỆT NAM</p>
                 <h2>@Model.Name</h2>
-                <p class="p2"><span style="color:#f9ff5f">Hà Nội</span> : <span>@Model.Address</span></p>
-                <p class="p2">Điện thoại : <span>@Model.MobileIN  - @Model.HotlineIN</span></p>
-                <p class="p2">Tổng đài bán hàng : <span style="color:#F00; font-size:16px">@Model.HotlineSwitchBoard</span>, Tổng đài bảo hành : <span style="color:#F00; font-size:16px">@Model.HotlineGuarantee</span></p>
+                <p class="p2"><span style="color:#f9ff5f">Cơ sở 1 : </span>  <span>@Model.Address1</span></p>
+                <p class="p2"><span style="color:#f9ff5f">Điện thoại Cơ Sở 1 : </span> <span>@Model.Mobile1  - @Model.Hotline1</span></p>
+                <p class="p2"><span style="color:#f9ff5f">Cơ sở 2 : </span><span>Số 170 Phạm Văn Đồng, Cầu Giấy, Hà Nội</span></p>
+                <p class="p2"><span style="color:#f9ff5f">Điện thoại Cơ sở 2 : </span>: <span>@Model.Mobile2  - @Model.Hotline2</span></p>
+                <p class="p2">Tổng đài bán hàng : <span style="color:#F00; font-size:16px">@Model.PbxSell</span>, Tổng đài bảo hành : <span style="color:#F00; font-size:16px">@Model.PbxGua</span></p>
                 <p class="p2">Email liên hệ: <span>@Model.Email</span></p>
                 @Html.Raw(ViewBag.resultParner)
 
@@ -139,7 +124,7 @@
         </div>
         <div class="Clear"></div>
         <div id="Maps_Homes">
-@Html.Raw(ViewBag.maps)            
+@*@Html.Raw(ViewBag.maps)*@            
             <div class="Clear"></div>
         </div>
         <div class="Clear"></div>

@@ -12,14 +12,16 @@
                     Khách hàng mua hàng ngoài<strong>19H30</strong> cần đặt lịch trước qua số hotline : <strong>1900 63 66 95</strong>
                 </span>
             </div>
-<img style="max-width:95%; height:auto; margin:7px auto; display:block" src="~/Content/Display/iCon/tong-dai-ban-hang.png" alt="Tổng đài" />
- 
-    <span class="Hotline"><span></span> @Model.HotlineIN</span>
- 
-            
-            <span class="Mobile"><span></span> @Model.MobileIN</span>
-            <span class="Email"><span></span> @Model.Email</span>
-            <span class="Address"><span></span> @Model.Address</span>
+            <img style="max-width:95%; height:auto; margin:7px auto; display:block" src="~/Content/Display/iCon/tong-dai-ban-hang.png" alt="Tổng đài" />
+
+            <span class="Hotline"><span></span> @Model.Hotline1</span>
+            <div class="Clear"></div>
+            <span class="Hotline"><span></span> @Model.Hotline2</span>
+
+            <span class="Mobile"><span></span>@Model.Mobile1</span>
+            <span class="Email"><span></span>@Model.Email</span>
+            <span class="Address">Cơ sở 1 : <span></span>@Model.Address1</span>
+            <span class="Address">Cơ sở 2 : <span></span>@Model.Address2</span>
         </div>
         <div id="ListSupport">
             <span class="httt">Hỗ trợ trực tuyến</span>

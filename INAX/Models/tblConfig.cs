@@ -15,11 +15,15 @@ namespace INAX.Models
         public Nullable<bool> PopupSupport { get; set; }
         public string Content { get; set; }
         public string Name { get; set; }
-        public string Address { get; set; }
-        public string MobileIN { get; set; }
-        public string HotlineIN { get; set; }
-        public string MobileOUT { get; set; }
-        public string HotlineOUT { get; set; }
+        public string Address1 { get; set; }
+        public string Address2 { get; set; }
+        public string Mobile1 { get; set; }
+        public string Hotline1 { get; set; }
+        public string Mobile2 { get; set; }
+        public string Hotline2 { get; set; }
+        public string PbxSell { get; set; }
+        public string PbxGua { get; set; }
+        public string PbxDen { get; set; }
         public string HotlineSwitchBoard { get; set; }
         public string HotlineGuarantee { get; set; }
         public string Email { get; set; }
